@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace TP_2
 {
-    public partial class FormInicio : Form
+    public partial class FormArticulos : Form
     {
-        public FormInicio()
+        public FormArticulos()
         {
             InitializeComponent();
         }
 
-        private void btnArticulos_Click(object sender, EventArgs e)
+
+        private void FormArticulos_Load(object sender, EventArgs e)
         {
-            FormArticulos formArticulos = new FormArticulos();
-            formArticulos.ShowDialog();
+
         }
     }
 }
