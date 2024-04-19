@@ -22,5 +22,11 @@ namespace TP_2
             FormArticulos formArticulos = new FormArticulos();
             formArticulos.ShowDialog();
         }
+
+        private void btnMarcas_Click(object sender, EventArgs e)
+        {
+            FormMarcas formMarca = new FormMarcas();
+            formMarca.ShowDialog();
+        }
     }
 }

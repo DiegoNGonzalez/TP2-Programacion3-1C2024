@@ -78,6 +78,7 @@
             this.btnMarcas.TabIndex = 3;
             this.btnMarcas.Text = "Marcas";
             this.btnMarcas.UseVisualStyleBackColor = true;
+            this.btnMarcas.Click += new System.EventHandler(this.btnMarcas_Click);
             // 
             // gbSecciones
             // 
