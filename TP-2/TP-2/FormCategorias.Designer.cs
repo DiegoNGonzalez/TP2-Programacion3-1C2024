@@ -41,7 +41,7 @@
             // 
             this.lblCategorias.AutoSize = true;
             this.lblCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategorias.Location = new System.Drawing.Point(239, 39);
+            this.lblCategorias.Location = new System.Drawing.Point(272, 39);
             this.lblCategorias.Name = "lblCategorias";
             this.lblCategorias.Size = new System.Drawing.Size(257, 55);
             this.lblCategorias.TabIndex = 0;
@@ -50,7 +50,7 @@
             // lvCategorias
             // 
             this.lvCategorias.HideSelection = false;
-            this.lvCategorias.Location = new System.Drawing.Point(215, 142);
+            this.lvCategorias.Location = new System.Drawing.Point(248, 142);
             this.lvCategorias.Name = "lvCategorias";
             this.lvCategorias.Size = new System.Drawing.Size(305, 178);
             this.lvCategorias.TabIndex = 1;
@@ -61,7 +61,7 @@
             this.gbxCategorias.Controls.Add(this.btnEliminar);
             this.gbxCategorias.Controls.Add(this.btnModificar);
             this.gbxCategorias.Controls.Add(this.btnAgregar);
-            this.gbxCategorias.Location = new System.Drawing.Point(192, 355);
+            this.gbxCategorias.Location = new System.Drawing.Point(225, 355);
             this.gbxCategorias.Name = "gbxCategorias";
             this.gbxCategorias.Size = new System.Drawing.Size(351, 52);
             this.gbxCategorias.TabIndex = 2;
