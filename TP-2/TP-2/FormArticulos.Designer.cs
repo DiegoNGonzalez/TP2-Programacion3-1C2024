@@ -42,7 +42,7 @@
             // 
             this.lblArticulosFormArticulos.AutoSize = true;
             this.lblArticulosFormArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticulosFormArticulos.Location = new System.Drawing.Point(197, 23);
+            this.lblArticulosFormArticulos.Location = new System.Drawing.Point(274, 28);
             this.lblArticulosFormArticulos.Name = "lblArticulosFormArticulos";
             this.lblArticulosFormArticulos.Size = new System.Drawing.Size(207, 55);
             this.lblArticulosFormArticulos.TabIndex = 0;
@@ -52,7 +52,7 @@
             // lvArticulosFormArticulos
             // 
             this.lvArticulosFormArticulos.HideSelection = false;
-            this.lvArticulosFormArticulos.Location = new System.Drawing.Point(148, 92);
+            this.lvArticulosFormArticulos.Location = new System.Drawing.Point(237, 120);
             this.lvArticulosFormArticulos.Name = "lvArticulosFormArticulos";
             this.lvArticulosFormArticulos.Size = new System.Drawing.Size(281, 130);
             this.lvArticulosFormArticulos.TabIndex = 1;
@@ -100,7 +100,7 @@
             this.gpSeccionesFormArticulos.Controls.Add(this.button4);
             this.gpSeccionesFormArticulos.Controls.Add(this.btnModificarFormArticulos);
             this.gpSeccionesFormArticulos.Controls.Add(this.btnEliminarFormArticulos);
-            this.gpSeccionesFormArticulos.Location = new System.Drawing.Point(116, 228);
+            this.gpSeccionesFormArticulos.Location = new System.Drawing.Point(207, 300);
             this.gpSeccionesFormArticulos.Name = "gpSeccionesFormArticulos";
             this.gpSeccionesFormArticulos.Size = new System.Drawing.Size(341, 54);
             this.gpSeccionesFormArticulos.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 327);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gpSeccionesFormArticulos);
             this.Controls.Add(this.lvArticulosFormArticulos);
             this.Controls.Add(this.lblArticulosFormArticulos);
