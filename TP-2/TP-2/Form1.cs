@@ -28,5 +28,11 @@ namespace TP_2
             FormMarcas formMarca = new FormMarcas();
             formMarca.ShowDialog();
         }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            FormCategorias formCategorias = new FormCategorias();
+            formCategorias.ShowDialog();
+        }
     }
 }

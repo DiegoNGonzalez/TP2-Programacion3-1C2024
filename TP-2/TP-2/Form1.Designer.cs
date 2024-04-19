@@ -68,6 +68,7 @@
             this.btnCategorias.TabIndex = 2;
             this.btnCategorias.Text = "Categorias";
             this.btnCategorias.UseVisualStyleBackColor = true;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // btnMarcas
             // 
