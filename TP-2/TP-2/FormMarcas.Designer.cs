@@ -32,8 +32,8 @@
             this.lvMarcas = new System.Windows.Forms.ListView();
             this.gbxMarcas = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.gbxMarcas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,8 +58,8 @@
             // 
             // gbxMarcas
             // 
-            this.gbxMarcas.Controls.Add(this.button3);
-            this.gbxMarcas.Controls.Add(this.button2);
+            this.gbxMarcas.Controls.Add(this.btnEliminar);
+            this.gbxMarcas.Controls.Add(this.btnModificar);
             this.gbxMarcas.Controls.Add(this.btnAgregar);
             this.gbxMarcas.Location = new System.Drawing.Point(203, 338);
             this.gbxMarcas.Name = "gbxMarcas";
@@ -77,23 +77,23 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnModificar
             // 
-            this.button2.Location = new System.Drawing.Point(117, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(117, 28);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 1;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Location = new System.Drawing.Point(224, 28);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(224, 28);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // FormMarcas
             // 
@@ -117,7 +117,7 @@
         private System.Windows.Forms.ListView lvMarcas;
         private System.Windows.Forms.GroupBox gbxMarcas;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
     }
 }
