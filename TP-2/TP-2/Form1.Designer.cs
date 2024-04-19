@@ -40,7 +40,7 @@
             // 
             this.lblNombreInicio.AutoSize = true;
             this.lblNombreInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreInicio.Location = new System.Drawing.Point(106, 27);
+            this.lblNombreInicio.Location = new System.Drawing.Point(220, 29);
             this.lblNombreInicio.Name = "lblNombreInicio";
             this.lblNombreInicio.Size = new System.Drawing.Size(361, 55);
             this.lblNombreInicio.TabIndex = 0;
@@ -86,7 +86,7 @@
             this.gbSecciones.Controls.Add(this.btnArticulos);
             this.gbSecciones.Controls.Add(this.btnMarcas);
             this.gbSecciones.Controls.Add(this.btnCategorias);
-            this.gbSecciones.Location = new System.Drawing.Point(218, 95);
+            this.gbSecciones.Location = new System.Drawing.Point(334, 138);
             this.gbSecciones.Name = "gbSecciones";
             this.gbSecciones.Size = new System.Drawing.Size(132, 166);
             this.gbSecciones.TabIndex = 4;
@@ -98,7 +98,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(541, 273);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gbSecciones);
             this.Controls.Add(this.lblNombreInicio);
             this.Name = "FormInicio";
