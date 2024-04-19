@@ -31,9 +31,9 @@
             this.lblCategorias = new System.Windows.Forms.Label();
             this.lvCategorias = new System.Windows.Forms.ListView();
             this.gbxCategorias = new System.Windows.Forms.GroupBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.gbxCategorias.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +68,14 @@
             this.gbxCategorias.TabStop = false;
             this.gbxCategorias.Text = "Secciones";
             // 
-            // btnAgregar
+            // btnEliminar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(26, 19);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 0;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(232, 19);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnModificar
             // 
@@ -86,14 +86,14 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // btnEliminar
+            // btnAgregar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(232, 19);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(26, 19);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // FormCategorias
             // 
@@ -104,6 +104,7 @@
             this.Controls.Add(this.lvCategorias);
             this.Controls.Add(this.lblCategorias);
             this.Name = "FormCategorias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCategorias";
             this.gbxCategorias.ResumeLayout(false);
             this.ResumeLayout(false);

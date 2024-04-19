@@ -31,9 +31,9 @@
             this.lblMarcas = new System.Windows.Forms.Label();
             this.lvMarcas = new System.Windows.Forms.ListView();
             this.gbxMarcas = new System.Windows.Forms.GroupBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.gbxMarcas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +68,14 @@
             this.gbxMarcas.TabStop = false;
             this.gbxMarcas.Text = "Secciones";
             // 
-            // btnAgregar
+            // btnEliminar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(19, 28);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 0;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(224, 28);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnModificar
             // 
@@ -86,14 +86,14 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // btnEliminar
+            // btnAgregar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(224, 28);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(19, 28);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // FormMarcas
             // 
@@ -104,6 +104,7 @@
             this.Controls.Add(this.lvMarcas);
             this.Controls.Add(this.lblMarcas);
             this.Name = "FormMarcas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMarcas";
             this.gbxMarcas.ResumeLayout(false);
             this.ResumeLayout(false);

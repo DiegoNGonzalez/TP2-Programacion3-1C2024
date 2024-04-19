@@ -116,6 +116,7 @@
             this.Controls.Add(this.lvArticulosFormArticulos);
             this.Controls.Add(this.lblArticulosFormArticulos);
             this.Name = "FormArticulos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormArticulos";
             this.Load += new System.EventHandler(this.FormArticulos_Load);
             this.gpSeccionesFormArticulos.ResumeLayout(false);
