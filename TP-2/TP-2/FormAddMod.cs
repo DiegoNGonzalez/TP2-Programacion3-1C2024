@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace TP_2
 {
-    public partial class FormArticulos : Form
+    public partial class FormAddMod : Form
     {
-        public FormArticulos()
+        public FormAddMod()
         {
             InitializeComponent();
-        }
-
-
-        private void FormArticulos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

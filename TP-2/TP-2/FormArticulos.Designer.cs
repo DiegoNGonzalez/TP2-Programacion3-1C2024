@@ -38,17 +38,19 @@
             this.gBoxBusquedaRapida = new System.Windows.Forms.GroupBox();
             this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
             this.gBoxFiltrado = new System.Windows.Forms.GroupBox();
+            this.btnLimpiarFiltro = new System.Windows.Forms.Button();
+            this.btnBuscarFiltrado = new System.Windows.Forms.Button();
             this.txtBuscarFiltrado = new System.Windows.Forms.TextBox();
             this.cBoxCriterio = new System.Windows.Forms.ComboBox();
             this.cBoxCampo = new System.Windows.Forms.ComboBox();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.lblCriterio = new System.Windows.Forms.Label();
             this.lblCampo = new System.Windows.Forms.Label();
-            this.btnBuscarFiltrado = new System.Windows.Forms.Button();
-            this.btnLimpiarFiltro = new System.Windows.Forms.Button();
+            this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
             this.gpSeccionesFormArticulos.SuspendLayout();
             this.gBoxBusquedaRapida.SuspendLayout();
             this.gBoxFiltrado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxArticulosFormArticulos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblArticulosFormArticulos
@@ -67,7 +69,7 @@
             this.lvArticulosFormArticulos.HideSelection = false;
             this.lvArticulosFormArticulos.Location = new System.Drawing.Point(173, 102);
             this.lvArticulosFormArticulos.Name = "lvArticulosFormArticulos";
-            this.lvArticulosFormArticulos.Size = new System.Drawing.Size(508, 224);
+            this.lvArticulosFormArticulos.Size = new System.Drawing.Size(376, 228);
             this.lvArticulosFormArticulos.TabIndex = 1;
             this.lvArticulosFormArticulos.UseCompatibleStateImageBehavior = false;
             // 
@@ -113,7 +115,7 @@
             this.gpSeccionesFormArticulos.Controls.Add(this.btnVerDetalles);
             this.gpSeccionesFormArticulos.Controls.Add(this.btnModificarFormArticulos);
             this.gpSeccionesFormArticulos.Controls.Add(this.btnEliminarFormArticulos);
-            this.gpSeccionesFormArticulos.Location = new System.Drawing.Point(12, 102);
+            this.gpSeccionesFormArticulos.Location = new System.Drawing.Point(18, 102);
             this.gpSeccionesFormArticulos.Name = "gpSeccionesFormArticulos";
             this.gpSeccionesFormArticulos.Size = new System.Drawing.Size(122, 169);
             this.gpSeccionesFormArticulos.TabIndex = 6;
@@ -124,9 +126,9 @@
             // 
             this.gBoxBusquedaRapida.Controls.Add(this.txtBusquedaRapida);
             this.gBoxBusquedaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxBusquedaRapida.Location = new System.Drawing.Point(12, 287);
+            this.gBoxBusquedaRapida.Location = new System.Drawing.Point(18, 287);
             this.gBoxBusquedaRapida.Name = "gBoxBusquedaRapida";
-            this.gBoxBusquedaRapida.Size = new System.Drawing.Size(140, 57);
+            this.gBoxBusquedaRapida.Size = new System.Drawing.Size(143, 57);
             this.gBoxBusquedaRapida.TabIndex = 7;
             this.gBoxBusquedaRapida.TabStop = false;
             this.gBoxBusquedaRapida.Text = "Busqueda rapida";
@@ -156,9 +158,29 @@
             this.gBoxFiltrado.TabStop = false;
             this.gBoxFiltrado.Text = "Filtrar";
             // 
+            // btnLimpiarFiltro
+            // 
+            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarFiltro.Location = new System.Drawing.Point(249, 93);
+            this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
+            this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiarFiltro.TabIndex = 7;
+            this.btnLimpiarFiltro.Text = "Limpiar";
+            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarFiltrado
+            // 
+            this.btnBuscarFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarFiltrado.Location = new System.Drawing.Point(161, 93);
+            this.btnBuscarFiltrado.Name = "btnBuscarFiltrado";
+            this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarFiltrado.TabIndex = 6;
+            this.btnBuscarFiltrado.Text = "Buscar";
+            this.btnBuscarFiltrado.UseVisualStyleBackColor = true;
+            // 
             // txtBuscarFiltrado
             // 
-            this.txtBuscarFiltrado.Location = new System.Drawing.Point(384, 50);
+            this.txtBuscarFiltrado.Location = new System.Drawing.Point(374, 50);
             this.txtBuscarFiltrado.Name = "txtBuscarFiltrado";
             this.txtBuscarFiltrado.Size = new System.Drawing.Size(100, 22);
             this.txtBuscarFiltrado.TabIndex = 5;
@@ -182,7 +204,7 @@
             // lblFiltro
             // 
             this.lblFiltro.AutoSize = true;
-            this.lblFiltro.Location = new System.Drawing.Point(381, 26);
+            this.lblFiltro.Location = new System.Drawing.Point(371, 26);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(46, 16);
             this.lblFiltro.TabIndex = 2;
@@ -200,37 +222,26 @@
             // lblCampo
             // 
             this.lblCampo.AutoSize = true;
-            this.lblCampo.Location = new System.Drawing.Point(25, 31);
+            this.lblCampo.Location = new System.Drawing.Point(25, 26);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(60, 16);
             this.lblCampo.TabIndex = 0;
             this.lblCampo.Text = "Campo:";
             // 
-            // btnBuscarFiltrado
+            // pBoxArticulosFormArticulos
             // 
-            this.btnBuscarFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarFiltrado.Location = new System.Drawing.Point(139, 93);
-            this.btnBuscarFiltrado.Name = "btnBuscarFiltrado";
-            this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarFiltrado.TabIndex = 6;
-            this.btnBuscarFiltrado.Text = "Buscar";
-            this.btnBuscarFiltrado.UseVisualStyleBackColor = true;
-            // 
-            // btnLimpiarFiltro
-            // 
-            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarFiltro.Location = new System.Drawing.Point(300, 93);
-            this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
-            this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiarFiltro.TabIndex = 7;
-            this.btnLimpiarFiltro.Text = "Limpiar";
-            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
+            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(595, 102);
+            this.pBoxArticulosFormArticulos.Name = "pBoxArticulosFormArticulos";
+            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(152, 228);
+            this.pBoxArticulosFormArticulos.TabIndex = 9;
+            this.pBoxArticulosFormArticulos.TabStop = false;
             // 
             // FormArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 520);
+            this.Controls.Add(this.pBoxArticulosFormArticulos);
             this.Controls.Add(this.gBoxFiltrado);
             this.Controls.Add(this.gBoxBusquedaRapida);
             this.Controls.Add(this.gpSeccionesFormArticulos);
@@ -245,6 +256,7 @@
             this.gBoxBusquedaRapida.PerformLayout();
             this.gBoxFiltrado.ResumeLayout(false);
             this.gBoxFiltrado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxArticulosFormArticulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,5 +282,6 @@
         private System.Windows.Forms.ComboBox cBoxCampo;
         private System.Windows.Forms.Button btnLimpiarFiltro;
         private System.Windows.Forms.Button btnBuscarFiltrado;
+        private System.Windows.Forms.PictureBox pBoxArticulosFormArticulos;
     }
 }
