@@ -249,7 +249,7 @@
             this.Controls.Add(this.lblArticulosFormArticulos);
             this.Name = "FormArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormArticulos";
+            this.Text = "Articulos";
             this.Load += new System.EventHandler(this.FormArticulos_Load);
             this.gpSeccionesFormArticulos.ResumeLayout(false);
             this.gBoxBusquedaRapida.ResumeLayout(false);

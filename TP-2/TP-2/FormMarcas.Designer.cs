@@ -105,7 +105,7 @@
             this.Controls.Add(this.lblMarcas);
             this.Name = "FormMarcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMarcas";
+            this.Text = "Marcas";
             this.gbxMarcas.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

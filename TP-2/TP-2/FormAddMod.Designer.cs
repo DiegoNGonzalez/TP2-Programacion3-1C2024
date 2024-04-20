@@ -39,9 +39,9 @@
             this.rbAgregarFormAddMod = new System.Windows.Forms.RadioButton();
             this.rbModificarFormAddMod = new System.Windows.Forms.RadioButton();
             this.gpEleccionFormAddMod = new System.Windows.Forms.GroupBox();
+            this.lblEleccion2FormAddMod = new System.Windows.Forms.Label();
             this.lblEleccionFormAddMod = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblEleccion2FormAddMod = new System.Windows.Forms.Label();
             this.gbSeccionesFormAddMod.SuspendLayout();
             this.gpEleccionFormAddMod.SuspendLayout();
             this.SuspendLayout();
@@ -170,6 +170,16 @@
             this.gpEleccionFormAddMod.TabStop = false;
             this.gpEleccionFormAddMod.Text = "Eleccion";
             // 
+            // lblEleccion2FormAddMod
+            // 
+            this.lblEleccion2FormAddMod.AutoSize = true;
+            this.lblEleccion2FormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEleccion2FormAddMod.Location = new System.Drawing.Point(75, 91);
+            this.lblEleccion2FormAddMod.Name = "lblEleccion2FormAddMod";
+            this.lblEleccion2FormAddMod.Size = new System.Drawing.Size(71, 20);
+            this.lblEleccion2FormAddMod.TabIndex = 11;
+            this.lblEleccion2FormAddMod.Text = "Articulo?";
+            // 
             // lblEleccionFormAddMod
             // 
             this.lblEleccionFormAddMod.AutoSize = true;
@@ -190,16 +200,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "/";
             // 
-            // lblEleccion2FormAddMod
-            // 
-            this.lblEleccion2FormAddMod.AutoSize = true;
-            this.lblEleccion2FormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEleccion2FormAddMod.Location = new System.Drawing.Point(75, 91);
-            this.lblEleccion2FormAddMod.Name = "lblEleccion2FormAddMod";
-            this.lblEleccion2FormAddMod.Size = new System.Drawing.Size(71, 20);
-            this.lblEleccion2FormAddMod.TabIndex = 11;
-            this.lblEleccion2FormAddMod.Text = "Articulo?";
-            // 
             // FormAddMod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,7 +208,8 @@
             this.Controls.Add(this.gpEleccionFormAddMod);
             this.Controls.Add(this.gbSeccionesFormAddMod);
             this.Name = "FormAddMod";
-            this.Text = "FormAddMod";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agregar/Modificar Articulo";
             this.gbSeccionesFormAddMod.ResumeLayout(false);
             this.gbSeccionesFormAddMod.PerformLayout();
             this.gpEleccionFormAddMod.ResumeLayout(false);

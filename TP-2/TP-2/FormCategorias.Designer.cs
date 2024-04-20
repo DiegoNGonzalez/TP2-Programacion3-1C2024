@@ -105,7 +105,7 @@
             this.Controls.Add(this.lblCategorias);
             this.Name = "FormCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCategorias";
+            this.Text = "Categorias";
             this.gbxCategorias.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
