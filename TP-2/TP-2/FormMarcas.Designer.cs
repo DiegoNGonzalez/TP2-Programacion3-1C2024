@@ -41,7 +41,7 @@
             // 
             this.lblMarcas.AutoSize = true;
             this.lblMarcas.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarcas.Location = new System.Drawing.Point(307, 27);
+            this.lblMarcas.Location = new System.Drawing.Point(307, 31);
             this.lblMarcas.Name = "lblMarcas";
             this.lblMarcas.Size = new System.Drawing.Size(182, 55);
             this.lblMarcas.TabIndex = 0;
@@ -50,7 +50,7 @@
             // lvMarcas
             // 
             this.lvMarcas.HideSelection = false;
-            this.lvMarcas.Location = new System.Drawing.Point(271, 121);
+            this.lvMarcas.Location = new System.Drawing.Point(271, 125);
             this.lvMarcas.Name = "lvMarcas";
             this.lvMarcas.Size = new System.Drawing.Size(266, 178);
             this.lvMarcas.TabIndex = 1;
@@ -61,7 +61,7 @@
             this.gbxMarcas.Controls.Add(this.btnEliminar);
             this.gbxMarcas.Controls.Add(this.btnModificar);
             this.gbxMarcas.Controls.Add(this.btnAgregar);
-            this.gbxMarcas.Location = new System.Drawing.Point(238, 338);
+            this.gbxMarcas.Location = new System.Drawing.Point(238, 342);
             this.gbxMarcas.Name = "gbxMarcas";
             this.gbxMarcas.Size = new System.Drawing.Size(324, 78);
             this.gbxMarcas.TabIndex = 2;
