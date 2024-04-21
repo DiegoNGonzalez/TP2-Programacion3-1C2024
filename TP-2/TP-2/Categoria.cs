@@ -10,6 +10,13 @@ namespace TP_2
     {
         public int IDCategoria { get; set; }
         public string NombreCategoria { get; set; }
+        
+        public override string ToString()
+        {
+            return NombreCategoria;
+        }
 
     }
+
+    
 }
