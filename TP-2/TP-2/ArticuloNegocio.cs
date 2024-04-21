@@ -20,7 +20,7 @@ namespace TP_2
             List<Articulo> Lista = new List<Articulo>();
             try
             {
-                Datos.SetearConsulta("SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', i.ImagenUrl FROM ARTICULOS a INNER JOIN CATEGORIAS c on a.IdCategoria = c.Id INNER JOIN Marcas m on a.IdMarca = m.Id INNER JOIN IMAGENES i on a.Id = i.IdArticulo");
+                Datos.SetearConsulta("SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', i.ImagenUrl FROM ARTICULOS a INNER JOIN CATEGORIAS c on a.IdCategoria = c.Id INNER JOIN Marcas m on a.IdMarca = m.Id INNER JOIN IMAGENES i on a.Id = i.IdArticulo");
                 Datos.EjectucarLectura();
 
                 while (Datos.Lector.Read())
@@ -29,6 +29,8 @@ namespace TP_2
                     aux.IDArticulo = Datos.Lector.GetInt32(0);
                     aux.CodigoArticulo = (string)Datos.Lector["Codigo"];
                     aux.NombreArticulo = (string)Datos.Lector["Nombre"];
+                    aux.DescripcionArticulo = (string)Datos.Lector["Descripcion"];
+                    aux.PrecioArticulo = (decimal)Datos.Lector["Precio"];
                     aux.MarcaArticulo = new Marca();
                     aux.MarcaArticulo.NombreMarca= (string)Datos.Lector["Marca"];
                     aux.CategoriaArticulo = new Categoria();
@@ -41,10 +43,14 @@ namespace TP_2
 
                 return Lista;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
+            }
+            finally
+            {
+                Datos.CerrarConexion();
             }
         }
 

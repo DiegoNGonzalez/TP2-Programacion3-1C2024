@@ -67,7 +67,7 @@
             // 
             // btnAgregarFormArticulos
             // 
-            this.btnAgregarFormArticulos.Location = new System.Drawing.Point(22, 19);
+            this.btnAgregarFormArticulos.Location = new System.Drawing.Point(34, 19);
             this.btnAgregarFormArticulos.Name = "btnAgregarFormArticulos";
             this.btnAgregarFormArticulos.Size = new System.Drawing.Size(75, 23);
             this.btnAgregarFormArticulos.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             // btnModificarFormArticulos
             // 
-            this.btnModificarFormArticulos.Location = new System.Drawing.Point(22, 56);
+            this.btnModificarFormArticulos.Location = new System.Drawing.Point(34, 56);
             this.btnModificarFormArticulos.Name = "btnModificarFormArticulos";
             this.btnModificarFormArticulos.Size = new System.Drawing.Size(75, 23);
             this.btnModificarFormArticulos.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             // btnEliminarFormArticulos
             // 
-            this.btnEliminarFormArticulos.Location = new System.Drawing.Point(22, 93);
+            this.btnEliminarFormArticulos.Location = new System.Drawing.Point(34, 93);
             this.btnEliminarFormArticulos.Name = "btnEliminarFormArticulos";
             this.btnEliminarFormArticulos.Size = new System.Drawing.Size(75, 23);
             this.btnEliminarFormArticulos.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             // btnVerDetalles
             // 
-            this.btnVerDetalles.Location = new System.Drawing.Point(22, 130);
+            this.btnVerDetalles.Location = new System.Drawing.Point(34, 130);
             this.btnVerDetalles.Name = "btnVerDetalles";
             this.btnVerDetalles.Size = new System.Drawing.Size(75, 23);
             this.btnVerDetalles.TabIndex = 5;
@@ -109,7 +109,7 @@
             this.gpSeccionesFormArticulos.Controls.Add(this.btnEliminarFormArticulos);
             this.gpSeccionesFormArticulos.Location = new System.Drawing.Point(18, 102);
             this.gpSeccionesFormArticulos.Name = "gpSeccionesFormArticulos";
-            this.gpSeccionesFormArticulos.Size = new System.Drawing.Size(122, 169);
+            this.gpSeccionesFormArticulos.Size = new System.Drawing.Size(143, 169);
             this.gpSeccionesFormArticulos.TabIndex = 6;
             this.gpSeccionesFormArticulos.TabStop = false;
             this.gpSeccionesFormArticulos.Text = "Secciones";
@@ -143,7 +143,7 @@
             this.gBoxFiltrado.Controls.Add(this.lblCriterio);
             this.gBoxFiltrado.Controls.Add(this.lblCampo);
             this.gBoxFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxFiltrado.Location = new System.Drawing.Point(12, 423);
+            this.gBoxFiltrado.Location = new System.Drawing.Point(294, 432);
             this.gBoxFiltrado.Name = "gBoxFiltrado";
             this.gBoxFiltrado.Size = new System.Drawing.Size(501, 128);
             this.gBoxFiltrado.TabIndex = 8;
@@ -222,9 +222,10 @@
             // 
             // pBoxArticulosFormArticulos
             // 
-            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(844, 102);
+            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(895, 102);
             this.pBoxArticulosFormArticulos.Name = "pBoxArticulosFormArticulos";
-            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(179, 279);
+            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(265, 315);
+            this.pBoxArticulosFormArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxArticulosFormArticulos.TabIndex = 9;
             this.pBoxArticulosFormArticulos.TabStop = false;
             // 
@@ -232,16 +233,17 @@
             // 
             this.dgvArticulos.BackgroundColor = System.Drawing.Color.MediumPurple;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Location = new System.Drawing.Point(173, 102);
+            this.dgvArticulos.Location = new System.Drawing.Point(221, 102);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.Size = new System.Drawing.Size(646, 315);
             this.dgvArticulos.TabIndex = 10;
+            this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // FormArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 674);
+            this.ClientSize = new System.Drawing.Size(1189, 607);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.pBoxArticulosFormArticulos);
             this.Controls.Add(this.gBoxFiltrado);
