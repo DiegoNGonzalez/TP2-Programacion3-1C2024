@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP_2
+namespace Negocio
 {
-    public class CategoriaNegocio
+    public class MarcaNegocio
     {
     }
 }

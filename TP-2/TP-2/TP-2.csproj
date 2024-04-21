@@ -47,10 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
-    <Compile Include="Articulo.cs" />
-    <Compile Include="ArticuloNegocio.cs" />
-    <Compile Include="Categoria.cs" />
-    <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,10 +77,6 @@
     <Compile Include="FormMarcas.Designer.cs">
       <DependentUpon>FormMarcas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Imagen.cs" />
-    <Compile Include="ImagenNegocio.cs" />
-    <Compile Include="Marca.cs" />
-    <Compile Include="MarcaNegocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -124,6 +116,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{ce64f95f-cafb-483d-b2ca-ef26b2a29ac0}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{60f2c35e-a59d-4506-ab5c-4c73f7a9362a}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

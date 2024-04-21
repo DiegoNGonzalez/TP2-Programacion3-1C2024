@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP_2
+namespace dominio
 {
-    public class ImagenNegocio
+    public class Imagen
     {
+        public int IDImagen { get; set; }
+        public string URLImagen { get; set; }
     }
 }

@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP_2
+namespace Negocio
 {
-    public class Imagen
+    public class Class1
     {
-        public int IDImagen { get; set; }
-        public string URLImagen { get; set; }
     }
 }
