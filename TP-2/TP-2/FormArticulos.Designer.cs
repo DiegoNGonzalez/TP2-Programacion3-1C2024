@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblArticulosFormArticulos = new System.Windows.Forms.Label();
-            this.lvArticulosFormArticulos = new System.Windows.Forms.ListView();
             this.btnAgregarFormArticulos = new System.Windows.Forms.Button();
             this.btnModificarFormArticulos = new System.Windows.Forms.Button();
             this.btnEliminarFormArticulos = new System.Windows.Forms.Button();
@@ -47,31 +46,24 @@
             this.lblCriterio = new System.Windows.Forms.Label();
             this.lblCampo = new System.Windows.Forms.Label();
             this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
+            this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.gpSeccionesFormArticulos.SuspendLayout();
             this.gBoxBusquedaRapida.SuspendLayout();
             this.gBoxFiltrado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxArticulosFormArticulos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblArticulosFormArticulos
             // 
             this.lblArticulosFormArticulos.AutoSize = true;
             this.lblArticulosFormArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticulosFormArticulos.Location = new System.Drawing.Point(279, 9);
+            this.lblArticulosFormArticulos.Location = new System.Drawing.Point(420, 9);
             this.lblArticulosFormArticulos.Name = "lblArticulosFormArticulos";
             this.lblArticulosFormArticulos.Size = new System.Drawing.Size(207, 55);
             this.lblArticulosFormArticulos.TabIndex = 0;
             this.lblArticulosFormArticulos.Text = "Articulos";
             this.lblArticulosFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lvArticulosFormArticulos
-            // 
-            this.lvArticulosFormArticulos.HideSelection = false;
-            this.lvArticulosFormArticulos.Location = new System.Drawing.Point(173, 102);
-            this.lvArticulosFormArticulos.Name = "lvArticulosFormArticulos";
-            this.lvArticulosFormArticulos.Size = new System.Drawing.Size(376, 228);
-            this.lvArticulosFormArticulos.TabIndex = 1;
-            this.lvArticulosFormArticulos.UseCompatibleStateImageBehavior = false;
             // 
             // btnAgregarFormArticulos
             // 
@@ -151,7 +143,7 @@
             this.gBoxFiltrado.Controls.Add(this.lblCriterio);
             this.gBoxFiltrado.Controls.Add(this.lblCampo);
             this.gBoxFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxFiltrado.Location = new System.Drawing.Point(12, 350);
+            this.gBoxFiltrado.Location = new System.Drawing.Point(12, 423);
             this.gBoxFiltrado.Name = "gBoxFiltrado";
             this.gBoxFiltrado.Size = new System.Drawing.Size(501, 128);
             this.gBoxFiltrado.TabIndex = 8;
@@ -230,22 +222,31 @@
             // 
             // pBoxArticulosFormArticulos
             // 
-            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(595, 102);
+            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(844, 102);
             this.pBoxArticulosFormArticulos.Name = "pBoxArticulosFormArticulos";
-            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(152, 228);
+            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(179, 279);
             this.pBoxArticulosFormArticulos.TabIndex = 9;
             this.pBoxArticulosFormArticulos.TabStop = false;
+            // 
+            // dgvArticulos
+            // 
+            this.dgvArticulos.BackgroundColor = System.Drawing.Color.MediumPurple;
+            this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticulos.Location = new System.Drawing.Point(173, 102);
+            this.dgvArticulos.Name = "dgvArticulos";
+            this.dgvArticulos.Size = new System.Drawing.Size(646, 315);
+            this.dgvArticulos.TabIndex = 10;
             // 
             // FormArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 520);
+            this.ClientSize = new System.Drawing.Size(1046, 674);
+            this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.pBoxArticulosFormArticulos);
             this.Controls.Add(this.gBoxFiltrado);
             this.Controls.Add(this.gBoxBusquedaRapida);
             this.Controls.Add(this.gpSeccionesFormArticulos);
-            this.Controls.Add(this.lvArticulosFormArticulos);
             this.Controls.Add(this.lblArticulosFormArticulos);
             this.Name = "FormArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -257,6 +258,7 @@
             this.gBoxFiltrado.ResumeLayout(false);
             this.gBoxFiltrado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxArticulosFormArticulos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,7 +267,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblArticulosFormArticulos;
-        private System.Windows.Forms.ListView lvArticulosFormArticulos;
         private System.Windows.Forms.Button btnAgregarFormArticulos;
         private System.Windows.Forms.Button btnModificarFormArticulos;
         private System.Windows.Forms.Button btnEliminarFormArticulos;
@@ -283,5 +284,6 @@
         private System.Windows.Forms.Button btnLimpiarFiltro;
         private System.Windows.Forms.Button btnBuscarFiltrado;
         private System.Windows.Forms.PictureBox pBoxArticulosFormArticulos;
+        private System.Windows.Forms.DataGridView dgvArticulos;
     }
 }

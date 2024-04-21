@@ -24,13 +24,13 @@ namespace TP_2
             comando = new SqlCommand();
         }
 
-        public void setearConsulta(string consulta)
+        public void SetearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = consulta;
         }
 
-        public void ejectucarLectura()
+        public void EjectucarLectura()
         {
             comando.Connection = conexion;
             try
@@ -46,7 +46,7 @@ namespace TP_2
             
         }
 
-        public void cerrarConexion()
+        public void CerrarConexion()
         {
             if (lector != null)
                 lector.Close();
