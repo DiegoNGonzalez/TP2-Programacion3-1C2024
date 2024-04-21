@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_2
 {
-    internal class Categoria
+    public class Categoria
     {
         int IDCategoria { get; set; }
         string NombreCategoria { get; set; }

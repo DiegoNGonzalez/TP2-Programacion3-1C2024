@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_2
 {
-    internal class Imagen
+    public class Imagen
     {
         int IDImagen { get; set; }
         string URLImagen { get; set; }
