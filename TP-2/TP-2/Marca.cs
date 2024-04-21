@@ -8,7 +8,7 @@ namespace TP_2
 {
     public class Marca
     {
-        int IDMarca { get; set; }
-        string NombreMarca { get; set; }
+        public int IDMarca { get; set; }
+        public string NombreMarca { get; set; }
     }
 }

@@ -8,8 +8,8 @@ namespace TP_2
 {
     public class Categoria
     {
-        int IDCategoria { get; set; }
-        string NombreCategoria { get; set; }
+        public int IDCategoria { get; set; }
+        public string NombreCategoria { get; set; }
 
     }
 }

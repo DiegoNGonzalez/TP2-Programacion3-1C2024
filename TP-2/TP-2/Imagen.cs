@@ -8,7 +8,7 @@ namespace TP_2
 {
     public class Imagen
     {
-        int IDImagen { get; set; }
-        string URLImagen { get; set; }
+        public int IDImagen { get; set; }
+        public string URLImagen { get; set; }
     }
 }

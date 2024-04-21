@@ -8,12 +8,13 @@ namespace TP_2
 {
     public class Articulo
     {
-        int IDArticulo { get; set; }
-        string NombreArticulo { get; set; }
-        string DescripcionArticulo { get; set; }
-        decimal PrecioArticulo { get; set; }
-        Marca MarcaArticulo { get; set; }
-        Categoria CategoriaArticulo { get; set; }
-        List<Imagen> Imagenes { get; set; }
+        public int IDArticulo { get; set; }
+        public string CodigoArticulo { get; set; }
+        public string NombreArticulo { get; set; }
+        public string DescripcionArticulo { get; set; }
+        public decimal PrecioArticulo { get; set; }
+        public Marca MarcaArticulo { get; set; }
+        public Categoria CategoriaArticulo { get; set; }
+        public List<Imagen> Imagenes { get; set; }
     }
 }
