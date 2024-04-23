@@ -16,5 +16,14 @@ namespace TP_2
         {
             InitializeComponent();
         }
+
+        private void FormAddMod_Load(object sender, EventArgs e)
+        {
+            nudPrecioFormAddMod.DecimalPlaces = 2;
+            nudPrecioFormAddMod.Minimum = 0.00m;
+            nudPrecioFormAddMod.Maximum = 999999.99m;
+            nudPrecioFormAddMod.Increment = 0.01m;
+
+        }
     }
 }

@@ -46,5 +46,17 @@ namespace TP_2
                 pBoxArticulosFormArticulos.Load("https://i0.wp.com/static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg?ssl=1");
             }
         }
+
+        private void btnAgregarFormArticulos_Click(object sender, EventArgs e)
+        {
+            FormAddMod formAddMod = new FormAddMod();
+            formAddMod.ShowDialog();
+        }
+
+        private void btnModificarFormArticulos_Click(object sender, EventArgs e)
+        {
+            FormAddMod formAddMod = new FormAddMod();
+            formAddMod.ShowDialog();
+        }
     }
 }

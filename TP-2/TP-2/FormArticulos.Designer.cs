@@ -73,6 +73,7 @@
             this.btnAgregarFormArticulos.TabIndex = 2;
             this.btnAgregarFormArticulos.Text = "Agregar";
             this.btnAgregarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnAgregarFormArticulos.Click += new System.EventHandler(this.btnAgregarFormArticulos_Click);
             // 
             // btnModificarFormArticulos
             // 
@@ -82,6 +83,7 @@
             this.btnModificarFormArticulos.TabIndex = 3;
             this.btnModificarFormArticulos.Text = "Modificar";
             this.btnModificarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnModificarFormArticulos.Click += new System.EventHandler(this.btnModificarFormArticulos_Click);
             // 
             // btnEliminarFormArticulos
             // 
