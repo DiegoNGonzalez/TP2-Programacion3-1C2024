@@ -60,13 +60,21 @@ namespace Negocio
         {
             try
             {
+                Datos.SetearConsulta("INTER INTO ARTICULOS (Codigo,Nombre,Descripcion,IdCategoria,IdMarca,Precio) values(@Codigo,@Nombre,@Descripcion,@IdCategoria,@IdMarca,@Precio)");
+                Datos.SetearParametro("@Codigo", Nuevo.CodigoArticulo);
+                Datos.SetearParametro("@Nombre", Nuevo.NombreArticulo);
+                Datos.SetearParametro("@Descripcion", Nuevo.DescripcionArticulo);
+                Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
+                Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
+                Datos.SetearParametro("@Precio", Nuevo.PrecioArticulo);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
+            finally { Datos.CerrarConexion();}
         }
 
         public void ModificarArticulo(Articulo Modificado)
