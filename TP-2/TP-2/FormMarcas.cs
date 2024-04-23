@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace TP_2
         public FormMarcas()
         {
             InitializeComponent();
+        }
+
+        private void FormMarcas_Load(object sender, EventArgs e)
+        {
+            MarcaNegocio negocio = new MarcaNegocio();
+            try
+            {
+                dgvMarcas.DataSource = negocio.ListarMarcas();
+                dgvMarcas.Columns[0].Visible = false;
+                dgvMarcas.Columns[1].HeaderText = "Marca";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }   
         }
     }
 }
