@@ -143,21 +143,21 @@
             this.txtCodigoFormAddMod.Location = new System.Drawing.Point(178, 87);
             this.txtCodigoFormAddMod.Name = "txtCodigoFormAddMod";
             this.txtCodigoFormAddMod.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoFormAddMod.TabIndex = 11;
+            this.txtCodigoFormAddMod.TabIndex = 0;
             // 
             // txtNombreFormAddMod
             // 
             this.txtNombreFormAddMod.Location = new System.Drawing.Point(178, 119);
             this.txtNombreFormAddMod.Name = "txtNombreFormAddMod";
             this.txtNombreFormAddMod.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreFormAddMod.TabIndex = 12;
+            this.txtNombreFormAddMod.TabIndex = 1;
             // 
             // txtUrlFormAddMod
             // 
             this.txtUrlFormAddMod.Location = new System.Drawing.Point(178, 184);
             this.txtUrlFormAddMod.Name = "txtUrlFormAddMod";
             this.txtUrlFormAddMod.Size = new System.Drawing.Size(100, 20);
-            this.txtUrlFormAddMod.TabIndex = 14;
+            this.txtUrlFormAddMod.TabIndex = 3;
             // 
             // cbxMarcaFormAddMod
             // 
@@ -165,7 +165,7 @@
             this.cbxMarcaFormAddMod.Location = new System.Drawing.Point(178, 216);
             this.cbxMarcaFormAddMod.Name = "cbxMarcaFormAddMod";
             this.cbxMarcaFormAddMod.Size = new System.Drawing.Size(100, 21);
-            this.cbxMarcaFormAddMod.TabIndex = 16;
+            this.cbxMarcaFormAddMod.TabIndex = 4;
             // 
             // cbxCategoriaFormAddMod
             // 
@@ -173,14 +173,14 @@
             this.cbxCategoriaFormAddMod.Location = new System.Drawing.Point(178, 248);
             this.cbxCategoriaFormAddMod.Name = "cbxCategoriaFormAddMod";
             this.cbxCategoriaFormAddMod.Size = new System.Drawing.Size(100, 21);
-            this.cbxCategoriaFormAddMod.TabIndex = 17;
+            this.cbxCategoriaFormAddMod.TabIndex = 5;
             // 
             // nudPrecioFormAddMod
             // 
             this.nudPrecioFormAddMod.Location = new System.Drawing.Point(178, 278);
             this.nudPrecioFormAddMod.Name = "nudPrecioFormAddMod";
             this.nudPrecioFormAddMod.Size = new System.Drawing.Size(103, 20);
-            this.nudPrecioFormAddMod.TabIndex = 18;
+            this.nudPrecioFormAddMod.TabIndex = 6;
             // 
             // btnAceptar
             // 
@@ -215,7 +215,7 @@
             this.txtDescripcionFormAddMod.Multiline = true;
             this.txtDescripcionFormAddMod.Name = "txtDescripcionFormAddMod";
             this.txtDescripcionFormAddMod.Size = new System.Drawing.Size(99, 33);
-            this.txtDescripcionFormAddMod.TabIndex = 22;
+            this.txtDescripcionFormAddMod.TabIndex = 2;
             // 
             // FormAddMod
             // 
