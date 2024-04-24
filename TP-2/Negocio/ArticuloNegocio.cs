@@ -20,9 +20,10 @@ namespace Negocio
         public List<Articulo> ListarArticulos()
         {
             List<Articulo> Lista = new List<Articulo>();
+            ImagenNegocio Imagenes = new ImagenNegocio();
             try
             {
-                Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', i.ImagenUrl FROM ARTICULOS a, Categorias c, Marcas m, Imagenes i where a.IdCategoria= c.Id and a.IdMarca = m.Id and a.Id= i.IdArticulo");
+                Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca' FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id");
                 Datos.EjecutarLectura();
 
                 while (Datos.Lector.Read())
@@ -37,21 +38,17 @@ namespace Negocio
                     aux.MarcaArticulo.NombreMarca= (string)Datos.Lector["Marca"];
                     aux.CategoriaArticulo = new Categoria();
                     aux.CategoriaArticulo.NombreCategoria = (string)Datos.Lector["Categoria"];
-                    aux.Imagenes = new List<Imagen>();
-                    aux.Imagenes.Add(new Imagen() { URLImagen = (string)Datos.Lector["ImagenUrl"] });
-                    Datos.SetearConsulta("select i.Id, i.IdArticulo, i.ImagenUrl from IMAGENES i");
-                    Datos.EjecutarLectura();
-                    while (Datos.Lector.Read())
-                    {
-                        Imagen img = new Imagen();
-                        img.IDImagen = Datos.Lector.GetInt32(0);
-                        img.IDArticulo = Datos.Lector.GetInt32(1);
-                        img.URLImagen = (string)Datos.Lector["ImagenUrl"];
-                        aux.Imagenes.Add(img);
-                    }
+                    
+                    
+                                     
+                                        
                     Lista.Add(aux);
                 }   
 
+                foreach (var item in Lista)
+                {
+                    item.Imagenes = Imagenes.Listarimagenes(item.IDArticulo);
+                }
                 return Lista;
             }
             catch (Exception ex)
