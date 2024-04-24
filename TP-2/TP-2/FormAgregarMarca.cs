@@ -14,9 +14,18 @@ namespace TP_2
 {
     public partial class frmAgregarMarca : Form
     {
+        private Marca marca = null;
         public frmAgregarMarca()
         {
             InitializeComponent();
+        }
+        public frmAgregarMarca(Marca marca)
+        {
+            InitializeComponent();
+            this.marca = marca;
+            Text = "Modificar Marca";
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -26,20 +35,40 @@ namespace TP_2
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Marca marca = new Marca();
             MarcaNegocio negocio = new MarcaNegocio();
             try
             {
+                if (marca == null) marca = new Marca();
                 marca.NombreMarca = txtMarca.Text;
-                negocio.agregarMarca(marca);
-                MessageBox.Show("Marca agregada con exito");
-                Close();
+
+                if (marca.IDMarca != 0)
+                {
+                    negocio.modificarMarca(marca);
+                    MessageBox.Show("Marca modificada con exito");
+                }
+                else
+                {
+                    negocio.agregarMarca(marca);
+                    MessageBox.Show("Marca agregada con exito");
+                }
                 
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                Close();
+            }
+        }
+
+        private void frmAgregarMarca_Load(object sender, EventArgs e)
+        {
+            if (marca != null)
+            {
+                txtMarca.Text = marca.NombreMarca;
             }
         }
     }
