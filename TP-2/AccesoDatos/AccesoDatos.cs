@@ -53,6 +53,11 @@ namespace AccesoDataBase
             conexion.Close();
         }
 
+        public void SetearParametro(string Nombre, object Valor)
+        {
+            comando.Parameters.AddWithValue(Nombre, Valor);
+        }
+
 
     }
 }
