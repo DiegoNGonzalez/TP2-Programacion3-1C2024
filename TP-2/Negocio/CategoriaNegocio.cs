@@ -23,7 +23,7 @@ namespace Negocio
                 while (datos.Lector.Read())
                 {
                     Categoria aux = new Categoria();
-                    aux.IDCategoria = datos.Lector.GetInt32(0);
+                    aux.IDCategoria = (int)datos.Lector["Id"];
                     aux.NombreCategoria = (string)datos.Lector["Descripcion"];
                     lista.Add(aux);
                 }
@@ -69,11 +69,11 @@ namespace Negocio
             {
                 throw ex;
             }
-            /*finally 
+            finally 
             {
                 datos.CerrarConexion();
             }
-            */
+            
             
         }
         public void eliminarCategoria(Categoria cat)
@@ -89,11 +89,11 @@ namespace Negocio
 
                 throw ex;
             }
-            /*finally 
+            finally
             {
                 datos.CerrarConexion();
             }
-            */
+            
         }
     }
 }
