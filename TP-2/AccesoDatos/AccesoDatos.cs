@@ -41,9 +41,24 @@ namespace AccesoDataBase
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             
+        }
+        
+        public void EjecutarAccion()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         public void CerrarConexion()

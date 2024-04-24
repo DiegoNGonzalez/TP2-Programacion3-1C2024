@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
 
 namespace TP_2
 {
@@ -20,6 +21,11 @@ namespace TP_2
 
         private void FormMarcas_Load(object sender, EventArgs e)
         {
+            Cargar();   
+        }
+
+        private void Cargar()
+        {
             MarcaNegocio negocio = new MarcaNegocio();
             try
             {
@@ -30,7 +36,47 @@ namespace TP_2
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-            }   
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAgregarMarca agregarMarca = new frmAgregarMarca();
+            agregarMarca.ShowDialog();
+            Cargar();
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Marca seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem;
+            frmAgregarMarca modificar = new frmAgregarMarca(seleccionado);
+            modificar.ShowDialog();
+            
+            Cargar();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            MarcaNegocio negocio = new MarcaNegocio();
+            Marca seleccionado;
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿Está seguro que desea eliminar la marca seleccionada?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.No)
+                {
+                    return;
+                }
+                seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem; 
+                negocio.eliminarMarca(seleccionado);
+                Cargar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
         }
     }
 }
