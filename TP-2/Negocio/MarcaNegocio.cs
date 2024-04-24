@@ -23,7 +23,7 @@ namespace Negocio
             try
             {
                 Datos.SetearConsulta("select Id, Descripcion FROM MARCAS");
-                Datos.EjectucarLectura();
+                Datos.EjecutarLectura();
 
                 while (Datos.Lector.Read())
                 {

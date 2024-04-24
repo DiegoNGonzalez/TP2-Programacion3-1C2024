@@ -23,7 +23,7 @@ namespace Negocio
             try
             {
                 Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', i.ImagenUrl FROM ARTICULOS a, Categorias c, Marcas m, Imagenes i where a.IdCategoria= c.Id and a.IdMarca = m.Id and a.Id= i.IdArticulo");
-                Datos.EjectucarLectura();
+                Datos.EjecutarLectura();
 
                 while (Datos.Lector.Read())
                 {
