@@ -17,7 +17,24 @@ namespace TP_2
         {
             InitializeComponent();
         }
+        private void Cargar()
+        {
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            try
+            {
+                dgvCategorias.DataSource = negocio.listarCategorias();
+                dgvCategorias.Columns[0].Visible = false;
+                dgvCategorias.Columns[1].HeaderText = "Categoria";
+            }
+            catch (Exception ex)
+            {
 
-
+                throw ex;
+            }
+        }
+        private void FormCategorias_Load(object sender, EventArgs e)
+        {
+            Cargar();
+        }
     }
 }
