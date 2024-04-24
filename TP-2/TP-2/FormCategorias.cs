@@ -32,6 +32,7 @@ namespace TP_2
                 throw ex;
             }
         }
+
         private void FormCategorias_Load(object sender, EventArgs e)
         {
             Cargar();

@@ -68,7 +68,7 @@ namespace Negocio
                 //Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
                 //Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
                 Datos.SetearParametro("@Precio", Nuevo.PrecioArticulo);
-                Datos.EjectucarLectura();
+                Datos.EjecutarLectura();
 
             }
             catch (Exception ex)

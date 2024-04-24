@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using AccesoDataBase;
@@ -17,7 +18,7 @@ namespace Negocio
             List<Categoria> lista = new List<Categoria>();
             try
             {
-                datos.SetearConsulta("select id, descripcion from categorias");
+                datos.SetearConsulta("select id, descripcion from CATEGORIAS");
                 datos.EjecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -36,12 +37,12 @@ namespace Negocio
             finally { datos.CerrarConexion(); }
         }
 
-        public void agregarCategoria(Categoria newarticle)
+        public void agregarCategoria(Categoria newCat)
         {
             try
             {
                 datos.SetearConsulta("insert into CATEGORIAS (Descripcion) values (@Descripcion)");
-                datos.SetearParametro("@Descripcion", newarticle.NombreCategoria);
+                datos.SetearParametro("@Descripcion", newCat.NombreCategoria);
                 datos.EjecutarAccion();
             }
             catch (Exception ex)
@@ -54,7 +55,45 @@ namespace Negocio
                 datos.CerrarConexion();
             }
             
+        }
+        public void modificarCategoria(Categoria cat)
+        {
+            try
+            {
+                datos.SetearConsulta("update CATEGORIAS set Descripcion = @Descripcion where Id = @Id");
+                datos.SetearParametro("@Descripcion", cat.NombreCategoria);
+                datos.SetearParametro("@Id", cat.IDCategoria);
+                datos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            /*finally 
+            {
+                datos.CerrarConexion();
+            }
+            */
+            
+        }
+        public void eliminarCategoria(Categoria cat)
+        {
+            try
+            {
+                datos.SetearConsulta("delete from CATEGORIAS where Id = @Id");
+                datos.SetearParametro("@Id", cat.IDCategoria);
+                datos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
 
+                throw ex;
+            }
+            /*finally 
+            {
+                datos.CerrarConexion();
+            }
+            */
         }
     }
 }
