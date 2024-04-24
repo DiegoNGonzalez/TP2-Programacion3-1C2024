@@ -36,12 +36,6 @@
             this.lblCategoriaFormAddMod = new System.Windows.Forms.Label();
             this.lblPrecioFormAddMod = new System.Windows.Forms.Label();
             this.gbSeccionesFormAddMod = new System.Windows.Forms.GroupBox();
-            this.rbAgregarFormAddMod = new System.Windows.Forms.RadioButton();
-            this.rbModificarFormAddMod = new System.Windows.Forms.RadioButton();
-            this.gpEleccionFormAddMod = new System.Windows.Forms.GroupBox();
-            this.lblEleccion2FormAddMod = new System.Windows.Forms.Label();
-            this.lblEleccionFormAddMod = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtCodigoFormAddMod = new System.Windows.Forms.TextBox();
             this.txtNombreFormAddMod = new System.Windows.Forms.TextBox();
             this.txtUrlFormAddMod = new System.Windows.Forms.TextBox();
@@ -53,7 +47,6 @@
             this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
             this.txtDescripcionFormAddMod = new System.Windows.Forms.TextBox();
             this.gbSeccionesFormAddMod.SuspendLayout();
-            this.gpEleccionFormAddMod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).BeginInit();
             this.SuspendLayout();
@@ -138,97 +131,30 @@
             this.gbSeccionesFormAddMod.Controls.Add(this.lblDescripcionFormAddMod);
             this.gbSeccionesFormAddMod.Controls.Add(this.lblUrlImgFormAddMod);
             this.gbSeccionesFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbSeccionesFormAddMod.Location = new System.Drawing.Point(75, 132);
+            this.gbSeccionesFormAddMod.Location = new System.Drawing.Point(12, 58);
             this.gbSeccionesFormAddMod.Name = "gbSeccionesFormAddMod";
-            this.gbSeccionesFormAddMod.Size = new System.Drawing.Size(97, 241);
+            this.gbSeccionesFormAddMod.Size = new System.Drawing.Size(160, 315);
             this.gbSeccionesFormAddMod.TabIndex = 7;
             this.gbSeccionesFormAddMod.TabStop = false;
             this.gbSeccionesFormAddMod.Text = "Secciones";
             // 
-            // rbAgregarFormAddMod
-            // 
-            this.rbAgregarFormAddMod.AutoSize = true;
-            this.rbAgregarFormAddMod.Location = new System.Drawing.Point(21, 53);
-            this.rbAgregarFormAddMod.Name = "rbAgregarFormAddMod";
-            this.rbAgregarFormAddMod.Size = new System.Drawing.Size(74, 20);
-            this.rbAgregarFormAddMod.TabIndex = 8;
-            this.rbAgregarFormAddMod.TabStop = true;
-            this.rbAgregarFormAddMod.Text = "Agregar";
-            this.rbAgregarFormAddMod.UseVisualStyleBackColor = true;
-            // 
-            // rbModificarFormAddMod
-            // 
-            this.rbModificarFormAddMod.AutoSize = true;
-            this.rbModificarFormAddMod.Location = new System.Drawing.Point(129, 53);
-            this.rbModificarFormAddMod.Name = "rbModificarFormAddMod";
-            this.rbModificarFormAddMod.Size = new System.Drawing.Size(80, 20);
-            this.rbModificarFormAddMod.TabIndex = 9;
-            this.rbModificarFormAddMod.TabStop = true;
-            this.rbModificarFormAddMod.Text = "Modificar";
-            this.rbModificarFormAddMod.UseVisualStyleBackColor = true;
-            // 
-            // gpEleccionFormAddMod
-            // 
-            this.gpEleccionFormAddMod.Controls.Add(this.lblEleccion2FormAddMod);
-            this.gpEleccionFormAddMod.Controls.Add(this.lblEleccionFormAddMod);
-            this.gpEleccionFormAddMod.Controls.Add(this.label1);
-            this.gpEleccionFormAddMod.Controls.Add(this.rbAgregarFormAddMod);
-            this.gpEleccionFormAddMod.Controls.Add(this.rbModificarFormAddMod);
-            this.gpEleccionFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpEleccionFormAddMod.Location = new System.Drawing.Point(12, 12);
-            this.gpEleccionFormAddMod.Name = "gpEleccionFormAddMod";
-            this.gpEleccionFormAddMod.Size = new System.Drawing.Size(235, 114);
-            this.gpEleccionFormAddMod.TabIndex = 10;
-            this.gpEleccionFormAddMod.TabStop = false;
-            this.gpEleccionFormAddMod.Text = "Eleccion";
-            // 
-            // lblEleccion2FormAddMod
-            // 
-            this.lblEleccion2FormAddMod.AutoSize = true;
-            this.lblEleccion2FormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEleccion2FormAddMod.Location = new System.Drawing.Point(75, 91);
-            this.lblEleccion2FormAddMod.Name = "lblEleccion2FormAddMod";
-            this.lblEleccion2FormAddMod.Size = new System.Drawing.Size(71, 20);
-            this.lblEleccion2FormAddMod.TabIndex = 11;
-            this.lblEleccion2FormAddMod.Text = "Articulo?";
-            // 
-            // lblEleccionFormAddMod
-            // 
-            this.lblEleccionFormAddMod.AutoSize = true;
-            this.lblEleccionFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEleccionFormAddMod.Location = new System.Drawing.Point(71, 18);
-            this.lblEleccionFormAddMod.Name = "lblEleccionFormAddMod";
-            this.lblEleccionFormAddMod.Size = new System.Drawing.Size(85, 20);
-            this.lblEleccionFormAddMod.TabIndex = 11;
-            this.lblEleccionFormAddMod.Text = "¿Quieres...";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(101, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 31);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "/";
-            // 
             // txtCodigoFormAddMod
             // 
-            this.txtCodigoFormAddMod.Location = new System.Drawing.Point(178, 157);
+            this.txtCodigoFormAddMod.Location = new System.Drawing.Point(178, 87);
             this.txtCodigoFormAddMod.Name = "txtCodigoFormAddMod";
             this.txtCodigoFormAddMod.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoFormAddMod.TabIndex = 11;
             // 
             // txtNombreFormAddMod
             // 
-            this.txtNombreFormAddMod.Location = new System.Drawing.Point(178, 189);
+            this.txtNombreFormAddMod.Location = new System.Drawing.Point(178, 119);
             this.txtNombreFormAddMod.Name = "txtNombreFormAddMod";
             this.txtNombreFormAddMod.Size = new System.Drawing.Size(100, 20);
             this.txtNombreFormAddMod.TabIndex = 12;
             // 
             // txtUrlFormAddMod
             // 
-            this.txtUrlFormAddMod.Location = new System.Drawing.Point(178, 254);
+            this.txtUrlFormAddMod.Location = new System.Drawing.Point(178, 184);
             this.txtUrlFormAddMod.Name = "txtUrlFormAddMod";
             this.txtUrlFormAddMod.Size = new System.Drawing.Size(100, 20);
             this.txtUrlFormAddMod.TabIndex = 14;
@@ -236,7 +162,7 @@
             // cbxMarcaFormAddMod
             // 
             this.cbxMarcaFormAddMod.FormattingEnabled = true;
-            this.cbxMarcaFormAddMod.Location = new System.Drawing.Point(178, 286);
+            this.cbxMarcaFormAddMod.Location = new System.Drawing.Point(178, 216);
             this.cbxMarcaFormAddMod.Name = "cbxMarcaFormAddMod";
             this.cbxMarcaFormAddMod.Size = new System.Drawing.Size(100, 21);
             this.cbxMarcaFormAddMod.TabIndex = 16;
@@ -244,14 +170,14 @@
             // cbxCategoriaFormAddMod
             // 
             this.cbxCategoriaFormAddMod.FormattingEnabled = true;
-            this.cbxCategoriaFormAddMod.Location = new System.Drawing.Point(178, 318);
+            this.cbxCategoriaFormAddMod.Location = new System.Drawing.Point(178, 248);
             this.cbxCategoriaFormAddMod.Name = "cbxCategoriaFormAddMod";
             this.cbxCategoriaFormAddMod.Size = new System.Drawing.Size(100, 21);
             this.cbxCategoriaFormAddMod.TabIndex = 17;
             // 
             // nudPrecioFormAddMod
             // 
-            this.nudPrecioFormAddMod.Location = new System.Drawing.Point(178, 348);
+            this.nudPrecioFormAddMod.Location = new System.Drawing.Point(178, 278);
             this.nudPrecioFormAddMod.Name = "nudPrecioFormAddMod";
             this.nudPrecioFormAddMod.Size = new System.Drawing.Size(103, 20);
             this.nudPrecioFormAddMod.TabIndex = 18;
@@ -264,6 +190,7 @@
             this.btnAceptar.TabIndex = 19;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -276,7 +203,7 @@
             // 
             // pbxFormAddMod
             // 
-            this.pbxFormAddMod.Location = new System.Drawing.Point(325, 137);
+            this.pbxFormAddMod.Location = new System.Drawing.Point(336, 87);
             this.pbxFormAddMod.Name = "pbxFormAddMod";
             this.pbxFormAddMod.Size = new System.Drawing.Size(234, 236);
             this.pbxFormAddMod.TabIndex = 21;
@@ -284,7 +211,7 @@
             // 
             // txtDescripcionFormAddMod
             // 
-            this.txtDescripcionFormAddMod.Location = new System.Drawing.Point(179, 215);
+            this.txtDescripcionFormAddMod.Location = new System.Drawing.Point(179, 145);
             this.txtDescripcionFormAddMod.Multiline = true;
             this.txtDescripcionFormAddMod.Name = "txtDescripcionFormAddMod";
             this.txtDescripcionFormAddMod.Size = new System.Drawing.Size(99, 33);
@@ -305,7 +232,6 @@
             this.Controls.Add(this.txtUrlFormAddMod);
             this.Controls.Add(this.txtNombreFormAddMod);
             this.Controls.Add(this.txtCodigoFormAddMod);
-            this.Controls.Add(this.gpEleccionFormAddMod);
             this.Controls.Add(this.gbSeccionesFormAddMod);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(598, 569);
@@ -316,8 +242,6 @@
             this.Load += new System.EventHandler(this.FormAddMod_Load);
             this.gbSeccionesFormAddMod.ResumeLayout(false);
             this.gbSeccionesFormAddMod.PerformLayout();
-            this.gpEleccionFormAddMod.ResumeLayout(false);
-            this.gpEleccionFormAddMod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).EndInit();
             this.ResumeLayout(false);
@@ -335,12 +259,6 @@
         private System.Windows.Forms.Label lblCategoriaFormAddMod;
         private System.Windows.Forms.Label lblPrecioFormAddMod;
         private System.Windows.Forms.GroupBox gbSeccionesFormAddMod;
-        private System.Windows.Forms.RadioButton rbAgregarFormAddMod;
-        private System.Windows.Forms.RadioButton rbModificarFormAddMod;
-        private System.Windows.Forms.GroupBox gpEleccionFormAddMod;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblEleccionFormAddMod;
-        private System.Windows.Forms.Label lblEleccion2FormAddMod;
         private System.Windows.Forms.TextBox txtCodigoFormAddMod;
         private System.Windows.Forms.TextBox txtNombreFormAddMod;
         private System.Windows.Forms.TextBox txtUrlFormAddMod;
