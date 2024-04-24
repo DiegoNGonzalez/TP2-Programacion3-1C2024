@@ -41,7 +41,7 @@ namespace AccesoDataBase
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             
         }

@@ -20,6 +20,11 @@ namespace TP_2
 
         private void FormMarcas_Load(object sender, EventArgs e)
         {
+            Cargar();   
+        }
+
+        private void Cargar()
+        {
             MarcaNegocio negocio = new MarcaNegocio();
             try
             {
@@ -30,7 +35,15 @@ namespace TP_2
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-            }   
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAgregarMarca agregarMarca = new frmAgregarMarca();
+            agregarMarca.ShowDialog();
+            Cargar();
+
         }
     }
 }
