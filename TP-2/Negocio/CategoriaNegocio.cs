@@ -35,5 +35,26 @@ namespace Negocio
             }
             finally { datos.CerrarConexion(); }
         }
+
+        public void agregarCategoria(Categoria newarticle)
+        {
+            try
+            {
+                datos.SetearConsulta("insert into CATEGORIAS (Descripcion) values (@Descripcion)");
+                datos.SetearParametro("@Descripcion", newarticle.NombreCategoria);
+                datos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+            
+
+        }
     }
 }
