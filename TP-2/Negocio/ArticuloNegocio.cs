@@ -23,7 +23,7 @@ namespace Negocio
             try
             {
                 Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', i.ImagenUrl FROM ARTICULOS a, Categorias c, Marcas m, Imagenes i where a.IdCategoria= c.Id and a.IdMarca = m.Id and a.Id= i.IdArticulo");
-                Datos.EjectucarLectura();
+                Datos.EjecutarLectura();
 
                 while (Datos.Lector.Read())
                 {
@@ -39,7 +39,16 @@ namespace Negocio
                     aux.CategoriaArticulo.NombreCategoria = (string)Datos.Lector["Categoria"];
                     aux.Imagenes = new List<Imagen>();
                     aux.Imagenes.Add(new Imagen() { URLImagen = (string)Datos.Lector["ImagenUrl"] });
-
+                    Datos.SetearConsulta("select i.Id, i.IdArticulo, i.ImagenUrl from IMAGENES i");
+                    Datos.EjecutarLectura();
+                    while (Datos.Lector.Read())
+                    {
+                        Imagen img = new Imagen();
+                        img.IDImagen = Datos.Lector.GetInt32(0);
+                        img.IDArticulo = Datos.Lector.GetInt32(1);
+                        img.URLImagen = (string)Datos.Lector["ImagenUrl"];
+                        aux.Imagenes.Add(img);
+                    }
                     Lista.Add(aux);
                 }   
 
@@ -68,7 +77,7 @@ namespace Negocio
                 //Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
                 //Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
                 Datos.SetearParametro("@Precio", Nuevo.PrecioArticulo);
-                Datos.EjectucarLectura();
+                Datos.EjecutarAccion();
 
             }
             catch (Exception ex)

@@ -30,7 +30,7 @@ namespace AccesoDataBase
             comando.CommandText = consulta;
         }
 
-        public void EjectucarLectura()
+        public void EjecutarLectura()
         {
             comando.Connection = conexion;
             try
