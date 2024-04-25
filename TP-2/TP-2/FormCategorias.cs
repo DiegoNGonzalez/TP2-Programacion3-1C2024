@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
 
 namespace TP_2
 {
@@ -36,6 +37,22 @@ namespace TP_2
         private void FormCategorias_Load(object sender, EventArgs e)
         {
             Cargar();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormAddCategoria form = new FormAddCategoria();
+            form.ShowDialog();
+            Cargar(); 
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Categoria catSelec = (Categoria)dgvCategorias.CurrentRow.DataBoundItem;
+            FormAddCategoria form = new FormAddCategoria(catSelec);
+            form.ShowDialog();
+            Cargar();
+
         }
     }
 }
