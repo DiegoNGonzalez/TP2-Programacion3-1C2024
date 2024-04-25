@@ -54,5 +54,26 @@ namespace TP_2
             Cargar();
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            CategoriaNegocio nego = new CategoriaNegocio();
+            Categoria catSelec;
+            try
+            {
+                DialogResult rta = MessageBox.Show("¿Está seguro que desea eliminar la categoria?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if(rta == DialogResult.No)
+                {
+                    return;
+                }
+                catSelec = (Categoria)dgvCategorias.CurrentRow.DataBoundItem;
+                nego.eliminarCategoria(catSelec);
+                Cargar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }
