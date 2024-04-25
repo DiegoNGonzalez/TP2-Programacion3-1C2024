@@ -69,7 +69,7 @@ namespace Negocio
             {
                 try
                 {
-                    Datos.SetearConsulta("INsERt INTO ARTICULOS (Codigo,Nombre,Descripcion,Precio,IdCategoria,IdMarca) values(@Codigo,@Nombre,@Descripcion,@Precio,@IdCategoria,@IdMarca)");
+                    Datos.SetearConsulta("INSERT INTO ARTICULOS (Codigo,Nombre,Descripcion,Precio,IdCategoria,IdMarca) values(@Codigo,@Nombre,@Descripcion,@Precio,@IdCategoria,@IdMarca)");
                     Datos.SetearParametro("@Codigo", Nuevo.CodigoArticulo);
                     Datos.SetearParametro("@Nombre", Nuevo.NombreArticulo);
                     Datos.SetearParametro("@Descripcion", Nuevo.DescripcionArticulo);
@@ -115,12 +115,19 @@ namespace Negocio
         {
             try
             {
+                Datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id = @ID");
+                Datos.SetearParametro("@ID", ID);
+                Datos.EjecutarAccion();
 
             }
             catch (Exception)
             {
 
                 throw;
+            }
+            finally 
+            {
+                Datos.CerrarConexion(); 
             }
         }
 

@@ -74,5 +74,27 @@ namespace TP_2
             formAddMod.ShowDialog();
             CargarGrid();
         }
+
+        private void btnEliminarFormArticulos_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio neg = new ArticuloNegocio();
+            Articulo artSelec;
+            try
+            {
+                DialogResult rta = MessageBox.Show("¿Esta seguro que desea eliminar este articulo?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (rta == DialogResult.No)
+                {
+                    return;
+                }
+                artSelec = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                neg.EliminarArticulo(artSelec.IDArticulo);
+                CargarGrid();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

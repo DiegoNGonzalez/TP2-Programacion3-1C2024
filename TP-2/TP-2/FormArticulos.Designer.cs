@@ -93,6 +93,7 @@
             this.btnEliminarFormArticulos.TabIndex = 4;
             this.btnEliminarFormArticulos.Text = "Eliminar";
             this.btnEliminarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnEliminarFormArticulos.Click += new System.EventHandler(this.btnEliminarFormArticulos_Click);
             // 
             // btnVerDetalles
             // 
