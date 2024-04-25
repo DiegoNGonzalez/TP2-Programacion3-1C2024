@@ -46,5 +46,12 @@ namespace Negocio
 			}
 			finally { Datos.CerrarConexion(); }
         }
+		public void AgregarImagen(int IDArticulo, string ImagenUrl)
+		{
+			Datos.SetearConsulta("insert into IMAGENES (IdArticulo, ImagenUrl) values (@IdArticulo, @ImagenUrl)");
+			Datos.SetearParametro("@IdArticulo", IDArticulo);
+			Datos.SetearParametro("@ImagenUrl", ImagenUrl);
+			Datos.EjecutarAccion();
+		}
     }
 }

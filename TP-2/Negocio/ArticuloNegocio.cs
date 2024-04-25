@@ -11,16 +11,17 @@ namespace Negocio
     public class ArticuloNegocio
     {
         private AccesoDatos Datos;
+        private ImagenNegocio Imagenes;
 
         public ArticuloNegocio()
         {
             Datos = new AccesoDatos();
+            Imagenes = new ImagenNegocio();
         }
 
         public List<Articulo> ListarArticulos()
         {
             List<Articulo> Lista = new List<Articulo>();
-            ImagenNegocio Imagenes = new ImagenNegocio();
             try
             {
                 Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca' FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id");
@@ -66,15 +67,28 @@ namespace Negocio
         {
             try
             {
-                Datos.SetearConsulta("INsERt INTO ARTICULOS (Codigo,Nombre,Descripcion,Precio,IdCategoria,IdMarca) values(@Codigo,@Nombre,@Descripcion,@Precio,@IdCategoria,@IdMarca)");
-                Datos.SetearParametro("@Codigo", Nuevo.CodigoArticulo);
-                Datos.SetearParametro("@Nombre", Nuevo.NombreArticulo);
-                Datos.SetearParametro("@Descripcion", Nuevo.DescripcionArticulo);
-                Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
-                Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
-                Datos.SetearParametro("@Precio", Nuevo.PrecioArticulo);
-                Datos.EjecutarAccion();
+                try
+                {
+                    Datos.SetearConsulta("INsERt INTO ARTICULOS (Codigo,Nombre,Descripcion,Precio,IdCategoria,IdMarca) values(@Codigo,@Nombre,@Descripcion,@Precio,@IdCategoria,@IdMarca)");
+                    Datos.SetearParametro("@Codigo", Nuevo.CodigoArticulo);
+                    Datos.SetearParametro("@Nombre", Nuevo.NombreArticulo);
+                    Datos.SetearParametro("@Descripcion", Nuevo.DescripcionArticulo);
+                    Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
+                    Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
+                    Datos.SetearParametro("@Precio", Nuevo.PrecioArticulo);
+                    Datos.EjecutarAccion();
+                }
+                catch (Exception ex)
+                {
 
+                    throw ex;
+                }
+                finally { Datos.CerrarConexion(); }
+                int ID = ObtenerUltimoID();
+                Imagenes.AgregarImagen(ID, Nuevo.Imagenes[0].URLImagen);
+                
+                
+                
             }
             catch (Exception ex)
             {
@@ -108,6 +122,23 @@ namespace Negocio
 
                 throw;
             }
+        }
+
+        public int ObtenerUltimoID()
+        {
+            try
+            {
+                Datos.SetearConsulta("SELECT MAX(Id) FROM ARTICULOS");
+                Datos.EjecutarLectura();
+                Datos.Lector.Read();
+                return Datos.Lector.GetInt32(0);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally { Datos.CerrarConexion(); }
         }
     }
 }
