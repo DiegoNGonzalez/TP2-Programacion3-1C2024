@@ -57,8 +57,23 @@ namespace TP_2
             nudPrecioFormAddMod.DecimalPlaces = 2;
             nudPrecioFormAddMod.Minimum = 0.00m;
             nudPrecioFormAddMod.Maximum = 999999.99m;
-            nudPrecioFormAddMod.Increment = 0.01m;
-
+            nudPrecioFormAddMod.Increment = 1.00m;
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            MarcaNegocio negocioMarca = new MarcaNegocio();
+            try
+            {
+                cbxCategoriaFormAddMod.DataSource = negocio.listarCategorias();
+                cbxCategoriaFormAddMod.ValueMember = "IDCategoria";
+                cbxCategoriaFormAddMod.DisplayMember = "NombreCategoria";
+                cbxMarcaFormAddMod.DataSource = negocioMarca.ListarMarcas();
+                cbxMarcaFormAddMod.ValueMember = "IDMarca";
+                cbxMarcaFormAddMod.DisplayMember = "NombreMarca";
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

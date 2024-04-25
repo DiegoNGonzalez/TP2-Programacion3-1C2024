@@ -45,9 +45,9 @@ namespace Negocio
                     Lista.Add(aux);
                 }   
 
-                foreach (var item in Lista)
+                foreach (var articulo in Lista)
                 {
-                    item.Imagenes = Imagenes.Listarimagenes(item.IDArticulo);
+                    articulo.Imagenes = Imagenes.Listarimagenes(articulo.IDArticulo);
                 }
                 return Lista;
             }
