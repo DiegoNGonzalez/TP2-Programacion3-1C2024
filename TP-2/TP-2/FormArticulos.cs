@@ -15,20 +15,33 @@ namespace TP_2
     public partial class FormArticulos : Form
     {
         private List<Articulo> listaArticulos;
+        private ArticuloNegocio negocio = new ArticuloNegocio();
         public FormArticulos()
         {
             InitializeComponent();
+            negocio = new ArticuloNegocio();
         }
 
 
         private void FormArticulos_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            listaArticulos = negocio.ListarArticulos();
-            dgvArticulos.DataSource = listaArticulos;
-            pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
+            
+            CargarGrid();
         }
+        private void CargarGrid()
+        {
+            try
+            {
+                listaArticulos = negocio.ListarArticulos();
+                dgvArticulos.DataSource = listaArticulos;
+                pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
+            }
+            catch (Exception ex)
+            {
 
+                throw ex;
+            }
+        }
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado =(Articulo)dgvArticulos.CurrentRow.DataBoundItem;
@@ -51,12 +64,15 @@ namespace TP_2
         {
             FormAddMod formAddMod = new FormAddMod();
             formAddMod.ShowDialog();
+            CargarGrid();
+            
         }
 
         private void btnModificarFormArticulos_Click(object sender, EventArgs e)
         {
             FormAddMod formAddMod = new FormAddMod();
             formAddMod.ShowDialog();
+            CargarGrid();
         }
     }
 }

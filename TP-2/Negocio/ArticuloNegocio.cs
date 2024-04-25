@@ -66,13 +66,12 @@ namespace Negocio
         {
             try
             {
-                Datos.SetearConsulta("INsERt INTO ARTICULOS (Codigo,Nombre,Descripcion,Precio) values(@Codigo,@Nombre,@Descripcion,@Precio)");
-                //,IdCategoria,IdMarca ,@IdCategoria,@IdMarca falta implementar marca y categoria
+                Datos.SetearConsulta("INsERt INTO ARTICULOS (Codigo,Nombre,Descripcion,Precio,IdCategoria,IdMarca) values(@Codigo,@Nombre,@Descripcion,@Precio,@IdCategoria,@IdMarca)");
                 Datos.SetearParametro("@Codigo", Nuevo.CodigoArticulo);
                 Datos.SetearParametro("@Nombre", Nuevo.NombreArticulo);
                 Datos.SetearParametro("@Descripcion", Nuevo.DescripcionArticulo);
-                //Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
-                //Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
+                Datos.SetearParametro("@IdCategoria", Nuevo.CategoriaArticulo.IDCategoria);
+                Datos.SetearParametro("@IdMarca", Nuevo.MarcaArticulo.IDMarca);
                 Datos.SetearParametro("@Precio", Nuevo.PrecioArticulo);
                 Datos.EjecutarAccion();
 
@@ -89,7 +88,7 @@ namespace Negocio
         {
             try
             {
-
+                
             }
             catch (Exception)
             {
