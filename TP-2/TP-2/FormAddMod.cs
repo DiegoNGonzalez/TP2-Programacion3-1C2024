@@ -25,6 +25,7 @@ namespace TP_2
         {
             InitializeComponent();
             this.Articulo = Articulo;
+            Text = "Modificar";
         }
 
         public Articulo CapturarArticuloForm()

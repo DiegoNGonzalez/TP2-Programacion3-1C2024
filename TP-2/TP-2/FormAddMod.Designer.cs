@@ -161,6 +161,7 @@
             // 
             // cbxMarcaFormAddMod
             // 
+            this.cbxMarcaFormAddMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMarcaFormAddMod.FormattingEnabled = true;
             this.cbxMarcaFormAddMod.Location = new System.Drawing.Point(178, 216);
             this.cbxMarcaFormAddMod.Name = "cbxMarcaFormAddMod";
@@ -169,6 +170,7 @@
             // 
             // cbxCategoriaFormAddMod
             // 
+            this.cbxCategoriaFormAddMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoriaFormAddMod.FormattingEnabled = true;
             this.cbxCategoriaFormAddMod.Location = new System.Drawing.Point(178, 248);
             this.cbxCategoriaFormAddMod.Name = "cbxCategoriaFormAddMod";
