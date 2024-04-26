@@ -124,9 +124,6 @@
   <data name="martillos-cruzados" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\martillos-cruzados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="samsung" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\samsung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="articulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\articulos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,9 +153,6 @@
   </data>
   <data name="bolsas-de-compra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bolsas-de-compra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="samsung (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\samsung (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="adidas (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adidas (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
