@@ -70,14 +70,15 @@ namespace TP_2
 
         private void btnModificarFormArticulos_Click(object sender, EventArgs e)
         {
-            FormAddMod formAddMod = new FormAddMod();
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            FormAddMod formAddMod = new FormAddMod(seleccionado);
             formAddMod.ShowDialog();
             CargarGrid();
         }
 
         private void btnEliminarFormArticulos_Click(object sender, EventArgs e)
         {
-            ArticuloNegocio neg = new ArticuloNegocio();
+            
             Articulo artSelec;
             try
             {
@@ -87,7 +88,7 @@ namespace TP_2
                     return;
                 }
                 artSelec = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                neg.EliminarArticulo(artSelec.IDArticulo);
+                negocio.EliminarArticulo(artSelec.IDArticulo);
                 CargarGrid();
             }
             catch (Exception ex)
@@ -95,6 +96,36 @@ namespace TP_2
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void btnSiguienteImg_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            int index = seleccionado.Imagenes.IndexOf(seleccionado.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
+            if (index == seleccionado.Imagenes.Count - 1)
+            {
+                index = 0;
+            }
+            else
+            {
+                index++;
+            }
+            CargarImagen(seleccionado.Imagenes[index].URLImagen);
+        }
+
+        private void btnAnteriorImg_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            int index = seleccionado.Imagenes.IndexOf(seleccionado.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
+            if (index == 0)
+            {
+                index = seleccionado.Imagenes.Count - 1;
+            }
+            else
+            {
+                index--;
+            }
+            CargarImagen(seleccionado.Imagenes[index].URLImagen);
         }
     }
 }
