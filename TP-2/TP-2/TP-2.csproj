@@ -119,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -147,6 +148,45 @@
       <Project>{60f2c35e-a59d-4506-ab5c-4c73f7a9362a}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\martillos-cruzados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrarDefinitivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incorrecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\articulos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsas-de-compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsas-de-compraDef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notasDef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adidas %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,21 +43,29 @@
             // 
             // btnAgregarAddCategoria
             // 
+            this.btnAgregarAddCategoria.Image = global::TP_2.Properties.Resources.agregar;
+            this.btnAgregarAddCategoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarAddCategoria.Location = new System.Drawing.Point(46, 193);
             this.btnAgregarAddCategoria.Name = "btnAgregarAddCategoria";
-            this.btnAgregarAddCategoria.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarAddCategoria.Size = new System.Drawing.Size(75, 29);
             this.btnAgregarAddCategoria.TabIndex = 1;
             this.btnAgregarAddCategoria.Text = "Agregar";
+            this.btnAgregarAddCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarAddCategoria.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAgregarAddCategoria.UseVisualStyleBackColor = true;
             this.btnAgregarAddCategoria.Click += new System.EventHandler(this.btnAgregarAddCategoria_Click);
             // 
             // btnCancelarAddCategoria
             // 
+            this.btnCancelarAddCategoria.Image = global::TP_2.Properties.Resources.incorrecto;
+            this.btnCancelarAddCategoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelarAddCategoria.Location = new System.Drawing.Point(163, 193);
             this.btnCancelarAddCategoria.Name = "btnCancelarAddCategoria";
-            this.btnCancelarAddCategoria.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelarAddCategoria.Size = new System.Drawing.Size(75, 29);
             this.btnCancelarAddCategoria.TabIndex = 2;
             this.btnCancelarAddCategoria.Text = "Cancelar";
+            this.btnCancelarAddCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarAddCategoria.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCancelarAddCategoria.UseVisualStyleBackColor = true;
             this.btnCancelarAddCategoria.Click += new System.EventHandler(this.btnCancelarAddCategoria_Click);
             // 

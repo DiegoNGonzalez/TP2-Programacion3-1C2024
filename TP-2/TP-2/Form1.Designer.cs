@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.lblNombreInicio = new System.Windows.Forms.Label();
-            this.btnArticulos = new System.Windows.Forms.Button();
-            this.btnCategorias = new System.Windows.Forms.Button();
-            this.btnMarcas = new System.Windows.Forms.Button();
             this.gbSecciones = new System.Windows.Forms.GroupBox();
+            this.btnArticulos = new System.Windows.Forms.Button();
+            this.btnMarcas = new System.Windows.Forms.Button();
+            this.btnCategorias = new System.Windows.Forms.Button();
             this.gbSecciones.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,40 +47,6 @@
             this.lblNombreInicio.Text = "Soluciones inc.";
             this.lblNombreInicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnArticulos
-            // 
-            this.btnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArticulos.Location = new System.Drawing.Point(7, 19);
-            this.btnArticulos.Name = "btnArticulos";
-            this.btnArticulos.Size = new System.Drawing.Size(119, 32);
-            this.btnArticulos.TabIndex = 1;
-            this.btnArticulos.Text = "Articulos";
-            this.btnArticulos.UseMnemonic = false;
-            this.btnArticulos.UseVisualStyleBackColor = true;
-            this.btnArticulos.Click += new System.EventHandler(this.btnArticulos_Click);
-            // 
-            // btnCategorias
-            // 
-            this.btnCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategorias.Location = new System.Drawing.Point(7, 69);
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(119, 32);
-            this.btnCategorias.TabIndex = 2;
-            this.btnCategorias.Text = "Categorias";
-            this.btnCategorias.UseVisualStyleBackColor = true;
-            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
-            // 
-            // btnMarcas
-            // 
-            this.btnMarcas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcas.Location = new System.Drawing.Point(7, 118);
-            this.btnMarcas.Name = "btnMarcas";
-            this.btnMarcas.Size = new System.Drawing.Size(119, 32);
-            this.btnMarcas.TabIndex = 3;
-            this.btnMarcas.Text = "Marcas";
-            this.btnMarcas.UseVisualStyleBackColor = true;
-            this.btnMarcas.Click += new System.EventHandler(this.btnMarcas_Click);
-            // 
             // gbSecciones
             // 
             this.gbSecciones.Controls.Add(this.btnArticulos);
@@ -92,6 +58,50 @@
             this.gbSecciones.TabIndex = 4;
             this.gbSecciones.TabStop = false;
             this.gbSecciones.Text = "Secciones";
+            // 
+            // btnArticulos
+            // 
+            this.btnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArticulos.Image = global::TP_2.Properties.Resources.bolsas_de_compraDef;
+            this.btnArticulos.Location = new System.Drawing.Point(7, 19);
+            this.btnArticulos.Name = "btnArticulos";
+            this.btnArticulos.Size = new System.Drawing.Size(119, 32);
+            this.btnArticulos.TabIndex = 1;
+            this.btnArticulos.Text = "Articulos";
+            this.btnArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnArticulos.UseMnemonic = false;
+            this.btnArticulos.UseVisualStyleBackColor = true;
+            this.btnArticulos.Click += new System.EventHandler(this.btnArticulos_Click);
+            // 
+            // btnMarcas
+            // 
+            this.btnMarcas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcas.Image = global::TP_2.Properties.Resources.adidas__1_;
+            this.btnMarcas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcas.Location = new System.Drawing.Point(7, 118);
+            this.btnMarcas.Name = "btnMarcas";
+            this.btnMarcas.Size = new System.Drawing.Size(119, 32);
+            this.btnMarcas.TabIndex = 3;
+            this.btnMarcas.Text = "Marcas";
+            this.btnMarcas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMarcas.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMarcas.UseVisualStyleBackColor = true;
+            this.btnMarcas.Click += new System.EventHandler(this.btnMarcas_Click);
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.Image = global::TP_2.Properties.Resources.notasDef;
+            this.btnCategorias.Location = new System.Drawing.Point(7, 69);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Size = new System.Drawing.Size(119, 32);
+            this.btnCategorias.TabIndex = 2;
+            this.btnCategorias.Text = "Categorias";
+            this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCategorias.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCategorias.UseVisualStyleBackColor = true;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // FormInicio
             // 

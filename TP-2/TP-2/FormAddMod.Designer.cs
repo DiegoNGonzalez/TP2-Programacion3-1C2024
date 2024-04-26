@@ -42,10 +42,10 @@
             this.cbxMarcaFormAddMod = new System.Windows.Forms.ComboBox();
             this.cbxCategoriaFormAddMod = new System.Windows.Forms.ComboBox();
             this.nudPrecioFormAddMod = new System.Windows.Forms.NumericUpDown();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
             this.txtDescripcionFormAddMod = new System.Windows.Forms.TextBox();
+            this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.gbSeccionesFormAddMod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).BeginInit();
@@ -184,25 +184,13 @@
             this.nudPrecioFormAddMod.Size = new System.Drawing.Size(103, 20);
             this.nudPrecioFormAddMod.TabIndex = 6;
             // 
-            // btnAceptar
+            // txtDescripcionFormAddMod
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(93, 410);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 19;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(206, 410);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 20;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.txtDescripcionFormAddMod.Location = new System.Drawing.Point(179, 145);
+            this.txtDescripcionFormAddMod.Multiline = true;
+            this.txtDescripcionFormAddMod.Name = "txtDescripcionFormAddMod";
+            this.txtDescripcionFormAddMod.Size = new System.Drawing.Size(99, 33);
+            this.txtDescripcionFormAddMod.TabIndex = 2;
             // 
             // pbxFormAddMod
             // 
@@ -212,13 +200,33 @@
             this.pbxFormAddMod.TabIndex = 21;
             this.pbxFormAddMod.TabStop = false;
             // 
-            // txtDescripcionFormAddMod
+            // btnCancelar
             // 
-            this.txtDescripcionFormAddMod.Location = new System.Drawing.Point(179, 145);
-            this.txtDescripcionFormAddMod.Multiline = true;
-            this.txtDescripcionFormAddMod.Name = "txtDescripcionFormAddMod";
-            this.txtDescripcionFormAddMod.Size = new System.Drawing.Size(99, 33);
-            this.txtDescripcionFormAddMod.TabIndex = 2;
+            this.btnCancelar.Image = global::TP_2.Properties.Resources.incorrecto;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(206, 410);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 31);
+            this.btnCancelar.TabIndex = 20;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Image = global::TP_2.Properties.Resources.bien;
+            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAceptar.Location = new System.Drawing.Point(93, 410);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 31);
+            this.btnAceptar.TabIndex = 19;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // FormAddMod
             // 
