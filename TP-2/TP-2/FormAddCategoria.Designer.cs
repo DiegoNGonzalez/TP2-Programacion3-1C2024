@@ -81,6 +81,7 @@
             this.Controls.Add(this.btnAgregarAddCategoria);
             this.Controls.Add(this.txtbAddCategoria);
             this.Name = "FormAddCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddCategoria";
             this.ResumeLayout(false);
             this.PerformLayout();

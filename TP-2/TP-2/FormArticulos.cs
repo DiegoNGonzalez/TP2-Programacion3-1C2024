@@ -77,7 +77,7 @@ namespace TP_2
 
         private void btnEliminarFormArticulos_Click(object sender, EventArgs e)
         {
-            ArticuloNegocio neg = new ArticuloNegocio();
+            
             Articulo artSelec;
             try
             {
@@ -87,7 +87,7 @@ namespace TP_2
                     return;
                 }
                 artSelec = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                neg.EliminarArticulo(artSelec.IDArticulo);
+                negocio.EliminarArticulo(artSelec.IDArticulo);
                 CargarGrid();
             }
             catch (Exception ex)
@@ -95,6 +95,36 @@ namespace TP_2
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void btnSiguienteImg_Click(object sender, EventArgs e)
+        {
+            Articulo selecciondo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            int index = selecciondo.Imagenes.IndexOf(selecciondo.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
+            if (index == selecciondo.Imagenes.Count - 1)
+            {
+                index = 0;
+            }
+            else
+            {
+                index++;
+            }
+            CargarImagen(selecciondo.Imagenes[index].URLImagen);
+        }
+
+        private void btnAnteriorImg_Click(object sender, EventArgs e)
+        {
+            Articulo selecciondo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            int index = selecciondo.Imagenes.IndexOf(selecciondo.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
+            if (index == 0)
+            {
+                index = selecciondo.Imagenes.Count - 1;
+            }
+            else
+            {
+                index--;
+            }
+            CargarImagen(selecciondo.Imagenes[index].URLImagen);
         }
     }
 }
