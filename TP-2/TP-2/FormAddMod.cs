@@ -92,5 +92,10 @@ namespace TP_2
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
