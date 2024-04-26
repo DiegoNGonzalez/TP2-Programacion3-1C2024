@@ -33,6 +33,15 @@ namespace TP_2
             Close();
         }
 
+        private bool validarTextBox()
+        {
+            if (string.IsNullOrEmpty(txtMarca.Text))
+            {
+                return false;
+            }
+            return true;
+        }
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             MarcaNegocio negocio = new MarcaNegocio();
@@ -43,11 +52,21 @@ namespace TP_2
 
                 if (marca.IDMarca != 0)
                 {
+                    if (!validarTextBox())
+                    {
+                        MessageBox.Show("Debe completar el campo Marca");
+                        return;
+                    }
                     negocio.modificarMarca(marca);
                     MessageBox.Show("Marca modificada con exito");
                 }
                 else
                 {
+                    if (!validarTextBox())
+                    {
+                        MessageBox.Show("Debe completar el campo Marca");
+                        return;
+                    }
                     negocio.agregarMarca(marca);
                     MessageBox.Show("Marca agregada con exito");
                 }

@@ -32,6 +32,7 @@ namespace TP_2
                 dgvMarcas.DataSource = negocio.ListarMarcas();
                 dgvMarcas.Columns[0].Visible = false;
                 dgvMarcas.Columns[1].HeaderText = "Marca";
+                
             }
             catch (Exception ex)
             {
@@ -49,6 +50,11 @@ namespace TP_2
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if (!validarSeleccion())
+            {
+                MessageBox.Show("Debe seleccionar una marca para modificar.");
+                return;
+            }
             Marca seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem;
             frmAgregarMarca modificar = new frmAgregarMarca(seleccionado);
             modificar.ShowDialog();
@@ -67,6 +73,11 @@ namespace TP_2
                 {
                     return;
                 }
+                if (!validarSeleccion())
+                {
+                    MessageBox.Show("Debe seleccionar una marca para eliminar.");
+                    return;
+                }
                 seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem; 
                 negocio.eliminarMarca(seleccionado);
                 Cargar();
@@ -76,7 +87,15 @@ namespace TP_2
 
                 MessageBox.Show(ex.ToString());
             }
+        }
 
+        private bool validarSeleccion()
+        {
+            if (dgvMarcas.CurrentRow == null)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
