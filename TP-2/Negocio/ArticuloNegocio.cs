@@ -24,7 +24,7 @@ namespace Negocio
             List<Articulo> Lista = new List<Articulo>();
             try
             {
-                Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.Descripcion as 'Categoria', m.Descripcion as 'Marca' FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id");
+                Datos.SetearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.ID IdCategoria, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', m.ID IdMarca FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id");
                 Datos.EjecutarLectura();
 
                 while (Datos.Lector.Read())
@@ -36,8 +36,10 @@ namespace Negocio
                     aux.DescripcionArticulo = (string)Datos.Lector["Descripcion"];
                     aux.PrecioArticulo = (decimal)Datos.Lector["Precio"];
                     aux.MarcaArticulo = new Marca();
+                    aux.MarcaArticulo.IDMarca = (int)Datos.Lector["IdMarca"];
                     aux.MarcaArticulo.NombreMarca= (string)Datos.Lector["Marca"];
                     aux.CategoriaArticulo = new Categoria();
+                    aux.CategoriaArticulo.IDCategoria = (int)Datos.Lector["IdCategoria"];
                     aux.CategoriaArticulo.NombreCategoria = (string)Datos.Lector["Categoria"];
                     
                     
@@ -102,7 +104,22 @@ namespace Negocio
         {
             try
             {
-               
+                Datos.SetearConsulta("update ARTICULOS set Codigo=@Codigo, Nombre=@Nombre,Descripcion=@Descripcion, IdMarca=@IdMarca, IdCategoria=@IdCategoria,Precio=@Precio where id=@Id ");
+                Datos.SetearParametro("@Codigo", Modificado.CodigoArticulo);
+                Datos.SetearParametro("@Nombre", Modificado.NombreArticulo); ;
+                Datos.SetearParametro("@Descripcion", Modificado.DescripcionArticulo);
+                Datos.SetearParametro("@IdCategoria", Modificado.CategoriaArticulo.IDCategoria);
+                Datos.SetearParametro("@IdMarca", Modificado.MarcaArticulo.IDMarca);
+                Datos.SetearParametro("@Precio", Modificado.PrecioArticulo);
+                Datos.SetearParametro("@Id", Modificado.IDArticulo);
+                Datos.EjecutarAccion();
+                Datos.CerrarConexion();
+                Datos.SetearConsulta("insert into IMAGENES (IdArticulo,ImagenUrl) values (@IdArticulo,@URL)");
+                Datos.SetearParametro("@IdArticulo", Modificado.IDArticulo);
+                Datos.SetearParametro("@URL", Modificado.Imagenes[0].URLImagen);
+                Datos.EjecutarAccion();
+
+
             }
             catch (Exception)
             {

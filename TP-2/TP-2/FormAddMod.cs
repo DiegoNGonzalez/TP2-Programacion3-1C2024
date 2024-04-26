@@ -68,6 +68,17 @@ namespace TP_2
                 cbxMarcaFormAddMod.DataSource = negocioMarca.ListarMarcas();
                 cbxMarcaFormAddMod.ValueMember = "IDMarca";
                 cbxMarcaFormAddMod.DisplayMember = "NombreMarca";
+
+                if (Articulo != null)
+                {
+                    txtCodigoFormAddMod.Text = Articulo.CodigoArticulo;
+                    txtNombreFormAddMod.Text = Articulo.NombreArticulo;
+                    txtDescripcionFormAddMod.Text = Articulo.DescripcionArticulo;
+                    nudPrecioFormAddMod.Value = Articulo.PrecioArticulo;
+                    cbxCategoriaFormAddMod.SelectedValue = Articulo.CategoriaArticulo.IDCategoria;
+                    cbxMarcaFormAddMod.SelectedValue = Articulo.MarcaArticulo.IDMarca;
+                    txtUrlFormAddMod.Text = Articulo.Imagenes[0].URLImagen;
+                }
                 
             }
             catch (Exception ex)
@@ -83,8 +94,25 @@ namespace TP_2
             {
                 if (Articulo == null)
                     Articulo= CapturarArticuloForm();
-                negocio.AgregarArticulo(Articulo);
-                MessageBox.Show("Articulo agregado con exito");
+                if (Articulo.IDArticulo != 0)
+                {
+                    Articulo.CodigoArticulo = txtCodigoFormAddMod.Text;
+                    Articulo.NombreArticulo = txtNombreFormAddMod.Text;
+                    Articulo.DescripcionArticulo = txtDescripcionFormAddMod.Text;
+                    Articulo.PrecioArticulo = nudPrecioFormAddMod.Value;
+                    Articulo.MarcaArticulo = (Marca)cbxMarcaFormAddMod.SelectedItem;
+                    Articulo.CategoriaArticulo = (Categoria)cbxCategoriaFormAddMod.SelectedItem;
+                    Articulo.Imagenes = new List<Imagen>();
+                    Articulo.Imagenes.Add(new Imagen() { URLImagen = txtUrlFormAddMod.Text });
+                    negocio.ModificarArticulo(Articulo);
+                    MessageBox.Show("Articulo modificado con exito");
+                }
+                else
+                {
+
+                    negocio.AgregarArticulo(Articulo);
+                    MessageBox.Show("Articulo agregado con exito");
+                }
                 this.Close();
             }
             catch (Exception ex)
@@ -92,5 +120,7 @@ namespace TP_2
                 MessageBox.Show(ex.Message);
             }
         }
+
+        
     }
 }
