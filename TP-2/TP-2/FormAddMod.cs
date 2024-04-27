@@ -95,30 +95,44 @@ namespace TP_2
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
+            if (txtCodigoFormAddMod.Text == "" || txtNombreFormAddMod.Text == "" || txtDescripcionFormAddMod.Text == "" || txtUrlFormAddMod.Text == "")
+            {
+                MessageBox.Show("Debe completar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             try
             {
                 if (Articulo == null)
-                    Articulo= CapturarArticuloForm();
-                if (Articulo.IDArticulo != 0)
+                    Articulo = CapturarArticuloForm();
+                if (cbxCategoriaFormAddMod.Items.Count == 0 || cbxMarcaFormAddMod.Items.Count == 0)
                 {
-                    Articulo.CodigoArticulo = txtCodigoFormAddMod.Text;
-                    Articulo.NombreArticulo = txtNombreFormAddMod.Text;
-                    Articulo.DescripcionArticulo = txtDescripcionFormAddMod.Text;
-                    Articulo.PrecioArticulo = nudPrecioFormAddMod.Value;
-                    Articulo.MarcaArticulo = (Marca)cbxMarcaFormAddMod.SelectedItem;
-                    Articulo.CategoriaArticulo = (Categoria)cbxCategoriaFormAddMod.SelectedItem;
-                    Articulo.Imagenes = new List<Imagen>();
-                    Articulo.Imagenes.Add(new Imagen() { URLImagen = txtUrlFormAddMod.Text });
-                    negocio.ModificarArticulo(Articulo);
-                    MessageBox.Show("Articulo modificado con exito");
+                    MessageBox.Show("No existe una Categoria o Marca para seleccionar, por favor agregue una.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
 
-                    negocio.AgregarArticulo(Articulo);
-                    MessageBox.Show("Articulo agregado con exito");
+                    if (Articulo.IDArticulo != 0)
+                    {
+                        Articulo.CodigoArticulo = txtCodigoFormAddMod.Text;
+                        Articulo.NombreArticulo = txtNombreFormAddMod.Text;
+                        Articulo.DescripcionArticulo = txtDescripcionFormAddMod.Text;
+                        Articulo.PrecioArticulo = nudPrecioFormAddMod.Value;
+                        Articulo.MarcaArticulo = (Marca)cbxMarcaFormAddMod.SelectedItem;
+                        Articulo.CategoriaArticulo = (Categoria)cbxCategoriaFormAddMod.SelectedItem;
+                        Articulo.Imagenes = new List<Imagen>();
+                        Articulo.Imagenes.Add(new Imagen() { URLImagen = txtUrlFormAddMod.Text });
+                        negocio.ModificarArticulo(Articulo);
+                        MessageBox.Show("Articulo modificado con exito");
+                    }
+                    else
+                    {
+
+                        negocio.AgregarArticulo(Articulo);
+                        MessageBox.Show("Articulo agregado con exito");
+                    }
+                    this.Close();
                 }
-                this.Close();
             }
             catch (Exception ex)
             {

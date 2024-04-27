@@ -39,16 +39,23 @@ namespace TP_2
             try
             {
                 listaArticulos = negocio.ListarArticulos();
-                dgvArticulos.DataSource = listaArticulos;
-                dgvArticulos.Columns["IdArticulo"].Visible= false;
-                dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
-                dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
-                pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
-                
+                if (listaArticulos.Count == 0)
+                {
+                    dgvArticulos.DataSource = null;
+                    pBoxArticulosFormArticulos.Load("https://i0.wp.com/static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg?ssl=1");
+                }
+                else
+                {
+                    dgvArticulos.DataSource = listaArticulos;
+                    dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];
+                    dgvArticulos.Columns["IdArticulo"].Visible = false;
+                    dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
+                    dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
+                    pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
+                }
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -90,6 +97,11 @@ namespace TP_2
 
         private void btnModificarFormArticulos_Click(object sender, EventArgs e)
         {
+            if (dgvArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar un articulo para modificar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             FormAddMod formAddMod = new FormAddMod(seleccionado);
             formAddMod.ShowDialog();
@@ -98,7 +110,12 @@ namespace TP_2
 
         private void btnEliminarFormArticulos_Click(object sender, EventArgs e)
         {
-            
+            if (dgvArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar un articulo para eliminar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Articulo artSelec;
             try
             {
@@ -121,6 +138,11 @@ namespace TP_2
 
         private void btnSiguienteImg_Click(object sender, EventArgs e)
         {
+            if (dgvArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar un articulo para ver sus imagenes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             int index = seleccionado.Imagenes.IndexOf(seleccionado.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
             if (index == seleccionado.Imagenes.Count - 1)
@@ -136,6 +158,11 @@ namespace TP_2
 
         private void btnAnteriorImg_Click(object sender, EventArgs e)
         {
+            if (dgvArticulos.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar un articulo para ver sus imagenes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             int index = seleccionado.Imagenes.IndexOf(seleccionado.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
             if (index == 0)
