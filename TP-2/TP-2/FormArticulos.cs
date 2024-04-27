@@ -127,5 +127,23 @@ namespace TP_2
             }
             CargarImagen(seleccionado.Imagenes[index].URLImagen);
         }
+
+        private void txtBusquedaRapida_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+            string filtro = txtBusquedaRapida.Text;
+            if (filtro.Length > 2)
+            {
+                listaFiltrada= listaArticulos.FindAll(articulo=>articulo.NombreArticulo.ToUpper().Contains(filtro.ToUpper())|| articulo.MarcaArticulo.NombreMarca.ToUpper().Contains(filtro.ToUpper()) || articulo.CategoriaArticulo.NombreCategoria.ToUpper().Contains(filtro.ToUpper())|| articulo.CodigoArticulo.ToUpper().Contains(filtro.ToUpper()));
+                dgvArticulos.DataSource = listaFiltrada;
+            }
+            else
+            {
+                listaFiltrada = listaArticulos;
+            }
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+
+        }
     }
 }
