@@ -32,6 +32,7 @@ namespace TP_2
             cBoxCampo.Items.Add("Marca");
             cBoxCampo.Items.Add("Categoria");
             cBoxCampo.Items.Add("Codigo");
+            cBoxCampo.Items.Add("Precio");
             
 
         }
@@ -203,6 +204,28 @@ namespace TP_2
             formDetalles.ShowDialog();
             
             
+        }
+
+        private void cBoxCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cBoxCampo.SelectedIndex != -1)
+            {
+
+                if (cBoxCampo.SelectedItem.ToString() == "Precio")
+                {
+                    cBoxCriterio.Items.Clear();
+                    cBoxCriterio.Items.Add("Mayor a");
+                    cBoxCriterio.Items.Add("Menor a");
+                    cBoxCriterio.Items.Add("Igual a");
+                }
+                else
+                {
+                    cBoxCriterio.Items.Clear();
+                    cBoxCriterio.Items.Add("Comienza con");
+                    cBoxCriterio.Items.Add("Termina con");
+                    cBoxCriterio.Items.Add("Contiene");
+                }
+            }
         }
     }
 }
