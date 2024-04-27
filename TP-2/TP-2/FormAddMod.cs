@@ -95,6 +95,12 @@ namespace TP_2
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
+            if (txtCodigoFormAddMod.Text == "" || txtNombreFormAddMod.Text == "" || txtDescripcionFormAddMod.Text == "" || txtUrlFormAddMod.Text == "")
+            {
+                MessageBox.Show("Debe completar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             try
             {
                 if (Articulo == null)
