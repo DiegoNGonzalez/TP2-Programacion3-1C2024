@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddMod));
             this.lblCodigoFormAddMod = new System.Windows.Forms.Label();
             this.lblNombreFormAddMod = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@
             this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnAbmImagenes = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.gbSeccionesFormAddMod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).BeginInit();
@@ -229,11 +232,27 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // btnAbmImagenes
+            // 
+            this.btnAbmImagenes.Location = new System.Drawing.Point(284, 184);
+            this.btnAbmImagenes.Name = "btnAbmImagenes";
+            this.btnAbmImagenes.Size = new System.Drawing.Size(46, 23);
+            this.btnAbmImagenes.TabIndex = 22;
+            this.btnAbmImagenes.Text = "button1";
+            this.btnAbmImagenes.UseVisualStyleBackColor = true;
+            this.btnAbmImagenes.Click += new System.EventHandler(this.btnAbmImagenes_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // FormAddMod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 530);
+            this.Controls.Add(this.btnAbmImagenes);
             this.Controls.Add(this.txtDescripcionFormAddMod);
             this.Controls.Add(this.pbxFormAddMod);
             this.Controls.Add(this.btnCancelar);
@@ -282,5 +301,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pbxFormAddMod;
         private System.Windows.Forms.TextBox txtDescripcionFormAddMod;
+        private System.Windows.Forms.Button btnAbmImagenes;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

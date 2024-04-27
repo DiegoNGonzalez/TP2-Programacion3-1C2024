@@ -35,6 +35,7 @@ namespace TP_2
                 listaArticulos = negocio.ListarArticulos();
                 dgvArticulos.DataSource = listaArticulos;
                 pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
+                
             }
             catch (Exception ex)
             {
@@ -96,6 +97,7 @@ namespace TP_2
 
                 MessageBox.Show(ex.ToString());
             }
+            
         }
 
         private void btnSiguienteImg_Click(object sender, EventArgs e)

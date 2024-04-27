@@ -52,11 +52,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAbmImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbmImagenes.Designer.cs">
+      <DependentUpon>FormAbmImagenes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddCategoria.Designer.cs">
       <DependentUpon>FormAddCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddModImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddModImg.Designer.cs">
+      <DependentUpon>FormAddModImg.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAgregarMarca.cs">
       <SubType>Form</SubType>
@@ -93,8 +105,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAbmImagenes.resx">
+      <DependentUpon>FormAbmImagenes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddCategoria.resx">
       <DependentUpon>FormAddCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddModImg.resx">
+      <DependentUpon>FormAddModImg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgregarMarca.resx">
       <DependentUpon>FormAgregarMarca.cs</DependentUpon>

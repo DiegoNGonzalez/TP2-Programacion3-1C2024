@@ -126,5 +126,11 @@ namespace TP_2
         {
             Close();
         }
+
+        private void btnAbmImagenes_Click(object sender, EventArgs e)
+        {
+            FormAbmImagenes form = new FormAbmImagenes(Articulo);
+            form.ShowDialog();
+        }
     }
 }

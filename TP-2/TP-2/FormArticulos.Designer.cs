@@ -256,6 +256,7 @@
             this.dgvArticulos.BackgroundColor = System.Drawing.Color.MediumPurple;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.Location = new System.Drawing.Point(221, 102);
+            this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.Size = new System.Drawing.Size(646, 315);
             this.dgvArticulos.TabIndex = 10;

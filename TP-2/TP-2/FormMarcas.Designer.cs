@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMarcas));
             this.lblMarcas = new System.Windows.Forms.Label();
             this.gbxMarcas = new System.Windows.Forms.GroupBox();
-            this.dgvMarcas = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.dgvMarcas = new System.Windows.Forms.DataGridView();
             this.gbxMarcas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
             this.SuspendLayout();
@@ -60,14 +60,6 @@
             this.gbxMarcas.TabIndex = 2;
             this.gbxMarcas.TabStop = false;
             this.gbxMarcas.Text = "Secciones";
-            // 
-            // dgvMarcas
-            // 
-            this.dgvMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMarcas.Location = new System.Drawing.Point(330, 110);
-            this.dgvMarcas.Name = "dgvMarcas";
-            this.dgvMarcas.Size = new System.Drawing.Size(126, 193);
-            this.dgvMarcas.TabIndex = 3;
             // 
             // btnEliminar
             // 
@@ -110,6 +102,15 @@
             this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // dgvMarcas
+            // 
+            this.dgvMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarcas.Location = new System.Drawing.Point(330, 110);
+            this.dgvMarcas.MultiSelect = false;
+            this.dgvMarcas.Name = "dgvMarcas";
+            this.dgvMarcas.Size = new System.Drawing.Size(126, 193);
+            this.dgvMarcas.TabIndex = 3;
             // 
             // FormMarcas
             // 

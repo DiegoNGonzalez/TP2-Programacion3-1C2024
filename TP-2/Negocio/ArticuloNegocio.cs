@@ -132,8 +132,7 @@ namespace Negocio
         {
             try
             {
-                Datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id = @ID");
-                Datos.SetearParametro("@ID", ID);
+                Datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id ="+ID);
                 Datos.EjecutarAccion();
 
             }
