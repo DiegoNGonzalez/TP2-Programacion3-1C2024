@@ -68,7 +68,7 @@ namespace TP_2
             Marca seleccionado;
             try
             {
-                DialogResult respuesta = MessageBox.Show("¿Está seguro que desea eliminar la marca seleccionada?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show("¿Está seguro que desea eliminar la marca seleccionada? Esto podria eliminar un Articulo asociado a ella.", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (respuesta == DialogResult.No)
                 {
                     return;
