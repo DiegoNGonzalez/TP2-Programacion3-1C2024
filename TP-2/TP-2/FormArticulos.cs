@@ -40,6 +40,9 @@ namespace TP_2
             {
                 listaArticulos = negocio.ListarArticulos();
                 dgvArticulos.DataSource = listaArticulos;
+                dgvArticulos.Columns["IdArticulo"].Visible= false;
+                dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
+                dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
                 pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
                 
             }
