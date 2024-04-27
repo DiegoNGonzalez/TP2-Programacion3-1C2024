@@ -56,7 +56,6 @@ namespace TP_2
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
