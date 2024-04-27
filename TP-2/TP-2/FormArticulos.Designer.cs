@@ -50,10 +50,6 @@
             this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
             this.btnLimpiarFiltro = new System.Windows.Forms.Button();
             this.btnBuscarFiltrado = new System.Windows.Forms.Button();
-            this.btnAgregarFormArticulos = new System.Windows.Forms.Button();
-            this.btnVerDetalles = new System.Windows.Forms.Button();
-            this.btnModificarFormArticulos = new System.Windows.Forms.Button();
-            this.btnEliminarFormArticulos = new System.Windows.Forms.Button();
             this.gpSeccionesFormArticulos.SuspendLayout();
             this.gBoxBusquedaRapida.SuspendLayout();
             this.gBoxFiltrado.SuspendLayout();
