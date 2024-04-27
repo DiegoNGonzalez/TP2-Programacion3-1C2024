@@ -63,46 +63,6 @@ namespace TP_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap adidas {
-            get {
-                object obj = ResourceManager.GetObject("adidas", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap adidas__1_ {
-            get {
-                object obj = ResourceManager.GetObject("adidas (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap agregar {
-            get {
-                object obj = ResourceManager.GetObject("agregar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap articulos {
-            get {
-                object obj = ResourceManager.GetObject("articulos", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bien {
             get {
                 object obj = ResourceManager.GetObject("bien", resourceCulture);
@@ -113,19 +73,9 @@ namespace TP_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bolsas_de_compra {
+        internal static System.Drawing.Bitmap bolsoDefinitivo {
             get {
-                object obj = ResourceManager.GetObject("bolsas-de-compra", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bolsas_de_compraDef {
-            get {
-                object obj = ResourceManager.GetObject("bolsas-de-compraDef", resourceCulture);
+                object obj = ResourceManager.GetObject("bolsoDefinitivo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +93,9 @@ namespace TP_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap categorias {
+        internal static System.Drawing.Bitmap boton_eliminar {
             get {
-                object obj = ResourceManager.GetObject("categorias", resourceCulture);
+                object obj = ResourceManager.GetObject("boton-eliminar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +103,29 @@ namespace TP_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap incorrecto {
+        internal static System.Drawing.Bitmap escoba {
             get {
-                object obj = ResourceManager.GetObject("incorrecto", resourceCulture);
+                object obj = ResourceManager.GetObject("escoba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap informacion {
+            get {
+                object obj = ResourceManager.GetObject("informacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letra_m__5_ {
+            get {
+                object obj = ResourceManager.GetObject("letra-m (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +146,16 @@ namespace TP_2.Properties {
         internal static System.Drawing.Bitmap martillos_cruzados {
             get {
                 object obj = ResourceManager.GetObject("martillos-cruzados", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mas {
+            get {
+                object obj = ResourceManager.GetObject("mas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

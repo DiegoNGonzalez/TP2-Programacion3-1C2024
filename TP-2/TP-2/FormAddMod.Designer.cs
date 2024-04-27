@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddMod));
             this.lblCodigoFormAddMod = new System.Windows.Forms.Label();
             this.lblNombreFormAddMod = new System.Windows.Forms.Label();
             this.lblDescripcionFormAddMod = new System.Windows.Forms.Label();
@@ -202,7 +203,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Image = global::TP_2.Properties.Resources.incorrecto;
+            this.btnCancelar.Image = global::TP_2.Properties.Resources.boton_eliminar;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(206, 410);
             this.btnCancelar.Name = "btnCancelar";
@@ -244,12 +245,13 @@
             this.Controls.Add(this.txtNombreFormAddMod);
             this.Controls.Add(this.txtCodigoFormAddMod);
             this.Controls.Add(this.gbSeccionesFormAddMod);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(598, 569);
             this.MinimumSize = new System.Drawing.Size(598, 569);
             this.Name = "FormAddMod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar/Modificar Articulo";
+            this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.FormAddMod_Load);
             this.gbSeccionesFormAddMod.ResumeLayout(false);
             this.gbSeccionesFormAddMod.PerformLayout();

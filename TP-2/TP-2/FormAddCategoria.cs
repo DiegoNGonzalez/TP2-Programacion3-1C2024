@@ -27,7 +27,7 @@ namespace TP_2
             Text = "Modificar";
         }
 
-        private void btnAgregarAddCategoria_Click(object sender, EventArgs e)
+        private void btnAceptarAddCategoria_Click(object sender, EventArgs e)
         {
             CategoriaNegocio nego = new CategoriaNegocio();
             try

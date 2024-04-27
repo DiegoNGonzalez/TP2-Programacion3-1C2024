@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMarcas));
             this.lblMarcas = new System.Windows.Forms.Label();
             this.gbxMarcas = new System.Windows.Forms.GroupBox();
+            this.dgvMarcas = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dgvMarcas = new System.Windows.Forms.DataGridView();
             this.gbxMarcas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,14 @@
             this.gbxMarcas.TabIndex = 2;
             this.gbxMarcas.TabStop = false;
             this.gbxMarcas.Text = "Secciones";
+            // 
+            // dgvMarcas
+            // 
+            this.dgvMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarcas.Location = new System.Drawing.Point(330, 110);
+            this.dgvMarcas.Name = "dgvMarcas";
+            this.dgvMarcas.Size = new System.Drawing.Size(126, 193);
+            this.dgvMarcas.TabIndex = 3;
             // 
             // btnEliminar
             // 
@@ -90,7 +99,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Image = global::TP_2.Properties.Resources.agregar;
+            this.btnAgregar.Image = global::TP_2.Properties.Resources.mas;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(35, 28);
             this.btnAgregar.Name = "btnAgregar";
@@ -102,14 +111,6 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // dgvMarcas
-            // 
-            this.dgvMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMarcas.Location = new System.Drawing.Point(330, 110);
-            this.dgvMarcas.Name = "dgvMarcas";
-            this.dgvMarcas.Size = new System.Drawing.Size(126, 193);
-            this.dgvMarcas.TabIndex = 3;
-            // 
             // FormMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +119,7 @@
             this.Controls.Add(this.dgvMarcas);
             this.Controls.Add(this.gbxMarcas);
             this.Controls.Add(this.lblMarcas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMarcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marcas";

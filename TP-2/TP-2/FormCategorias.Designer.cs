@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategorias));
             this.lblCategorias = new System.Windows.Forms.Label();
             this.gbxCategorias = new System.Windows.Forms.GroupBox();
+            this.dgvCategorias = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dgvCategorias = new System.Windows.Forms.DataGridView();
             this.gbxCategorias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,14 @@
             this.gbxCategorias.TabIndex = 2;
             this.gbxCategorias.TabStop = false;
             this.gbxCategorias.Text = "Secciones";
+            // 
+            // dgvCategorias
+            // 
+            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategorias.Location = new System.Drawing.Point(272, 161);
+            this.dgvCategorias.Name = "dgvCategorias";
+            this.dgvCategorias.Size = new System.Drawing.Size(240, 150);
+            this.dgvCategorias.TabIndex = 3;
             // 
             // btnEliminar
             // 
@@ -90,7 +99,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Image = global::TP_2.Properties.Resources.agregar;
+            this.btnAgregar.Image = global::TP_2.Properties.Resources.mas;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(47, 19);
             this.btnAgregar.Name = "btnAgregar";
@@ -102,14 +111,6 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // dgvCategorias
-            // 
-            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategorias.Location = new System.Drawing.Point(272, 161);
-            this.dgvCategorias.Name = "dgvCategorias";
-            this.dgvCategorias.Size = new System.Drawing.Size(240, 150);
-            this.dgvCategorias.TabIndex = 3;
-            // 
             // FormCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +119,7 @@
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.gbxCategorias);
             this.Controls.Add(this.lblCategorias);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorias";

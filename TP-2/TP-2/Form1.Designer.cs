@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicio));
             this.lblNombreInicio = new System.Windows.Forms.Label();
             this.gbSecciones = new System.Windows.Forms.GroupBox();
             this.btnArticulos = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             // btnArticulos
             // 
             this.btnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArticulos.Image = global::TP_2.Properties.Resources.bolsas_de_compraDef;
+            this.btnArticulos.Image = global::TP_2.Properties.Resources.bolsoDefinitivo;
             this.btnArticulos.Location = new System.Drawing.Point(7, 19);
             this.btnArticulos.Name = "btnArticulos";
             this.btnArticulos.Size = new System.Drawing.Size(119, 32);
@@ -77,8 +78,7 @@
             // btnMarcas
             // 
             this.btnMarcas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcas.Image = global::TP_2.Properties.Resources.adidas__1_;
-            this.btnMarcas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcas.Image = global::TP_2.Properties.Resources.letra_m__5_;
             this.btnMarcas.Location = new System.Drawing.Point(7, 118);
             this.btnMarcas.Name = "btnMarcas";
             this.btnMarcas.Size = new System.Drawing.Size(119, 32);
@@ -111,6 +111,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gbSecciones);
             this.Controls.Add(this.lblNombreInicio);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Soluciones inc.";

@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArticulos));
             this.lblArticulosFormArticulos = new System.Windows.Forms.Label();
             this.gpSeccionesFormArticulos = new System.Windows.Forms.GroupBox();
             this.gBoxBusquedaRapida = new System.Windows.Forms.GroupBox();
             this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
             this.gBoxFiltrado = new System.Windows.Forms.GroupBox();
-            this.btnLimpiarFiltro = new System.Windows.Forms.Button();
             this.txtBuscarFiltrado = new System.Windows.Forms.TextBox();
             this.cBoxCriterio = new System.Windows.Forms.ComboBox();
             this.cBoxCampo = new System.Windows.Forms.ComboBox();
@@ -44,6 +44,7 @@
             this.btnAnteriorImg = new System.Windows.Forms.Button();
             this.btnSiguienteImg = new System.Windows.Forms.Button();
             this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
+            this.btnLimpiarFiltro = new System.Windows.Forms.Button();
             this.btnBuscarFiltrado = new System.Windows.Forms.Button();
             this.btnAgregarFormArticulos = new System.Windows.Forms.Button();
             this.btnVerDetalles = new System.Windows.Forms.Button();
@@ -115,16 +116,6 @@
             this.gBoxFiltrado.TabIndex = 8;
             this.gBoxFiltrado.TabStop = false;
             this.gBoxFiltrado.Text = "Filtrar";
-            // 
-            // btnLimpiarFiltro
-            // 
-            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarFiltro.Location = new System.Drawing.Point(249, 93);
-            this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
-            this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiarFiltro.TabIndex = 7;
-            this.btnLimpiarFiltro.Text = "Limpiar";
-            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
             // 
             // txtBuscarFiltrado
             // 
@@ -217,6 +208,20 @@
             this.pBoxArticulosFormArticulos.TabIndex = 9;
             this.pBoxArticulosFormArticulos.TabStop = false;
             // 
+            // btnLimpiarFiltro
+            // 
+            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarFiltro.Image = global::TP_2.Properties.Resources.escoba;
+            this.btnLimpiarFiltro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiarFiltro.Location = new System.Drawing.Point(249, 93);
+            this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
+            this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 29);
+            this.btnLimpiarFiltro.TabIndex = 7;
+            this.btnLimpiarFiltro.Text = "Limpiar";
+            this.btnLimpiarFiltro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiarFiltro.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
+            // 
             // btnBuscarFiltrado
             // 
             this.btnBuscarFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,7 +229,7 @@
             this.btnBuscarFiltrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarFiltrado.Location = new System.Drawing.Point(161, 93);
             this.btnBuscarFiltrado.Name = "btnBuscarFiltrado";
-            this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 29);
             this.btnBuscarFiltrado.TabIndex = 6;
             this.btnBuscarFiltrado.Text = "Buscar";
             this.btnBuscarFiltrado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -233,7 +238,7 @@
             // 
             // btnAgregarFormArticulos
             // 
-            this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.agregar;
+            this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.mas;
             this.btnAgregarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarFormArticulos.Location = new System.Drawing.Point(21, 27);
             this.btnAgregarFormArticulos.Name = "btnAgregarFormArticulos";
@@ -247,7 +252,7 @@
             // 
             // btnVerDetalles
             // 
-            this.btnVerDetalles.Image = global::TP_2.Properties.Resources.lupa;
+            this.btnVerDetalles.Image = global::TP_2.Properties.Resources.informacion;
             this.btnVerDetalles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVerDetalles.Location = new System.Drawing.Point(21, 140);
             this.btnVerDetalles.Name = "btnVerDetalles";
@@ -299,6 +304,7 @@
             this.Controls.Add(this.gBoxBusquedaRapida);
             this.Controls.Add(this.gpSeccionesFormArticulos);
             this.Controls.Add(this.lblArticulosFormArticulos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos";

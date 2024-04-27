@@ -150,9 +150,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\agregar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\martillos-cruzados.png" />
   </ItemGroup>
   <ItemGroup>
@@ -165,28 +162,25 @@
     <None Include="Resources\bien.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\incorrecto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\articulos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bolsas-de-compra.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\categorias.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bolsas-de-compraDef.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\notasDef.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\adidas.png" />
+    <None Include="Resources\bolsoDefinitivo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\adidas %281%29.png" />
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escoba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letra-m %285%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
