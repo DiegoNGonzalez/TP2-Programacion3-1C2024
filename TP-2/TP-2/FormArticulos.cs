@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using dominio;
 using Negocio;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TP_2
 {
@@ -45,8 +46,18 @@ namespace TP_2
         }
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo seleccionado =(Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            CargarImagen(seleccionado.Imagenes[0].URLImagen);
+            try
+            {
+                pBoxArticulosFormArticulos.Load(seleccionado.Imagenes[0].URLImagen);
+            }
+            catch (Exception)
+            {
+                articuloNegocio.ModificarArticuloImagen(seleccionado);
+                MessageBox.Show("Se ha modificado la URL de la imagen del articulo (por Default), porque la URL era Inexistente. Vuelva a abrir Articulos.", "URL INEXISTENTE",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
         }
 
         private void CargarImagen(string imagen) 
@@ -54,7 +65,7 @@ namespace TP_2
             try
             {
                 pBoxArticulosFormArticulos.Load(imagen); 
-            } 
+            }
             catch (Exception ex)
             {
                 pBoxArticulosFormArticulos.Load("https://i0.wp.com/static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg?ssl=1");
