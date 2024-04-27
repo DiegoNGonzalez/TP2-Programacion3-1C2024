@@ -107,6 +107,7 @@
             this.btnVerDetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVerDetalles.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnVerDetalles.UseVisualStyleBackColor = true;
+            this.btnVerDetalles.Click += new System.EventHandler(this.btnVerDetalles_Click);
             // 
             // btnModificarFormArticulos
             // 

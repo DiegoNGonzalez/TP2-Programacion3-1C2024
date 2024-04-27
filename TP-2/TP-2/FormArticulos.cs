@@ -166,5 +166,14 @@ namespace TP_2
             dgvArticulos.DataSource = listaFiltrada;
 
         }
+
+        private void btnVerDetalles_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            formDetalles formDetalles = new formDetalles(seleccionado);
+            formDetalles.ShowDialog();
+            
+            
+        }
     }
 }
