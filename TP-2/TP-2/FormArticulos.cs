@@ -26,8 +26,13 @@ namespace TP_2
 
         private void FormArticulos_Load(object sender, EventArgs e)
         {
-            
+
             CargarGrid();
+            cBoxCampo.Items.Add("Nombre");
+            cBoxCampo.Items.Add("Marca");
+            cBoxCampo.Items.Add("Categoria");
+            cBoxCampo.Items.Add("Codigo");
+
         }
         private void CargarGrid()
         {
