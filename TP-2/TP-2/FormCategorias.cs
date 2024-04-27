@@ -48,6 +48,11 @@ namespace TP_2
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if (dgvCategorias.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar una Categoria para modificar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Categoria catSelec = (Categoria)dgvCategorias.CurrentRow.DataBoundItem;
             FormAddCategoria form = new FormAddCategoria(catSelec);
             form.ShowDialog();
@@ -59,9 +64,14 @@ namespace TP_2
         {
             CategoriaNegocio nego = new CategoriaNegocio();
             Categoria catSelec;
+            if (dgvCategorias.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar una Categoria para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             try
             {
-                DialogResult rta = MessageBox.Show("¿Está seguro que desea eliminar la categoria?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult rta = MessageBox.Show("¿Está seguro que desea eliminar la categoria? Esto podria eliminar Articulos asociados a ella.", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if(rta == DialogResult.No)
                 {
                     return;

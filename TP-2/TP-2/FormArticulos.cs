@@ -39,12 +39,19 @@ namespace TP_2
             try
             {
                 listaArticulos = negocio.ListarArticulos();
-                dgvArticulos.DataSource = listaArticulos;
-                dgvArticulos.Columns["IdArticulo"].Visible= false;
-                dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
-                dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
-                pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
-                
+                if (listaArticulos.Count == 0)
+                {
+                    dgvArticulos.DataSource = null;
+                    pBoxArticulosFormArticulos.Load("https://i0.wp.com/static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg?ssl=1");
+                }
+                else
+                {
+                    dgvArticulos.DataSource = listaArticulos;
+                    dgvArticulos.Columns["IdArticulo"].Visible = false;
+                    dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
+                    dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
+                    pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
+                }
             }
             catch (Exception ex)
             {
