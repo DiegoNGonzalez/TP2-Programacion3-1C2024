@@ -32,6 +32,7 @@ namespace TP_2
             cBoxCampo.Items.Add("Marca");
             cBoxCampo.Items.Add("Categoria");
             cBoxCampo.Items.Add("Codigo");
+            
 
         }
         private void CargarGrid()
@@ -48,6 +49,7 @@ namespace TP_2
                 {
                     dgvArticulos.DataSource = listaArticulos;
                     dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];
+                    dgvArticulos.Columns["PrecioArticulo"].DataGridView.Columns["PrecioArticulo"].DefaultCellStyle.Format = "$0.00";                   
                     dgvArticulos.Columns["IdArticulo"].Visible = false;
                     dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
                     dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
