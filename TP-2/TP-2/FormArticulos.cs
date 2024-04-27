@@ -26,8 +26,13 @@ namespace TP_2
 
         private void FormArticulos_Load(object sender, EventArgs e)
         {
-            
+
             CargarGrid();
+            cBoxCampo.Items.Add("Nombre");
+            cBoxCampo.Items.Add("Marca");
+            cBoxCampo.Items.Add("Categoria");
+            cBoxCampo.Items.Add("Codigo");
+
         }
         private void CargarGrid()
         {
@@ -35,6 +40,9 @@ namespace TP_2
             {
                 listaArticulos = negocio.ListarArticulos();
                 dgvArticulos.DataSource = listaArticulos;
+                dgvArticulos.Columns["IdArticulo"].Visible= false;
+                dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
+                dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
                 pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
                 
             }
