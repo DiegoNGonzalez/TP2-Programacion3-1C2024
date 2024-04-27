@@ -52,7 +52,7 @@ namespace TP_2
         {
             if (!validarSeleccion())
             {
-                MessageBox.Show("Debe seleccionar una marca para modificar.");
+                MessageBox.Show("Debe seleccionar una Marca para modificar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             Marca seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem;
@@ -68,7 +68,7 @@ namespace TP_2
             Marca seleccionado;
             try
             {
-                DialogResult respuesta = MessageBox.Show("¿Está seguro que desea eliminar la marca seleccionada? Esto podria eliminar un Articulo asociado a ella.", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show("¿Está seguro que desea eliminar la Marca seleccionada? Esto podria eliminar un Articulo asociado a ella.", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (respuesta == DialogResult.No)
                 {
                     return;

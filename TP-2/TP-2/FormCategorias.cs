@@ -50,7 +50,7 @@ namespace TP_2
         {
             if (dgvCategorias.CurrentRow == null)
             {
-                MessageBox.Show("Debe seleccionar una Categoria para modificar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe seleccionar una Categoria para modificar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             Categoria catSelec = (Categoria)dgvCategorias.CurrentRow.DataBoundItem;
@@ -66,12 +66,12 @@ namespace TP_2
             Categoria catSelec;
             if (dgvCategorias.CurrentRow == null)
             {
-                MessageBox.Show("Debe seleccionar una Categoria para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe seleccionar una Categoria para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             try
             {
-                DialogResult rta = MessageBox.Show("¿Está seguro que desea eliminar la categoria? Esto podria eliminar Articulos asociados a ella.", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult rta = MessageBox.Show("¿Está seguro que desea eliminar la categoria? Esto podria eliminar Articulos asociados a ella.", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if(rta == DialogResult.No)
                 {
                     return;
