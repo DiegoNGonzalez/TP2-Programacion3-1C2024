@@ -48,8 +48,7 @@ namespace TP_2
                 else
                 {
                     dgvArticulos.DataSource = listaArticulos;
-                    dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];
-                    dgvArticulos.Columns["PrecioArticulo"].DataGridView.Columns["PrecioArticulo"].DefaultCellStyle.Format = "$0.00";                   
+                    dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];                  
                     dgvArticulos.Columns["IdArticulo"].Visible = false;
                     dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
                     dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
