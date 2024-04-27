@@ -45,11 +45,11 @@
             this.cbxCategoriaFormAddMod = new System.Windows.Forms.ComboBox();
             this.nudPrecioFormAddMod = new System.Windows.Forms.NumericUpDown();
             this.txtDescripcionFormAddMod = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnAbmImagenes = new System.Windows.Forms.Button();
             this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnAbmImagenes = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.gbSeccionesFormAddMod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).BeginInit();
@@ -196,6 +196,21 @@
             this.txtDescripcionFormAddMod.Size = new System.Drawing.Size(99, 33);
             this.txtDescripcionFormAddMod.TabIndex = 2;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // btnAbmImagenes
+            // 
+            this.btnAbmImagenes.Image = global::TP_2.Properties.Resources.imagen;
+            this.btnAbmImagenes.Location = new System.Drawing.Point(305, 410);
+            this.btnAbmImagenes.Name = "btnAbmImagenes";
+            this.btnAbmImagenes.Size = new System.Drawing.Size(39, 31);
+            this.btnAbmImagenes.TabIndex = 22;
+            this.btnAbmImagenes.UseVisualStyleBackColor = true;
+            this.btnAbmImagenes.Click += new System.EventHandler(this.btnAbmImagenes_Click);
+            // 
             // pbxFormAddMod
             // 
             this.pbxFormAddMod.Location = new System.Drawing.Point(336, 87);
@@ -231,21 +246,6 @@
             this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // btnAbmImagenes
-            // 
-            this.btnAbmImagenes.Location = new System.Drawing.Point(284, 184);
-            this.btnAbmImagenes.Name = "btnAbmImagenes";
-            this.btnAbmImagenes.Size = new System.Drawing.Size(46, 23);
-            this.btnAbmImagenes.TabIndex = 22;
-            this.btnAbmImagenes.Text = "button1";
-            this.btnAbmImagenes.UseVisualStyleBackColor = true;
-            this.btnAbmImagenes.Click += new System.EventHandler(this.btnAbmImagenes_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // FormAddMod
             // 

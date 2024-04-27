@@ -33,15 +33,17 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.txtUrlImagen = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAbmImagenes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).BeginInit();
             this.SuspendLayout();
             // 
             // pBoxAbmImagenes
             // 
-            this.pBoxAbmImagenes.Location = new System.Drawing.Point(477, 12);
+            this.pBoxAbmImagenes.Location = new System.Drawing.Point(337, 12);
             this.pBoxAbmImagenes.Name = "pBoxAbmImagenes";
-            this.pBoxAbmImagenes.Size = new System.Drawing.Size(195, 326);
+            this.pBoxAbmImagenes.Size = new System.Drawing.Size(220, 276);
             this.pBoxAbmImagenes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxAbmImagenes.TabIndex = 0;
             this.pBoxAbmImagenes.TabStop = false;
@@ -51,54 +53,86 @@
             this.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvImagenes.Location = new System.Drawing.Point(12, 12);
             this.dgvImagenes.Name = "dgvImagenes";
-            this.dgvImagenes.Size = new System.Drawing.Size(440, 326);
+            this.dgvImagenes.Size = new System.Drawing.Size(316, 218);
             this.dgvImagenes.TabIndex = 1;
             this.dgvImagenes.SelectionChanged += new System.EventHandler(this.dgvImagenes_SelectionChanged);
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Image = global::TP_2.Properties.Resources.mas;
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.Location = new System.Drawing.Point(37, 354);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(75, 33);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnModificar
             // 
+            this.btnModificar.Image = global::TP_2.Properties.Resources.martillos_cruzados;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.Location = new System.Drawing.Point(155, 354);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(75, 33);
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Image = global::TP_2.Properties.Resources.borrarDefinitivo;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.Location = new System.Drawing.Point(285, 354);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(75, 33);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // txtUrlImagen
+            // 
+            this.txtUrlImagen.Location = new System.Drawing.Point(12, 252);
+            this.txtUrlImagen.Name = "txtUrlImagen";
+            this.txtUrlImagen.Size = new System.Drawing.Size(100, 20);
+            this.txtUrlImagen.TabIndex = 5;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Image = global::TP_2.Properties.Resources.escoba;
+            this.btnLimpiar.Location = new System.Drawing.Point(127, 250);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(40, 23);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // FormAbmImagenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 450);
+            this.ClientSize = new System.Drawing.Size(569, 410);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.txtUrlImagen);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvImagenes);
             this.Controls.Add(this.pBoxAbmImagenes);
             this.Name = "FormAbmImagenes";
-            this.Text = "FormAbmImagenes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Imagenes";
             this.Load += new System.EventHandler(this.FormAbmImagenes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAbmImagenes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImagenes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +143,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.TextBox txtUrlImagen;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

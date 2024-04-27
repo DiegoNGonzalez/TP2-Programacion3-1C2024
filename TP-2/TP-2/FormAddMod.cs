@@ -20,12 +20,16 @@ namespace TP_2
         public FormAddMod()
         {
             InitializeComponent();
+            btnAbmImagenes.Visible = false;
         }
         public FormAddMod(Articulo Articulo)
         {
             InitializeComponent();
             this.Articulo = Articulo;
             Text = "Modificar";
+            lblUrlImgFormAddMod.Text = "Imagenes";
+            txtUrlFormAddMod.Visible = false;
+            btnAbmImagenes.Location = new Point(206, 182);
         }
 
         public Articulo CapturarArticuloForm()

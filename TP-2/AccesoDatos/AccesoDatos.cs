@@ -51,6 +51,7 @@ namespace AccesoDataBase
             comando.Connection = conexion;
             try
             {
+                
                 conexion.Open();
                 comando.ExecuteNonQuery();
             }
@@ -58,6 +59,10 @@ namespace AccesoDataBase
             {
 
                 throw ex;
+            }
+            finally
+            {
+                comando.Parameters.Clear();
             }
         }
 
@@ -71,6 +76,7 @@ namespace AccesoDataBase
         public void SetearParametro(string Nombre, object Valor)
         {
             comando.Parameters.AddWithValue(Nombre, Valor);
+
         }
 
 
