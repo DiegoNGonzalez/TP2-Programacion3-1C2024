@@ -87,7 +87,7 @@
             // 
             // btnAgregarFormArticulos
             // 
-            this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.agregar;
+            this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.mas;
             this.btnAgregarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarFormArticulos.Location = new System.Drawing.Point(21, 27);
             this.btnAgregarFormArticulos.Name = "btnAgregarFormArticulos";
