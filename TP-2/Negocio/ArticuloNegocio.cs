@@ -132,8 +132,7 @@ namespace Negocio
         {
             try
             {
-                Datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id = @ID");
-                Datos.SetearParametro("@ID", ID);
+                Datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id ="+ID);
                 Datos.EjecutarAccion();
 
             }
@@ -156,6 +155,23 @@ namespace Negocio
                 Datos.EjecutarLectura();
                 Datos.Lector.Read();
                 return Datos.Lector.GetInt32(0);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally { Datos.CerrarConexion(); }
+        }
+
+        public void ModificarArticuloImagen(Articulo Modificado)
+        {
+            try
+            {
+                Datos.SetearConsulta("update IMAGENES set ImagenUrl = @URL where IdArticulo = @IdArticulo");
+                Datos.SetearParametro("@IdArticulo", Modificado.IDArticulo);
+                Datos.SetearParametro("@URL", "https://i0.wp.com/static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg?ssl=1");
+                Datos.EjecutarAccion();
             }
             catch (Exception ex)
             {
