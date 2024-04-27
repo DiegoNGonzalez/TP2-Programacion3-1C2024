@@ -123,6 +123,7 @@ namespace TP_2
 
                     negocio.AgregarArticulo(Articulo);
                     MessageBox.Show("Articulo agregado con exito");
+                    
                 }
                 this.Close();
             }
