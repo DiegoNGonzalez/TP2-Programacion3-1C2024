@@ -51,6 +51,7 @@ namespace TP_2
                     dgvArticulos.Columns["IdArticulo"].Visible = false;
                     dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
                     dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
+                    dgvArticulos.Columns["PrecioArticulo"].DataGridView.Columns["PrecioArticulo"].DefaultCellStyle.Format = "$0.00";
                     pBoxArticulosFormArticulos.Load(listaArticulos[0].Imagenes[0].URLImagen);
                 }
             }

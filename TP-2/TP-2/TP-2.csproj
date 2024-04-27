@@ -194,5 +194,17 @@
   <ItemGroup>
     <None Include="Resources\imagen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaDer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaDer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaIzq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\iconForm1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

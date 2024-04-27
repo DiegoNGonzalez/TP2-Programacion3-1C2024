@@ -31,15 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArticulos));
             this.lblArticulosFormArticulos = new System.Windows.Forms.Label();
             this.gpSeccionesFormArticulos = new System.Windows.Forms.GroupBox();
-            this.btnAgregarFormArticulos = new System.Windows.Forms.Button();
-            this.btnVerDetalles = new System.Windows.Forms.Button();
-            this.btnModificarFormArticulos = new System.Windows.Forms.Button();
-            this.btnEliminarFormArticulos = new System.Windows.Forms.Button();
             this.gBoxBusquedaRapida = new System.Windows.Forms.GroupBox();
             this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
             this.gBoxFiltrado = new System.Windows.Forms.GroupBox();
-            this.btnLimpiarFiltro = new System.Windows.Forms.Button();
-            this.btnBuscarFiltrado = new System.Windows.Forms.Button();
             this.txtBuscarFiltrado = new System.Windows.Forms.TextBox();
             this.cBoxCriterio = new System.Windows.Forms.ComboBox();
             this.cBoxCampo = new System.Windows.Forms.ComboBox();
@@ -47,9 +41,15 @@
             this.lblCriterio = new System.Windows.Forms.Label();
             this.lblCampo = new System.Windows.Forms.Label();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
-            this.btnAnteriorImg = new System.Windows.Forms.Button();
             this.btnSiguienteImg = new System.Windows.Forms.Button();
+            this.btnAnteriorImg = new System.Windows.Forms.Button();
             this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
+            this.btnLimpiarFiltro = new System.Windows.Forms.Button();
+            this.btnBuscarFiltrado = new System.Windows.Forms.Button();
+            this.btnAgregarFormArticulos = new System.Windows.Forms.Button();
+            this.btnVerDetalles = new System.Windows.Forms.Button();
+            this.btnModificarFormArticulos = new System.Windows.Forms.Button();
+            this.btnEliminarFormArticulos = new System.Windows.Forms.Button();
             this.gpSeccionesFormArticulos.SuspendLayout();
             this.gBoxBusquedaRapida.SuspendLayout();
             this.gBoxFiltrado.SuspendLayout();
@@ -80,61 +80,6 @@
             this.gpSeccionesFormArticulos.TabIndex = 6;
             this.gpSeccionesFormArticulos.TabStop = false;
             this.gpSeccionesFormArticulos.Text = "Secciones";
-            // 
-            // btnAgregarFormArticulos
-            // 
-            this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.mas;
-            this.btnAgregarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarFormArticulos.Location = new System.Drawing.Point(21, 27);
-            this.btnAgregarFormArticulos.Name = "btnAgregarFormArticulos";
-            this.btnAgregarFormArticulos.Size = new System.Drawing.Size(100, 31);
-            this.btnAgregarFormArticulos.TabIndex = 2;
-            this.btnAgregarFormArticulos.Text = "Agregar";
-            this.btnAgregarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAgregarFormArticulos.UseVisualStyleBackColor = true;
-            this.btnAgregarFormArticulos.Click += new System.EventHandler(this.btnAgregarFormArticulos_Click);
-            // 
-            // btnVerDetalles
-            // 
-            this.btnVerDetalles.Image = global::TP_2.Properties.Resources.informacion;
-            this.btnVerDetalles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerDetalles.Location = new System.Drawing.Point(21, 140);
-            this.btnVerDetalles.Name = "btnVerDetalles";
-            this.btnVerDetalles.Size = new System.Drawing.Size(100, 33);
-            this.btnVerDetalles.TabIndex = 5;
-            this.btnVerDetalles.Text = "Ver Detalles";
-            this.btnVerDetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerDetalles.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnVerDetalles.UseVisualStyleBackColor = true;
-            // 
-            // btnModificarFormArticulos
-            // 
-            this.btnModificarFormArticulos.Image = global::TP_2.Properties.Resources.martillos_cruzados;
-            this.btnModificarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificarFormArticulos.Location = new System.Drawing.Point(21, 64);
-            this.btnModificarFormArticulos.Name = "btnModificarFormArticulos";
-            this.btnModificarFormArticulos.Size = new System.Drawing.Size(100, 31);
-            this.btnModificarFormArticulos.TabIndex = 3;
-            this.btnModificarFormArticulos.Text = "Modificar";
-            this.btnModificarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModificarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnModificarFormArticulos.UseVisualStyleBackColor = true;
-            this.btnModificarFormArticulos.Click += new System.EventHandler(this.btnModificarFormArticulos_Click);
-            // 
-            // btnEliminarFormArticulos
-            // 
-            this.btnEliminarFormArticulos.Image = global::TP_2.Properties.Resources.borrarDefinitivo;
-            this.btnEliminarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarFormArticulos.Location = new System.Drawing.Point(21, 101);
-            this.btnEliminarFormArticulos.Name = "btnEliminarFormArticulos";
-            this.btnEliminarFormArticulos.Size = new System.Drawing.Size(100, 33);
-            this.btnEliminarFormArticulos.TabIndex = 4;
-            this.btnEliminarFormArticulos.Text = "Eliminar";
-            this.btnEliminarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnEliminarFormArticulos.UseVisualStyleBackColor = true;
-            this.btnEliminarFormArticulos.Click += new System.EventHandler(this.btnEliminarFormArticulos_Click);
             // 
             // gBoxBusquedaRapida
             // 
@@ -172,34 +117,6 @@
             this.gBoxFiltrado.TabIndex = 8;
             this.gBoxFiltrado.TabStop = false;
             this.gBoxFiltrado.Text = "Filtrar";
-            // 
-            // btnLimpiarFiltro
-            // 
-            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarFiltro.Image = global::TP_2.Properties.Resources.escoba;
-            this.btnLimpiarFiltro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiarFiltro.Location = new System.Drawing.Point(249, 93);
-            this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
-            this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 29);
-            this.btnLimpiarFiltro.TabIndex = 7;
-            this.btnLimpiarFiltro.Text = "Limpiar";
-            this.btnLimpiarFiltro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiarFiltro.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscarFiltrado
-            // 
-            this.btnBuscarFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarFiltrado.Image = global::TP_2.Properties.Resources.lupa;
-            this.btnBuscarFiltrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarFiltrado.Location = new System.Drawing.Point(161, 93);
-            this.btnBuscarFiltrado.Name = "btnBuscarFiltrado";
-            this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 29);
-            this.btnBuscarFiltrado.TabIndex = 6;
-            this.btnBuscarFiltrado.Text = "Buscar";
-            this.btnBuscarFiltrado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarFiltrado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnBuscarFiltrado.UseVisualStyleBackColor = true;
             // 
             // txtBuscarFiltrado
             // 
@@ -266,27 +183,27 @@
             this.dgvArticulos.TabIndex = 10;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
-            // btnAnteriorImg
-            // 
-            this.btnAnteriorImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnteriorImg.Location = new System.Drawing.Point(956, 423);
-            this.btnAnteriorImg.Name = "btnAnteriorImg";
-            this.btnAnteriorImg.Size = new System.Drawing.Size(44, 23);
-            this.btnAnteriorImg.TabIndex = 11;
-            this.btnAnteriorImg.Text = "<";
-            this.btnAnteriorImg.UseVisualStyleBackColor = true;
-            this.btnAnteriorImg.Click += new System.EventHandler(this.btnAnteriorImg_Click);
-            // 
             // btnSiguienteImg
             // 
             this.btnSiguienteImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguienteImg.Location = new System.Drawing.Point(1058, 423);
+            this.btnSiguienteImg.Image = global::TP_2.Properties.Resources.flechaDer2;
+            this.btnSiguienteImg.Location = new System.Drawing.Point(1050, 423);
             this.btnSiguienteImg.Name = "btnSiguienteImg";
-            this.btnSiguienteImg.Size = new System.Drawing.Size(44, 23);
+            this.btnSiguienteImg.Size = new System.Drawing.Size(43, 37);
             this.btnSiguienteImg.TabIndex = 12;
-            this.btnSiguienteImg.Text = ">";
             this.btnSiguienteImg.UseVisualStyleBackColor = true;
             this.btnSiguienteImg.Click += new System.EventHandler(this.btnSiguienteImg_Click);
+            // 
+            // btnAnteriorImg
+            // 
+            this.btnAnteriorImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnteriorImg.Image = global::TP_2.Properties.Resources.flechaIzq;
+            this.btnAnteriorImg.Location = new System.Drawing.Point(973, 423);
+            this.btnAnteriorImg.Name = "btnAnteriorImg";
+            this.btnAnteriorImg.Size = new System.Drawing.Size(43, 37);
+            this.btnAnteriorImg.TabIndex = 11;
+            this.btnAnteriorImg.UseVisualStyleBackColor = true;
+            this.btnAnteriorImg.Click += new System.EventHandler(this.btnAnteriorImg_Click);
             // 
             // pBoxArticulosFormArticulos
             // 
@@ -296,6 +213,89 @@
             this.pBoxArticulosFormArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxArticulosFormArticulos.TabIndex = 9;
             this.pBoxArticulosFormArticulos.TabStop = false;
+            // 
+            // btnLimpiarFiltro
+            // 
+            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarFiltro.Image = global::TP_2.Properties.Resources.escoba;
+            this.btnLimpiarFiltro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiarFiltro.Location = new System.Drawing.Point(249, 93);
+            this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
+            this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 29);
+            this.btnLimpiarFiltro.TabIndex = 7;
+            this.btnLimpiarFiltro.Text = "Limpiar";
+            this.btnLimpiarFiltro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiarFiltro.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarFiltrado
+            // 
+            this.btnBuscarFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarFiltrado.Image = global::TP_2.Properties.Resources.lupa;
+            this.btnBuscarFiltrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarFiltrado.Location = new System.Drawing.Point(161, 93);
+            this.btnBuscarFiltrado.Name = "btnBuscarFiltrado";
+            this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 29);
+            this.btnBuscarFiltrado.TabIndex = 6;
+            this.btnBuscarFiltrado.Text = "Buscar";
+            this.btnBuscarFiltrado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarFiltrado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnBuscarFiltrado.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarFormArticulos
+            // 
+            this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.mas;
+            this.btnAgregarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarFormArticulos.Location = new System.Drawing.Point(21, 27);
+            this.btnAgregarFormArticulos.Name = "btnAgregarFormArticulos";
+            this.btnAgregarFormArticulos.Size = new System.Drawing.Size(100, 31);
+            this.btnAgregarFormArticulos.TabIndex = 2;
+            this.btnAgregarFormArticulos.Text = "Agregar";
+            this.btnAgregarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAgregarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnAgregarFormArticulos.Click += new System.EventHandler(this.btnAgregarFormArticulos_Click);
+            // 
+            // btnVerDetalles
+            // 
+            this.btnVerDetalles.Image = global::TP_2.Properties.Resources.informacion;
+            this.btnVerDetalles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerDetalles.Location = new System.Drawing.Point(21, 140);
+            this.btnVerDetalles.Name = "btnVerDetalles";
+            this.btnVerDetalles.Size = new System.Drawing.Size(100, 33);
+            this.btnVerDetalles.TabIndex = 5;
+            this.btnVerDetalles.Text = "Ver Detalles";
+            this.btnVerDetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVerDetalles.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnVerDetalles.UseVisualStyleBackColor = true;
+            // 
+            // btnModificarFormArticulos
+            // 
+            this.btnModificarFormArticulos.Image = global::TP_2.Properties.Resources.martillos_cruzados;
+            this.btnModificarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarFormArticulos.Location = new System.Drawing.Point(21, 64);
+            this.btnModificarFormArticulos.Name = "btnModificarFormArticulos";
+            this.btnModificarFormArticulos.Size = new System.Drawing.Size(100, 31);
+            this.btnModificarFormArticulos.TabIndex = 3;
+            this.btnModificarFormArticulos.Text = "Modificar";
+            this.btnModificarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnModificarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnModificarFormArticulos.Click += new System.EventHandler(this.btnModificarFormArticulos_Click);
+            // 
+            // btnEliminarFormArticulos
+            // 
+            this.btnEliminarFormArticulos.Image = global::TP_2.Properties.Resources.borrarDefinitivo;
+            this.btnEliminarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarFormArticulos.Location = new System.Drawing.Point(21, 101);
+            this.btnEliminarFormArticulos.Name = "btnEliminarFormArticulos";
+            this.btnEliminarFormArticulos.Size = new System.Drawing.Size(100, 33);
+            this.btnEliminarFormArticulos.TabIndex = 4;
+            this.btnEliminarFormArticulos.Text = "Eliminar";
+            this.btnEliminarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnEliminarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnEliminarFormArticulos.Click += new System.EventHandler(this.btnEliminarFormArticulos_Click);
             // 
             // FormArticulos
             // 
