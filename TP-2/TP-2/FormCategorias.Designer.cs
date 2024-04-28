@@ -120,7 +120,9 @@
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.gbxCategorias);
             this.Controls.Add(this.lblCategorias);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FormCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorias";

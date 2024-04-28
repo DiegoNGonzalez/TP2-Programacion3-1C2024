@@ -269,6 +269,7 @@
             this.Controls.Add(this.txtUrlFormAddMod);
             this.Controls.Add(this.txtNombreFormAddMod);
             this.Controls.Add(this.txtCodigoFormAddMod);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(585, 449);

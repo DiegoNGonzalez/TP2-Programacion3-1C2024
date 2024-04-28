@@ -301,7 +301,7 @@
             this.Controls.Add(this.gBoxBusquedaRapida);
             this.Controls.Add(this.gpSeccionesFormArticulos);
             this.Controls.Add(this.lblArticulosFormArticulos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormArticulos";
