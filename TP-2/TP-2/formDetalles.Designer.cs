@@ -41,6 +41,8 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblValorPrecio = new System.Windows.Forms.Label();
             this.gbxDetalles = new System.Windows.Forms.GroupBox();
+            this.btnAnteriorImg = new System.Windows.Forms.Button();
+            this.btnSiguienteImg = new System.Windows.Forms.Button();
             this.pbxDetallles = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.gbxDetalles.SuspendLayout();
@@ -154,6 +156,8 @@
             // 
             // gbxDetalles
             // 
+            this.gbxDetalles.Controls.Add(this.btnAnteriorImg);
+            this.gbxDetalles.Controls.Add(this.btnSiguienteImg);
             this.gbxDetalles.Controls.Add(this.pbxDetallles);
             this.gbxDetalles.Controls.Add(this.lblCodigoArticulo);
             this.gbxDetalles.Controls.Add(this.lblNombreArticulo);
@@ -168,13 +172,33 @@
             this.gbxDetalles.Controls.Add(this.lblValorMarca);
             this.gbxDetalles.Location = new System.Drawing.Point(84, 12);
             this.gbxDetalles.Name = "gbxDetalles";
-            this.gbxDetalles.Size = new System.Drawing.Size(517, 337);
+            this.gbxDetalles.Size = new System.Drawing.Size(549, 365);
             this.gbxDetalles.TabIndex = 11;
             this.gbxDetalles.TabStop = false;
             // 
+            // btnAnteriorImg
+            // 
+            this.btnAnteriorImg.Image = global::TP_2.Properties.Resources.flechaIzq;
+            this.btnAnteriorImg.Location = new System.Drawing.Point(344, 293);
+            this.btnAnteriorImg.Name = "btnAnteriorImg";
+            this.btnAnteriorImg.Size = new System.Drawing.Size(54, 38);
+            this.btnAnteriorImg.TabIndex = 13;
+            this.btnAnteriorImg.UseVisualStyleBackColor = true;
+            this.btnAnteriorImg.Click += new System.EventHandler(this.btnAnteriorImg_Click);
+            // 
+            // btnSiguienteImg
+            // 
+            this.btnSiguienteImg.Image = global::TP_2.Properties.Resources.flechaDer2;
+            this.btnSiguienteImg.Location = new System.Drawing.Point(422, 293);
+            this.btnSiguienteImg.Name = "btnSiguienteImg";
+            this.btnSiguienteImg.Size = new System.Drawing.Size(51, 38);
+            this.btnSiguienteImg.TabIndex = 12;
+            this.btnSiguienteImg.UseVisualStyleBackColor = true;
+            this.btnSiguienteImg.Click += new System.EventHandler(this.btnSiguienteImg_Click);
+            // 
             // pbxDetallles
             // 
-            this.pbxDetallles.Location = new System.Drawing.Point(304, 101);
+            this.pbxDetallles.Location = new System.Drawing.Point(308, 66);
             this.pbxDetallles.Name = "pbxDetallles";
             this.pbxDetallles.Size = new System.Drawing.Size(191, 221);
             this.pbxDetallles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -183,7 +207,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(259, 371);
+            this.btnVolver.Location = new System.Drawing.Point(262, 383);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(109, 28);
             this.btnVolver.TabIndex = 12;
@@ -195,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 425);
+            this.ClientSize = new System.Drawing.Size(704, 444);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.gbxDetalles);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -225,5 +249,7 @@
         private System.Windows.Forms.GroupBox gbxDetalles;
         private System.Windows.Forms.PictureBox pbxDetallles;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnAnteriorImg;
+        private System.Windows.Forms.Button btnSiguienteImg;
     }
 }

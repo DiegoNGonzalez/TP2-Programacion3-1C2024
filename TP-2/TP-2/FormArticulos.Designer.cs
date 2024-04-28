@@ -47,8 +47,6 @@
             this.lblCriterio = new System.Windows.Forms.Label();
             this.lblCampo = new System.Windows.Forms.Label();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
-            this.btnSiguienteImg = new System.Windows.Forms.Button();
-            this.btnAnteriorImg = new System.Windows.Forms.Button();
             this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
             this.gpSeccionesFormArticulos.SuspendLayout();
             this.gBoxBusquedaRapida.SuspendLayout();
@@ -272,28 +270,6 @@
             this.dgvArticulos.TabIndex = 10;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
-            // btnSiguienteImg
-            // 
-            this.btnSiguienteImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguienteImg.Image = global::TP_2.Properties.Resources.flechaDer2;
-            this.btnSiguienteImg.Location = new System.Drawing.Point(1050, 423);
-            this.btnSiguienteImg.Name = "btnSiguienteImg";
-            this.btnSiguienteImg.Size = new System.Drawing.Size(43, 37);
-            this.btnSiguienteImg.TabIndex = 12;
-            this.btnSiguienteImg.UseVisualStyleBackColor = true;
-            this.btnSiguienteImg.Click += new System.EventHandler(this.btnSiguienteImg_Click);
-            // 
-            // btnAnteriorImg
-            // 
-            this.btnAnteriorImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnteriorImg.Image = global::TP_2.Properties.Resources.flechaIzq;
-            this.btnAnteriorImg.Location = new System.Drawing.Point(973, 423);
-            this.btnAnteriorImg.Name = "btnAnteriorImg";
-            this.btnAnteriorImg.Size = new System.Drawing.Size(43, 37);
-            this.btnAnteriorImg.TabIndex = 11;
-            this.btnAnteriorImg.UseVisualStyleBackColor = true;
-            this.btnAnteriorImg.Click += new System.EventHandler(this.btnAnteriorImg_Click);
-            // 
             // pBoxArticulosFormArticulos
             // 
             this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(895, 102);
@@ -308,8 +284,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 607);
-            this.Controls.Add(this.btnSiguienteImg);
-            this.Controls.Add(this.btnAnteriorImg);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.pBoxArticulosFormArticulos);
             this.Controls.Add(this.gBoxFiltrado);
@@ -355,8 +329,6 @@
         private System.Windows.Forms.Button btnBuscarFiltrado;
         private System.Windows.Forms.PictureBox pBoxArticulosFormArticulos;
         private System.Windows.Forms.DataGridView dgvArticulos;
-        private System.Windows.Forms.Button btnAnteriorImg;
-        private System.Windows.Forms.Button btnSiguienteImg;
         private System.Windows.Forms.GroupBox gBoxFiltrado;
     }
 }

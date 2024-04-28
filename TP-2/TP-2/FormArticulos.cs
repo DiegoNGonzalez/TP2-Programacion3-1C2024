@@ -138,45 +138,7 @@ namespace TP_2
 
         }
 
-        private void btnSiguienteImg_Click(object sender, EventArgs e)
-        {
-            if (dgvArticulos.CurrentRow == null)
-            {
-                MessageBox.Show("Debe seleccionar un articulo para ver sus imagenes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            int index = seleccionado.Imagenes.IndexOf(seleccionado.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
-            if (index == seleccionado.Imagenes.Count - 1)
-            {
-                index = 0;
-            }
-            else
-            {
-                index++;
-            }
-            CargarImagen(seleccionado.Imagenes[index].URLImagen);
-        }
-
-        private void btnAnteriorImg_Click(object sender, EventArgs e)
-        {
-            if (dgvArticulos.CurrentRow == null)
-            {
-                MessageBox.Show("Debe seleccionar un articulo para ver sus imagenes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            int index = seleccionado.Imagenes.IndexOf(seleccionado.Imagenes.Find(x => x.URLImagen == pBoxArticulosFormArticulos.ImageLocation));
-            if (index == 0)
-            {
-                index = seleccionado.Imagenes.Count - 1;
-            }
-            else
-            {
-                index--;
-            }
-            CargarImagen(seleccionado.Imagenes[index].URLImagen);
-        }
+        
 
         private void txtBusquedaRapida_TextChanged(object sender, EventArgs e)
         {
