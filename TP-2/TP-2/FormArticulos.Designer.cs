@@ -31,14 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArticulos));
             this.lblArticulosFormArticulos = new System.Windows.Forms.Label();
-            this.gpSeccionesFormArticulos = new System.Windows.Forms.GroupBox();
             this.btnAgregarFormArticulos = new System.Windows.Forms.Button();
             this.btnVerDetalles = new System.Windows.Forms.Button();
             this.btnModificarFormArticulos = new System.Windows.Forms.Button();
             this.btnEliminarFormArticulos = new System.Windows.Forms.Button();
             this.gBoxBusquedaRapida = new System.Windows.Forms.GroupBox();
             this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
-            this.gBoxFiltrado = new System.Windows.Forms.GroupBox();
             this.btnLimpiarFiltro = new System.Windows.Forms.Button();
             this.btnBuscarFiltrado = new System.Windows.Forms.Button();
             this.txtBuscarFiltrado = new System.Windows.Forms.TextBox();
@@ -49,258 +47,287 @@
             this.lblCampo = new System.Windows.Forms.Label();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.pBoxArticulosFormArticulos = new System.Windows.Forms.PictureBox();
-            this.gpSeccionesFormArticulos.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.gBoxBusquedaRapida.SuspendLayout();
-            this.gBoxFiltrado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxArticulosFormArticulos)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblArticulosFormArticulos
             // 
             this.lblArticulosFormArticulos.AutoSize = true;
-            this.lblArticulosFormArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticulosFormArticulos.Location = new System.Drawing.Point(420, 9);
+            this.lblArticulosFormArticulos.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArticulosFormArticulos.Location = new System.Drawing.Point(348, 19);
             this.lblArticulosFormArticulos.Name = "lblArticulosFormArticulos";
-            this.lblArticulosFormArticulos.Size = new System.Drawing.Size(207, 55);
+            this.lblArticulosFormArticulos.Size = new System.Drawing.Size(220, 49);
             this.lblArticulosFormArticulos.TabIndex = 0;
             this.lblArticulosFormArticulos.Text = "Articulos";
             this.lblArticulosFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gpSeccionesFormArticulos
-            // 
-            this.gpSeccionesFormArticulos.Controls.Add(this.btnAgregarFormArticulos);
-            this.gpSeccionesFormArticulos.Controls.Add(this.btnVerDetalles);
-            this.gpSeccionesFormArticulos.Controls.Add(this.btnModificarFormArticulos);
-            this.gpSeccionesFormArticulos.Controls.Add(this.btnEliminarFormArticulos);
-            this.gpSeccionesFormArticulos.Location = new System.Drawing.Point(18, 102);
-            this.gpSeccionesFormArticulos.Name = "gpSeccionesFormArticulos";
-            this.gpSeccionesFormArticulos.Size = new System.Drawing.Size(143, 179);
-            this.gpSeccionesFormArticulos.TabIndex = 6;
-            this.gpSeccionesFormArticulos.TabStop = false;
-            this.gpSeccionesFormArticulos.Text = "Secciones";
-            // 
             // btnAgregarFormArticulos
             // 
+            this.btnAgregarFormArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnAgregarFormArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarFormArticulos.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarFormArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnAgregarFormArticulos.Image = global::TP_2.Properties.Resources.mas;
             this.btnAgregarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarFormArticulos.Location = new System.Drawing.Point(21, 27);
+            this.btnAgregarFormArticulos.Location = new System.Drawing.Point(21, 16);
             this.btnAgregarFormArticulos.Name = "btnAgregarFormArticulos";
-            this.btnAgregarFormArticulos.Size = new System.Drawing.Size(100, 31);
+            this.btnAgregarFormArticulos.Size = new System.Drawing.Size(113, 31);
             this.btnAgregarFormArticulos.TabIndex = 2;
             this.btnAgregarFormArticulos.Text = "Agregar";
             this.btnAgregarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAgregarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnAgregarFormArticulos.UseVisualStyleBackColor = false;
             this.btnAgregarFormArticulos.Click += new System.EventHandler(this.btnAgregarFormArticulos_Click);
             // 
             // btnVerDetalles
             // 
+            this.btnVerDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnVerDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerDetalles.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerDetalles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnVerDetalles.Image = global::TP_2.Properties.Resources.informacion;
             this.btnVerDetalles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerDetalles.Location = new System.Drawing.Point(21, 140);
+            this.btnVerDetalles.Location = new System.Drawing.Point(21, 129);
             this.btnVerDetalles.Name = "btnVerDetalles";
-            this.btnVerDetalles.Size = new System.Drawing.Size(100, 33);
+            this.btnVerDetalles.Size = new System.Drawing.Size(113, 33);
             this.btnVerDetalles.TabIndex = 5;
             this.btnVerDetalles.Text = "Ver Detalles";
             this.btnVerDetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVerDetalles.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnVerDetalles.UseVisualStyleBackColor = true;
+            this.btnVerDetalles.UseVisualStyleBackColor = false;
             this.btnVerDetalles.Click += new System.EventHandler(this.btnVerDetalles_Click);
             // 
             // btnModificarFormArticulos
             // 
+            this.btnModificarFormArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnModificarFormArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnModificarFormArticulos.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarFormArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnModificarFormArticulos.Image = global::TP_2.Properties.Resources.martillos_cruzados;
             this.btnModificarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificarFormArticulos.Location = new System.Drawing.Point(21, 64);
+            this.btnModificarFormArticulos.Location = new System.Drawing.Point(21, 53);
             this.btnModificarFormArticulos.Name = "btnModificarFormArticulos";
-            this.btnModificarFormArticulos.Size = new System.Drawing.Size(100, 31);
+            this.btnModificarFormArticulos.Size = new System.Drawing.Size(113, 31);
             this.btnModificarFormArticulos.TabIndex = 3;
             this.btnModificarFormArticulos.Text = "Modificar";
             this.btnModificarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnModificarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnModificarFormArticulos.UseVisualStyleBackColor = false;
             this.btnModificarFormArticulos.Click += new System.EventHandler(this.btnModificarFormArticulos_Click);
             // 
             // btnEliminarFormArticulos
             // 
+            this.btnEliminarFormArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnEliminarFormArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminarFormArticulos.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarFormArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnEliminarFormArticulos.Image = global::TP_2.Properties.Resources.borrarDefinitivo;
             this.btnEliminarFormArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarFormArticulos.Location = new System.Drawing.Point(21, 101);
+            this.btnEliminarFormArticulos.Location = new System.Drawing.Point(21, 90);
             this.btnEliminarFormArticulos.Name = "btnEliminarFormArticulos";
-            this.btnEliminarFormArticulos.Size = new System.Drawing.Size(100, 33);
+            this.btnEliminarFormArticulos.Size = new System.Drawing.Size(113, 33);
             this.btnEliminarFormArticulos.TabIndex = 4;
             this.btnEliminarFormArticulos.Text = "Eliminar";
             this.btnEliminarFormArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminarFormArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnEliminarFormArticulos.UseVisualStyleBackColor = true;
+            this.btnEliminarFormArticulos.UseVisualStyleBackColor = false;
             this.btnEliminarFormArticulos.Click += new System.EventHandler(this.btnEliminarFormArticulos_Click);
             // 
             // gBoxBusquedaRapida
             // 
             this.gBoxBusquedaRapida.Controls.Add(this.txtBusquedaRapida);
-            this.gBoxBusquedaRapida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxBusquedaRapida.Location = new System.Drawing.Point(18, 287);
+            this.gBoxBusquedaRapida.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBoxBusquedaRapida.Location = new System.Drawing.Point(18, 307);
             this.gBoxBusquedaRapida.Name = "gBoxBusquedaRapida";
-            this.gBoxBusquedaRapida.Size = new System.Drawing.Size(143, 57);
+            this.gBoxBusquedaRapida.Size = new System.Drawing.Size(151, 57);
             this.gBoxBusquedaRapida.TabIndex = 7;
             this.gBoxBusquedaRapida.TabStop = false;
             this.gBoxBusquedaRapida.Text = "Busqueda rapida";
             // 
             // txtBusquedaRapida
             // 
+            this.txtBusquedaRapida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.txtBusquedaRapida.Location = new System.Drawing.Point(6, 21);
             this.txtBusquedaRapida.Name = "txtBusquedaRapida";
-            this.txtBusquedaRapida.Size = new System.Drawing.Size(128, 22);
+            this.txtBusquedaRapida.Size = new System.Drawing.Size(128, 23);
             this.txtBusquedaRapida.TabIndex = 0;
             this.txtBusquedaRapida.TextChanged += new System.EventHandler(this.txtBusquedaRapida_TextChanged);
             // 
-            // gBoxFiltrado
-            // 
-            this.gBoxFiltrado.Controls.Add(this.btnLimpiarFiltro);
-            this.gBoxFiltrado.Controls.Add(this.btnBuscarFiltrado);
-            this.gBoxFiltrado.Controls.Add(this.txtBuscarFiltrado);
-            this.gBoxFiltrado.Controls.Add(this.cBoxCriterio);
-            this.gBoxFiltrado.Controls.Add(this.cBoxCampo);
-            this.gBoxFiltrado.Controls.Add(this.lblFiltro);
-            this.gBoxFiltrado.Controls.Add(this.lblCriterio);
-            this.gBoxFiltrado.Controls.Add(this.lblCampo);
-            this.gBoxFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxFiltrado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gBoxFiltrado.Location = new System.Drawing.Point(294, 432);
-            this.gBoxFiltrado.Margin = new System.Windows.Forms.Padding(0);
-            this.gBoxFiltrado.Name = "gBoxFiltrado";
-            this.gBoxFiltrado.Size = new System.Drawing.Size(501, 128);
-            this.gBoxFiltrado.TabIndex = 8;
-            this.gBoxFiltrado.TabStop = false;
-            this.gBoxFiltrado.Text = "Filtrar";
-            // 
             // btnLimpiarFiltro
             // 
-            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnLimpiarFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLimpiarFiltro.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnLimpiarFiltro.Image = global::TP_2.Properties.Resources.escoba;
             this.btnLimpiarFiltro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiarFiltro.Location = new System.Drawing.Point(249, 93);
+            this.btnLimpiarFiltro.Location = new System.Drawing.Point(242, 76);
             this.btnLimpiarFiltro.Name = "btnLimpiarFiltro";
             this.btnLimpiarFiltro.Size = new System.Drawing.Size(75, 29);
             this.btnLimpiarFiltro.TabIndex = 7;
             this.btnLimpiarFiltro.Text = "Limpiar";
             this.btnLimpiarFiltro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpiarFiltro.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
+            this.btnLimpiarFiltro.UseVisualStyleBackColor = false;
             this.btnLimpiarFiltro.Click += new System.EventHandler(this.btnLimpiarFiltro_Click);
             // 
             // btnBuscarFiltrado
             // 
-            this.btnBuscarFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarFiltrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnBuscarFiltrado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscarFiltrado.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarFiltrado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnBuscarFiltrado.Image = global::TP_2.Properties.Resources.lupa;
             this.btnBuscarFiltrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarFiltrado.Location = new System.Drawing.Point(161, 93);
+            this.btnBuscarFiltrado.Location = new System.Drawing.Point(154, 76);
             this.btnBuscarFiltrado.Name = "btnBuscarFiltrado";
             this.btnBuscarFiltrado.Size = new System.Drawing.Size(75, 29);
             this.btnBuscarFiltrado.TabIndex = 6;
             this.btnBuscarFiltrado.Text = "Buscar";
             this.btnBuscarFiltrado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarFiltrado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnBuscarFiltrado.UseVisualStyleBackColor = true;
+            this.btnBuscarFiltrado.UseVisualStyleBackColor = false;
             this.btnBuscarFiltrado.Click += new System.EventHandler(this.btnBuscarFiltrado_Click);
             // 
             // txtBuscarFiltrado
             // 
-            this.txtBuscarFiltrado.Location = new System.Drawing.Point(374, 50);
+            this.txtBuscarFiltrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.txtBuscarFiltrado.Location = new System.Drawing.Point(359, 36);
             this.txtBuscarFiltrado.Name = "txtBuscarFiltrado";
-            this.txtBuscarFiltrado.Size = new System.Drawing.Size(100, 22);
+            this.txtBuscarFiltrado.Size = new System.Drawing.Size(121, 20);
             this.txtBuscarFiltrado.TabIndex = 5;
             // 
             // cBoxCriterio
             // 
+            this.cBoxCriterio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.cBoxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxCriterio.FormattingEnabled = true;
-            this.cBoxCriterio.Location = new System.Drawing.Point(203, 50);
+            this.cBoxCriterio.Location = new System.Drawing.Point(186, 36);
             this.cBoxCriterio.Name = "cBoxCriterio";
-            this.cBoxCriterio.Size = new System.Drawing.Size(121, 24);
+            this.cBoxCriterio.Size = new System.Drawing.Size(121, 21);
             this.cBoxCriterio.TabIndex = 4;
             // 
             // cBoxCampo
             // 
+            this.cBoxCampo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.cBoxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxCampo.FormattingEnabled = true;
-            this.cBoxCampo.Location = new System.Drawing.Point(28, 50);
+            this.cBoxCampo.Location = new System.Drawing.Point(13, 36);
             this.cBoxCampo.Name = "cBoxCampo";
-            this.cBoxCampo.Size = new System.Drawing.Size(121, 24);
+            this.cBoxCampo.Size = new System.Drawing.Size(121, 21);
             this.cBoxCampo.TabIndex = 3;
             this.cBoxCampo.SelectedIndexChanged += new System.EventHandler(this.cBoxCampo_SelectedIndexChanged);
             // 
             // lblFiltro
             // 
             this.lblFiltro.AutoSize = true;
-            this.lblFiltro.Location = new System.Drawing.Point(371, 26);
+            this.lblFiltro.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblFiltro.Location = new System.Drawing.Point(356, 9);
             this.lblFiltro.Name = "lblFiltro";
-            this.lblFiltro.Size = new System.Drawing.Size(46, 16);
+            this.lblFiltro.Size = new System.Drawing.Size(64, 17);
             this.lblFiltro.TabIndex = 2;
             this.lblFiltro.Text = "Filtro:";
             // 
             // lblCriterio
             // 
             this.lblCriterio.AutoSize = true;
-            this.lblCriterio.Location = new System.Drawing.Point(200, 26);
+            this.lblCriterio.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCriterio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblCriterio.Location = new System.Drawing.Point(183, 9);
             this.lblCriterio.Name = "lblCriterio";
-            this.lblCriterio.Size = new System.Drawing.Size(57, 16);
+            this.lblCriterio.Size = new System.Drawing.Size(80, 17);
             this.lblCriterio.TabIndex = 1;
-            this.lblCriterio.Text = "Criterio";
+            this.lblCriterio.Text = "Criterio:";
             // 
             // lblCampo
             // 
             this.lblCampo.AutoSize = true;
-            this.lblCampo.Location = new System.Drawing.Point(25, 26);
+            this.lblCampo.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCampo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblCampo.Location = new System.Drawing.Point(10, 9);
             this.lblCampo.Name = "lblCampo";
-            this.lblCampo.Size = new System.Drawing.Size(60, 16);
+            this.lblCampo.Size = new System.Drawing.Size(56, 17);
             this.lblCampo.TabIndex = 0;
             this.lblCampo.Text = "Campo:";
             // 
             // dgvArticulos
             // 
-            this.dgvArticulos.BackgroundColor = System.Drawing.Color.MediumPurple;
+            this.dgvArticulos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.dgvArticulos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvArticulos.Location = new System.Drawing.Point(221, 102);
+            this.dgvArticulos.Location = new System.Drawing.Point(197, 102);
             this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.ReadOnly = true;
             this.dgvArticulos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvArticulos.Size = new System.Drawing.Size(646, 315);
+            this.dgvArticulos.Size = new System.Drawing.Size(471, 262);
             this.dgvArticulos.TabIndex = 10;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // pBoxArticulosFormArticulos
             // 
-            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(895, 102);
+            this.pBoxArticulosFormArticulos.Location = new System.Drawing.Point(694, 102);
             this.pBoxArticulosFormArticulos.Name = "pBoxArticulosFormArticulos";
-            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(265, 315);
+            this.pBoxArticulosFormArticulos.Size = new System.Drawing.Size(229, 262);
             this.pBoxArticulosFormArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxArticulosFormArticulos.TabIndex = 9;
             this.pBoxArticulosFormArticulos.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtBuscarFiltrado);
+            this.panel1.Controls.Add(this.btnLimpiarFiltro);
+            this.panel1.Controls.Add(this.lblCampo);
+            this.panel1.Controls.Add(this.lblCriterio);
+            this.panel1.Controls.Add(this.btnBuscarFiltrado);
+            this.panel1.Controls.Add(this.lblFiltro);
+            this.panel1.Controls.Add(this.cBoxCampo);
+            this.panel1.Controls.Add(this.cBoxCriterio);
+            this.panel1.Location = new System.Drawing.Point(175, 380);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(493, 116);
+            this.panel1.TabIndex = 11;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnAgregarFormArticulos);
+            this.panel2.Controls.Add(this.btnEliminarFormArticulos);
+            this.panel2.Controls.Add(this.btnVerDetalles);
+            this.panel2.Controls.Add(this.btnModificarFormArticulos);
+            this.panel2.Location = new System.Drawing.Point(18, 118);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(151, 178);
+            this.panel2.TabIndex = 12;
             // 
             // FormArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(1189, 607);
+            this.ClientSize = new System.Drawing.Size(932, 508);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.pBoxArticulosFormArticulos);
-            this.Controls.Add(this.gBoxFiltrado);
             this.Controls.Add(this.gBoxBusquedaRapida);
-            this.Controls.Add(this.gpSeccionesFormArticulos);
             this.Controls.Add(this.lblArticulosFormArticulos);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -308,13 +335,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos";
             this.Load += new System.EventHandler(this.FormArticulos_Load);
-            this.gpSeccionesFormArticulos.ResumeLayout(false);
             this.gBoxBusquedaRapida.ResumeLayout(false);
             this.gBoxBusquedaRapida.PerformLayout();
-            this.gBoxFiltrado.ResumeLayout(false);
-            this.gBoxFiltrado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxArticulosFormArticulos)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,7 +354,6 @@
         private System.Windows.Forms.Button btnModificarFormArticulos;
         private System.Windows.Forms.Button btnEliminarFormArticulos;
         private System.Windows.Forms.Button btnVerDetalles;
-        private System.Windows.Forms.GroupBox gpSeccionesFormArticulos;
         private System.Windows.Forms.GroupBox gBoxBusquedaRapida;
         private System.Windows.Forms.TextBox txtBusquedaRapida;
         private System.Windows.Forms.Label lblFiltro;
@@ -340,6 +366,7 @@
         private System.Windows.Forms.Button btnBuscarFiltrado;
         private System.Windows.Forms.PictureBox pBoxArticulosFormArticulos;
         private System.Windows.Forms.DataGridView dgvArticulos;
-        private System.Windows.Forms.GroupBox gBoxFiltrado;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

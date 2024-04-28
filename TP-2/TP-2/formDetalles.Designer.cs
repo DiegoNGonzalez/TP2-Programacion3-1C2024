@@ -53,17 +53,21 @@
             // 
             // btnVolver
             // 
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVolver.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnVolver.Location = new System.Drawing.Point(262, 383);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(109, 28);
             this.btnVolver.TabIndex = 12;
             this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.panel1.Controls.Add(this.lblCodigoArticulo);
             this.panel1.Controls.Add(this.lblValorPrecio);
             this.panel1.Controls.Add(this.lblValorCodigo);
@@ -74,7 +78,8 @@
             this.panel1.Controls.Add(this.lblCategoria);
             this.panel1.Controls.Add(this.lblMarca);
             this.panel1.Controls.Add(this.lblValorMarca);
-            this.panel1.Location = new System.Drawing.Point(69, 61);
+            this.panel1.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(16, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(355, 309);
             this.panel1.TabIndex = 13;
@@ -84,6 +89,7 @@
             // 
             this.lblCodigoArticulo.AutoSize = true;
             this.lblCodigoArticulo.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoArticulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblCodigoArticulo.Location = new System.Drawing.Point(58, 70);
             this.lblCodigoArticulo.Name = "lblCodigoArticulo";
             this.lblCodigoArticulo.Size = new System.Drawing.Size(73, 21);
@@ -94,6 +100,7 @@
             // 
             this.lblValorPrecio.AutoSize = true;
             this.lblValorPrecio.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblValorPrecio.Location = new System.Drawing.Point(150, 220);
             this.lblValorPrecio.Name = "lblValorPrecio";
             this.lblValorPrecio.Size = new System.Drawing.Size(73, 21);
@@ -104,6 +111,7 @@
             // 
             this.lblValorCodigo.AutoSize = true;
             this.lblValorCodigo.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblValorCodigo.Location = new System.Drawing.Point(150, 69);
             this.lblValorCodigo.Name = "lblValorCodigo";
             this.lblValorCodigo.Size = new System.Drawing.Size(64, 21);
@@ -114,6 +122,7 @@
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblPrecio.Location = new System.Drawing.Point(58, 222);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(73, 21);
@@ -124,6 +133,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblDescripcion.Location = new System.Drawing.Point(13, 111);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(118, 21);
@@ -134,6 +144,7 @@
             // 
             this.lblValorCategoria.AutoSize = true;
             this.lblValorCategoria.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblValorCategoria.Location = new System.Drawing.Point(150, 184);
             this.lblValorCategoria.Name = "lblValorCategoria";
             this.lblValorCategoria.Size = new System.Drawing.Size(64, 21);
@@ -144,6 +155,7 @@
             // 
             this.lblValorDescripcion.AutoSize = true;
             this.lblValorDescripcion.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblValorDescripcion.Location = new System.Drawing.Point(150, 111);
             this.lblValorDescripcion.Name = "lblValorDescripcion";
             this.lblValorDescripcion.Size = new System.Drawing.Size(64, 21);
@@ -154,6 +166,7 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblCategoria.Location = new System.Drawing.Point(31, 185);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(100, 21);
@@ -164,6 +177,7 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblMarca.Location = new System.Drawing.Point(67, 150);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(64, 21);
@@ -174,6 +188,7 @@
             // 
             this.lblValorMarca.AutoSize = true;
             this.lblValorMarca.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lblValorMarca.Location = new System.Drawing.Point(150, 149);
             this.lblValorMarca.Name = "lblValorMarca";
             this.lblValorMarca.Size = new System.Drawing.Size(64, 21);
@@ -183,10 +198,11 @@
             // lblNombreArticulo
             // 
             this.lblNombreArticulo.AutoSize = true;
-            this.lblNombreArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreArticulo.Location = new System.Drawing.Point(245, 9);
+            this.lblNombreArticulo.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreArticulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblNombreArticulo.Location = new System.Drawing.Point(297, 9);
             this.lblNombreArticulo.Name = "lblNombreArticulo";
-            this.lblNombreArticulo.Size = new System.Drawing.Size(92, 31);
+            this.lblNombreArticulo.Size = new System.Drawing.Size(111, 35);
             this.lblNombreArticulo.TabIndex = 28;
             this.lblNombreArticulo.Text = "label1";
             // 
@@ -195,7 +211,7 @@
             this.panel2.Controls.Add(this.btnAnteriorImg);
             this.panel2.Controls.Add(this.btnSiguienteImg);
             this.panel2.Controls.Add(this.pbxDetallles);
-            this.panel2.Location = new System.Drawing.Point(430, 61);
+            this.panel2.Location = new System.Drawing.Point(392, 61);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(283, 309);
             this.panel2.TabIndex = 42;

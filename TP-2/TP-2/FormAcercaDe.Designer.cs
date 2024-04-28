@@ -68,11 +68,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.label3.Location = new System.Drawing.Point(7, 208);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 21);
+            this.label3.Size = new System.Drawing.Size(237, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Diego Gonzalez Valenzuela";
             // 
@@ -136,11 +137,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.label4.Location = new System.Drawing.Point(61, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 21);
+            this.label4.Size = new System.Drawing.Size(129, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "Tomas Caceres";
             // 
@@ -204,11 +206,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.label5.Location = new System.Drawing.Point(47, 208);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 21);
+            this.label5.Size = new System.Drawing.Size(156, 23);
             this.label5.TabIndex = 10;
             this.label5.Text = "Sebastian Scollo";
             // 
