@@ -34,5 +34,10 @@ namespace TP_2
             FormCategorias formCategorias = new FormCategorias();
             formCategorias.ShowDialog();
         }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

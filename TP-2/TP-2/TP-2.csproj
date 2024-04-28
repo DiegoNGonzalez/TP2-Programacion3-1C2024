@@ -58,6 +58,12 @@
     <Compile Include="FormAbmImagenes.Designer.cs">
       <DependentUpon>FormAbmImagenes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcercaDe.Designer.cs">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAbmImagenes.resx">
       <DependentUpon>FormAbmImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAcercaDe.resx">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddCategoria.resx">
       <DependentUpon>FormAddCategoria.cs</DependentUpon>
