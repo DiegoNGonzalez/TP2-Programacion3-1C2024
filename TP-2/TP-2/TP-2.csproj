@@ -106,6 +106,9 @@
     <Compile Include="formDetalles.Designer.cs">
       <DependentUpon>formDetalles.cs</DependentUpon>
     </Compile>
+    <Compile Include="PictureBoxRedondo.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormInicial.resx">
@@ -222,6 +225,11 @@
     <None Include="Resources\flechaIzq.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\linkedin.png" />
+    <None Include="Resources\diegoImg.png" />
+    <None Include="Resources\github.png" />
+    <None Include="Resources\fotoTomi.jpeg" />
+    <None Include="Resources\fotoSeba.jpeg" />
     <Content Include="Resources\iconForm1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

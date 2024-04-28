@@ -36,20 +36,15 @@ namespace TP_2
             formCategorias.ShowDialog();
         }
 
-        private void btnAbout_Click(object sender, EventArgs e)
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormAcercaDe formAcercade = new FormAcercaDe(); 
-            formAcercade.ShowDialog();
+            FormAcercaDe formAcercaDe = new FormAcercaDe();
+            formAcercaDe.ShowDialog();
+            
         }
 
-        private void btnAbout_MouseEnter(object sender, EventArgs e)
-        {
-            btnAbout.BackColor = Color.LightGray;
-        }
+        
 
-        private void btnAbout_MouseLeave(object sender, EventArgs e)
-        {
-            btnAbout.BackColor = Color.FromArgb(23,23,23);
-        }
+       
     }
 }
