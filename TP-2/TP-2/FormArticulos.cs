@@ -185,6 +185,12 @@ namespace TP_2
             if (filtro.Length > 2)
             {
                 listaFiltrada = listaArticulos.FindAll(articulo => articulo.NombreArticulo.ToUpper().Contains(filtro.ToUpper()) || articulo.MarcaArticulo.NombreMarca.ToUpper().Contains(filtro.ToUpper()) || articulo.CategoriaArticulo.NombreCategoria.ToUpper().Contains(filtro.ToUpper()) || articulo.CodigoArticulo.ToUpper().Contains(filtro.ToUpper()));
+                if (listaFiltrada.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron coincidencias", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    listaFiltrada = listaArticulos;
+                    txtBusquedaRapida.Text = "";
+                }
                 dgvArticulos.DataSource = listaFiltrada;
             }
             else
@@ -193,6 +199,12 @@ namespace TP_2
             }
             dgvArticulos.DataSource = null;
             dgvArticulos.DataSource = listaFiltrada;
+            dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];
+            dgvArticulos.Columns["IdArticulo"].Visible = false;
+            dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
+            dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
+            dgvArticulos.Columns["PrecioArticulo"].DataGridView.Columns["PrecioArticulo"].DefaultCellStyle.Format = "$0.00";
+            pBoxArticulosFormArticulos.Load(listaFiltrada[0].Imagenes[0].URLImagen);
 
         }
 

@@ -30,9 +30,13 @@ namespace Negocio
 				while (Datos.Lector.Read())
 				{
                     Imagen aux = new Imagen();
-                    aux.IDImagen = Datos.Lector.GetInt32(0);
-                    aux.IDArticulo = Datos.Lector.GetInt32(1);
-                    aux.URLImagen = (string)Datos.Lector["ImagenUrl"];
+					
+						aux.IDImagen = Datos.Lector.GetInt32(0);
+						aux.IDArticulo = Datos.Lector.GetInt32(1);
+						aux.URLImagen = (string)Datos.Lector["ImagenUrl"];
+
+					
+
                     Lista.Add(aux);
                 }
 				

@@ -39,5 +39,11 @@ namespace TP_2
         {
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormAcercaDe formAcercaDe = new FormAcercaDe();
+            formAcercaDe.ShowDialog();
+        }
     }
 }

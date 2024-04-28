@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formDetalles));
             this.lblNombreArticulo = new System.Windows.Forms.Label();
             this.lblCodigoArticulo = new System.Windows.Forms.Label();
             this.lblValorCodigo = new System.Windows.Forms.Label();
@@ -197,7 +198,9 @@
             this.ClientSize = new System.Drawing.Size(704, 425);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.gbxDetalles);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formDetalles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalles";
             this.gbxDetalles.ResumeLayout(false);
             this.gbxDetalles.PerformLayout();
