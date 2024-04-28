@@ -111,6 +111,8 @@
             this.ClientSize = new System.Drawing.Size(369, 270);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(385, 309);
+            this.MinimumSize = new System.Drawing.Size(385, 309);
             this.Name = "frmAgregarMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Marca";

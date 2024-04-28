@@ -113,6 +113,8 @@
             this.ClientSize = new System.Drawing.Size(372, 273);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(388, 312);
+            this.MinimumSize = new System.Drawing.Size(388, 312);
             this.Name = "FormAddCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Categoria";
