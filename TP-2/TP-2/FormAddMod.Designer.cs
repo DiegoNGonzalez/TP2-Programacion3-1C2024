@@ -46,12 +46,10 @@
             this.txtDescripcionFormAddMod = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnAbmImagenes = new System.Windows.Forms.Button();
-            this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,21 +132,21 @@
             // 
             // txtCodigoFormAddMod
             // 
-            this.txtCodigoFormAddMod.Location = new System.Drawing.Point(178, 87);
+            this.txtCodigoFormAddMod.Location = new System.Drawing.Point(286, 59);
             this.txtCodigoFormAddMod.Name = "txtCodigoFormAddMod";
             this.txtCodigoFormAddMod.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoFormAddMod.TabIndex = 0;
             // 
             // txtNombreFormAddMod
             // 
-            this.txtNombreFormAddMod.Location = new System.Drawing.Point(178, 119);
+            this.txtNombreFormAddMod.Location = new System.Drawing.Point(286, 91);
             this.txtNombreFormAddMod.Name = "txtNombreFormAddMod";
             this.txtNombreFormAddMod.Size = new System.Drawing.Size(100, 20);
             this.txtNombreFormAddMod.TabIndex = 1;
             // 
             // txtUrlFormAddMod
             // 
-            this.txtUrlFormAddMod.Location = new System.Drawing.Point(178, 184);
+            this.txtUrlFormAddMod.Location = new System.Drawing.Point(286, 156);
             this.txtUrlFormAddMod.Name = "txtUrlFormAddMod";
             this.txtUrlFormAddMod.Size = new System.Drawing.Size(100, 20);
             this.txtUrlFormAddMod.TabIndex = 3;
@@ -157,7 +155,7 @@
             // 
             this.cbxMarcaFormAddMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMarcaFormAddMod.FormattingEnabled = true;
-            this.cbxMarcaFormAddMod.Location = new System.Drawing.Point(178, 216);
+            this.cbxMarcaFormAddMod.Location = new System.Drawing.Point(286, 188);
             this.cbxMarcaFormAddMod.Name = "cbxMarcaFormAddMod";
             this.cbxMarcaFormAddMod.Size = new System.Drawing.Size(100, 21);
             this.cbxMarcaFormAddMod.TabIndex = 4;
@@ -166,21 +164,21 @@
             // 
             this.cbxCategoriaFormAddMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoriaFormAddMod.FormattingEnabled = true;
-            this.cbxCategoriaFormAddMod.Location = new System.Drawing.Point(178, 248);
+            this.cbxCategoriaFormAddMod.Location = new System.Drawing.Point(286, 220);
             this.cbxCategoriaFormAddMod.Name = "cbxCategoriaFormAddMod";
             this.cbxCategoriaFormAddMod.Size = new System.Drawing.Size(100, 21);
             this.cbxCategoriaFormAddMod.TabIndex = 5;
             // 
             // nudPrecioFormAddMod
             // 
-            this.nudPrecioFormAddMod.Location = new System.Drawing.Point(178, 278);
+            this.nudPrecioFormAddMod.Location = new System.Drawing.Point(286, 250);
             this.nudPrecioFormAddMod.Name = "nudPrecioFormAddMod";
             this.nudPrecioFormAddMod.Size = new System.Drawing.Size(103, 20);
             this.nudPrecioFormAddMod.TabIndex = 6;
             // 
             // txtDescripcionFormAddMod
             // 
-            this.txtDescripcionFormAddMod.Location = new System.Drawing.Point(179, 145);
+            this.txtDescripcionFormAddMod.Location = new System.Drawing.Point(287, 117);
             this.txtDescripcionFormAddMod.Multiline = true;
             this.txtDescripcionFormAddMod.Name = "txtDescripcionFormAddMod";
             this.txtDescripcionFormAddMod.Size = new System.Drawing.Size(99, 33);
@@ -197,20 +195,12 @@
             this.btnAbmImagenes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAbmImagenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnAbmImagenes.Image = global::TP_2.Properties.Resources.imagen;
-            this.btnAbmImagenes.Location = new System.Drawing.Point(238, 359);
+            this.btnAbmImagenes.Location = new System.Drawing.Point(377, 331);
             this.btnAbmImagenes.Name = "btnAbmImagenes";
             this.btnAbmImagenes.Size = new System.Drawing.Size(39, 31);
             this.btnAbmImagenes.TabIndex = 22;
             this.btnAbmImagenes.UseVisualStyleBackColor = false;
             this.btnAbmImagenes.Click += new System.EventHandler(this.btnAbmImagenes_Click);
-            // 
-            // pbxFormAddMod
-            // 
-            this.pbxFormAddMod.Location = new System.Drawing.Point(336, 76);
-            this.pbxFormAddMod.Name = "pbxFormAddMod";
-            this.pbxFormAddMod.Size = new System.Drawing.Size(234, 236);
-            this.pbxFormAddMod.TabIndex = 21;
-            this.pbxFormAddMod.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -220,7 +210,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCancelar.Image = global::TP_2.Properties.Resources.boton_eliminar;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(132, 359);
+            this.btnCancelar.Location = new System.Drawing.Point(271, 331);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 31);
             this.btnCancelar.TabIndex = 20;
@@ -238,7 +228,7 @@
             this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnAceptar.Image = global::TP_2.Properties.Resources.bien;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(26, 359);
+            this.btnAceptar.Location = new System.Drawing.Point(165, 331);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(86, 31);
             this.btnAceptar.TabIndex = 19;
@@ -257,7 +247,7 @@
             this.panel1.Controls.Add(this.lblNombreFormAddMod);
             this.panel1.Controls.Add(this.lblCategoriaFormAddMod);
             this.panel1.Controls.Add(this.lblCodigoFormAddMod);
-            this.panel1.Location = new System.Drawing.Point(26, 76);
+            this.panel1.Location = new System.Drawing.Point(134, 48);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(127, 222);
             this.panel1.TabIndex = 23;
@@ -267,11 +257,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(582, 530);
+            this.ClientSize = new System.Drawing.Size(569, 410);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAbmImagenes);
             this.Controls.Add(this.txtDescripcionFormAddMod);
-            this.Controls.Add(this.pbxFormAddMod);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.nudPrecioFormAddMod);
@@ -282,14 +271,13 @@
             this.Controls.Add(this.txtCodigoFormAddMod);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(598, 569);
-            this.MinimumSize = new System.Drawing.Size(598, 569);
+            this.MaximumSize = new System.Drawing.Size(585, 449);
+            this.MinimumSize = new System.Drawing.Size(585, 449);
             this.Name = "FormAddMod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.FormAddMod_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -314,7 +302,6 @@
         private System.Windows.Forms.NumericUpDown nudPrecioFormAddMod;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.PictureBox pbxFormAddMod;
         private System.Windows.Forms.TextBox txtDescripcionFormAddMod;
         private System.Windows.Forms.Button btnAbmImagenes;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
