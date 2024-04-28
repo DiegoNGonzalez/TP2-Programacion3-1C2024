@@ -116,10 +116,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvMarcas);
             this.Controls.Add(this.gbxMarcas);
             this.Controls.Add(this.lblMarcas);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMarcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

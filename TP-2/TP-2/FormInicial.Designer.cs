@@ -33,7 +33,7 @@
             this.lblNombreInicio = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnArticulos = new System.Windows.Forms.Button();
             this.btnMarcas = new System.Windows.Forms.Button();
@@ -46,11 +46,13 @@
             // lblNombreInicio
             // 
             this.lblNombreInicio.AutoSize = true;
-            this.lblNombreInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNombreInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblNombreInicio.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.lblNombreInicio.Location = new System.Drawing.Point(220, 29);
+            this.lblNombreInicio.Location = new System.Drawing.Point(223, 30);
             this.lblNombreInicio.Name = "lblNombreInicio";
-            this.lblNombreInicio.Size = new System.Drawing.Size(361, 55);
+            this.lblNombreInicio.Size = new System.Drawing.Size(354, 51);
             this.lblNombreInicio.TabIndex = 0;
             this.lblNombreInicio.Text = "Soluciones inc.";
             this.lblNombreInicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,7 +67,7 @@
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem1});
+            this.btnAbout});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 427);
             this.menuStrip1.Name = "menuStrip1";
@@ -73,14 +75,16 @@
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // aboutToolStripMenuItem1
+            // btnAbout
             // 
-            this.aboutToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(71, 19);
-            this.aboutToolStripMenuItem1.Text = "Acerca de";
-            this.aboutToolStripMenuItem1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
+            this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(71, 19);
+            this.btnAbout.Text = "Acerca de";
+            this.btnAbout.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            this.btnAbout.MouseEnter += new System.EventHandler(this.btnAbout_MouseEnter);
+            this.btnAbout.MouseLeave += new System.EventHandler(this.btnAbout_MouseLeave);
             // 
             // panel1
             // 
@@ -99,9 +103,10 @@
             this.btnArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btnArticulos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
             this.btnArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.btnArticulos.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnArticulos.Image = global::TP_2.Properties.Resources.bolsoDefinitivo;
+            this.btnArticulos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnArticulos.Location = new System.Drawing.Point(53, 42);
             this.btnArticulos.Name = "btnArticulos";
             this.btnArticulos.Size = new System.Drawing.Size(119, 32);
@@ -109,7 +114,7 @@
             this.btnArticulos.Text = "Articulos";
             this.btnArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnArticulos.UseMnemonic = false;
+            this.btnArticulos.UseCompatibleTextRendering = true;
             this.btnArticulos.UseVisualStyleBackColor = false;
             this.btnArticulos.Click += new System.EventHandler(this.btnArticulos_Click);
             // 
@@ -118,9 +123,10 @@
             this.btnMarcas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btnMarcas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
             this.btnMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.btnMarcas.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnMarcas.Image = global::TP_2.Properties.Resources.letra_m__5_;
+            this.btnMarcas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMarcas.Location = new System.Drawing.Point(53, 141);
             this.btnMarcas.Name = "btnMarcas";
             this.btnMarcas.Size = new System.Drawing.Size(119, 32);
@@ -128,6 +134,7 @@
             this.btnMarcas.Text = "Marcas";
             this.btnMarcas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMarcas.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMarcas.UseCompatibleTextRendering = true;
             this.btnMarcas.UseVisualStyleBackColor = false;
             this.btnMarcas.Click += new System.EventHandler(this.btnMarcas_Click);
             // 
@@ -136,9 +143,10 @@
             this.btnCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btnCategorias.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
             this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.btnCategorias.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCategorias.Image = global::TP_2.Properties.Resources.notasDef;
+            this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCategorias.Location = new System.Drawing.Point(53, 92);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(119, 32);
@@ -146,6 +154,7 @@
             this.btnCategorias.Text = "Categorias";
             this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCategorias.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCategorias.UseCompatibleTextRendering = true;
             this.btnCategorias.UseVisualStyleBackColor = false;
             this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
@@ -184,7 +193,7 @@
         private System.Windows.Forms.Label lblNombreInicio;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem btnAbout;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnArticulos;
         private System.Windows.Forms.Button btnMarcas;

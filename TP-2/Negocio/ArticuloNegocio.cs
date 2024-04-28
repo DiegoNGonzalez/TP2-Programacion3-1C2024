@@ -39,74 +39,24 @@ namespace Negocio
                 {
                     Articulo aux = new Articulo();
                     aux.IDArticulo = Datos.Lector.GetInt32(0);
-                    if (!(Datos.Lector["Codigo"] is DBNull))
-                    {
-                        aux.CodigoArticulo = (string)Datos.Lector["Codigo"];
-
-                    }
-                    else
-                    {
-                        aux.CodigoArticulo = "Falta dato";
-                    }
-
-                    if (!(Datos.Lector["Nombre"] is DBNull))
-                    {
-
-                        aux.NombreArticulo = (string)Datos.Lector["Nombre"];
-                    }
-                    else
-                    {
-
-                        aux.NombreArticulo = "Falta dato";
-                    }
-                    if (Datos.Lector["Descripcion"] is DBNull)
-                    {
-                        aux.DescripcionArticulo = "Falta dato";
-                    }
-                    else
-                    {
-                        aux.DescripcionArticulo = (string)Datos.Lector["Descripcion"];
-                    }
-                    if (Datos.Lector["Precio"] is DBNull)
-                    {
-                        aux.PrecioArticulo = 0;
-                    }
-                    else
-                    {
-                        aux.PrecioArticulo = (decimal)Datos.Lector["Precio"];
-                    }
-                    if (Datos.Lector["IdMarca"] is DBNull)
-                    {
-                        aux.MarcaArticulo = new Marca();
-                        aux.MarcaArticulo.IDMarca = 0;
-                        aux.MarcaArticulo.NombreMarca = "Falta dato";
-                    }
-                    else
-                    {
-                        aux.MarcaArticulo = new Marca();
-                        aux.MarcaArticulo.IDMarca = (int)Datos.Lector["IdMarca"];
-                        aux.MarcaArticulo.NombreMarca = (string)Datos.Lector["Marca"];
-                    }
-                    if (Datos.Lector["IdCategoria"] is DBNull)
-                    {
-                        aux.CategoriaArticulo = new Categoria();
-                        aux.CategoriaArticulo.IDCategoria = 0;
-                        aux.CategoriaArticulo.NombreCategoria = "Falta dato";
-                    }
-                    else
-                    {
-                        aux.CategoriaArticulo = new Categoria();
-                        aux.CategoriaArticulo.IDCategoria = (int)Datos.Lector["IdCategoria"];
-                        aux.CategoriaArticulo.NombreCategoria = (string)Datos.Lector["Categoria"];
-                    }
-                    aux.Imagenes=new List<Imagen>();
-                    Lista.Add(aux);
-
+                    aux.CodigoArticulo = (string)Datos.Lector["Codigo"];
+                    aux.NombreArticulo = (string)Datos.Lector["Nombre"];
+                    aux.DescripcionArticulo = (string)Datos.Lector["Descripcion"];
+                    aux.PrecioArticulo = (decimal)Datos.Lector["Precio"];
+                    aux.MarcaArticulo = new Marca();
+                    aux.MarcaArticulo.IDMarca = (int)Datos.Lector["IdMarca"];
+                    aux.MarcaArticulo.NombreMarca= (string)Datos.Lector["Marca"];
+                    aux.CategoriaArticulo = new Categoria();
+                    aux.CategoriaArticulo.IDCategoria = (int)Datos.Lector["IdCategoria"];
+                    aux.CategoriaArticulo.NombreCategoria = (string)Datos.Lector["Categoria"];
                     
+                    
+                    Lista.Add(aux);
                 }   
 
                 foreach (var articulo in Lista)
                 {
+                    
                     articulo.Imagenes = Imagenes.Listarimagenes(articulo.IDArticulo);
                 }
                 return Lista;

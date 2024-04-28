@@ -37,7 +37,6 @@
             this.lblMarcaFormAddMod = new System.Windows.Forms.Label();
             this.lblCategoriaFormAddMod = new System.Windows.Forms.Label();
             this.lblPrecioFormAddMod = new System.Windows.Forms.Label();
-            this.gbSeccionesFormAddMod = new System.Windows.Forms.GroupBox();
             this.txtCodigoFormAddMod = new System.Windows.Forms.TextBox();
             this.txtNombreFormAddMod = new System.Windows.Forms.TextBox();
             this.txtUrlFormAddMod = new System.Windows.Forms.TextBox();
@@ -50,97 +49,88 @@
             this.pbxFormAddMod = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.gbSeccionesFormAddMod.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCodigoFormAddMod
             // 
             this.lblCodigoFormAddMod.AutoSize = true;
-            this.lblCodigoFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoFormAddMod.Location = new System.Drawing.Point(6, 29);
+            this.lblCodigoFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblCodigoFormAddMod.Location = new System.Drawing.Point(63, 14);
             this.lblCodigoFormAddMod.Name = "lblCodigoFormAddMod";
-            this.lblCodigoFormAddMod.Size = new System.Drawing.Size(54, 16);
+            this.lblCodigoFormAddMod.Size = new System.Drawing.Size(64, 17);
             this.lblCodigoFormAddMod.TabIndex = 0;
             this.lblCodigoFormAddMod.Text = "Codigo:";
             // 
             // lblNombreFormAddMod
             // 
             this.lblNombreFormAddMod.AutoSize = true;
-            this.lblNombreFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreFormAddMod.Location = new System.Drawing.Point(6, 57);
+            this.lblNombreFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblNombreFormAddMod.Location = new System.Drawing.Point(63, 43);
             this.lblNombreFormAddMod.Name = "lblNombreFormAddMod";
-            this.lblNombreFormAddMod.Size = new System.Drawing.Size(59, 16);
+            this.lblNombreFormAddMod.Size = new System.Drawing.Size(64, 17);
             this.lblNombreFormAddMod.TabIndex = 1;
             this.lblNombreFormAddMod.Text = "Nombre:";
             // 
             // lblDescripcionFormAddMod
             // 
             this.lblDescripcionFormAddMod.AutoSize = true;
-            this.lblDescripcionFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionFormAddMod.Location = new System.Drawing.Point(6, 84);
+            this.lblDescripcionFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblDescripcionFormAddMod.Location = new System.Drawing.Point(23, 69);
             this.lblDescripcionFormAddMod.Name = "lblDescripcionFormAddMod";
-            this.lblDescripcionFormAddMod.Size = new System.Drawing.Size(82, 16);
+            this.lblDescripcionFormAddMod.Size = new System.Drawing.Size(104, 17);
             this.lblDescripcionFormAddMod.TabIndex = 2;
             this.lblDescripcionFormAddMod.Text = "Descripcion:";
             // 
             // lblUrlImgFormAddMod
             // 
             this.lblUrlImgFormAddMod.AutoSize = true;
-            this.lblUrlImgFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUrlImgFormAddMod.Location = new System.Drawing.Point(6, 123);
+            this.lblUrlImgFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUrlImgFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblUrlImgFormAddMod.Location = new System.Drawing.Point(31, 108);
             this.lblUrlImgFormAddMod.Name = "lblUrlImgFormAddMod";
-            this.lblUrlImgFormAddMod.Size = new System.Drawing.Size(85, 16);
+            this.lblUrlImgFormAddMod.Size = new System.Drawing.Size(96, 17);
             this.lblUrlImgFormAddMod.TabIndex = 3;
             this.lblUrlImgFormAddMod.Text = "URL Imagen:";
             // 
             // lblMarcaFormAddMod
             // 
             this.lblMarcaFormAddMod.AutoSize = true;
-            this.lblMarcaFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarcaFormAddMod.Location = new System.Drawing.Point(9, 154);
+            this.lblMarcaFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarcaFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblMarcaFormAddMod.Location = new System.Drawing.Point(71, 140);
             this.lblMarcaFormAddMod.Name = "lblMarcaFormAddMod";
-            this.lblMarcaFormAddMod.Size = new System.Drawing.Size(48, 16);
+            this.lblMarcaFormAddMod.Size = new System.Drawing.Size(56, 17);
             this.lblMarcaFormAddMod.TabIndex = 4;
             this.lblMarcaFormAddMod.Text = "Marca:";
             // 
             // lblCategoriaFormAddMod
             // 
             this.lblCategoriaFormAddMod.AutoSize = true;
-            this.lblCategoriaFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoriaFormAddMod.Location = new System.Drawing.Point(6, 187);
+            this.lblCategoriaFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoriaFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblCategoriaFormAddMod.Location = new System.Drawing.Point(39, 172);
             this.lblCategoriaFormAddMod.Name = "lblCategoriaFormAddMod";
-            this.lblCategoriaFormAddMod.Size = new System.Drawing.Size(69, 16);
+            this.lblCategoriaFormAddMod.Size = new System.Drawing.Size(88, 17);
             this.lblCategoriaFormAddMod.TabIndex = 5;
             this.lblCategoriaFormAddMod.Text = "Categoria:";
             // 
             // lblPrecioFormAddMod
             // 
             this.lblPrecioFormAddMod.AutoSize = true;
-            this.lblPrecioFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioFormAddMod.Location = new System.Drawing.Point(9, 216);
+            this.lblPrecioFormAddMod.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioFormAddMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblPrecioFormAddMod.Location = new System.Drawing.Point(60, 201);
             this.lblPrecioFormAddMod.Name = "lblPrecioFormAddMod";
-            this.lblPrecioFormAddMod.Size = new System.Drawing.Size(49, 16);
+            this.lblPrecioFormAddMod.Size = new System.Drawing.Size(64, 17);
             this.lblPrecioFormAddMod.TabIndex = 6;
             this.lblPrecioFormAddMod.Text = "Precio:";
-            // 
-            // gbSeccionesFormAddMod
-            // 
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblMarcaFormAddMod);
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblPrecioFormAddMod);
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblCodigoFormAddMod);
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblCategoriaFormAddMod);
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblNombreFormAddMod);
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblDescripcionFormAddMod);
-            this.gbSeccionesFormAddMod.Controls.Add(this.lblUrlImgFormAddMod);
-            this.gbSeccionesFormAddMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbSeccionesFormAddMod.Location = new System.Drawing.Point(12, 58);
-            this.gbSeccionesFormAddMod.Name = "gbSeccionesFormAddMod";
-            this.gbSeccionesFormAddMod.Size = new System.Drawing.Size(160, 315);
-            this.gbSeccionesFormAddMod.TabIndex = 7;
-            this.gbSeccionesFormAddMod.TabStop = false;
-            this.gbSeccionesFormAddMod.Text = "Secciones";
             // 
             // txtCodigoFormAddMod
             // 
@@ -203,17 +193,20 @@
             // 
             // btnAbmImagenes
             // 
+            this.btnAbmImagenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnAbmImagenes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAbmImagenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnAbmImagenes.Image = global::TP_2.Properties.Resources.imagen;
-            this.btnAbmImagenes.Location = new System.Drawing.Point(305, 410);
+            this.btnAbmImagenes.Location = new System.Drawing.Point(238, 359);
             this.btnAbmImagenes.Name = "btnAbmImagenes";
             this.btnAbmImagenes.Size = new System.Drawing.Size(39, 31);
             this.btnAbmImagenes.TabIndex = 22;
-            this.btnAbmImagenes.UseVisualStyleBackColor = true;
+            this.btnAbmImagenes.UseVisualStyleBackColor = false;
             this.btnAbmImagenes.Click += new System.EventHandler(this.btnAbmImagenes_Click);
             // 
             // pbxFormAddMod
             // 
-            this.pbxFormAddMod.Location = new System.Drawing.Point(336, 87);
+            this.pbxFormAddMod.Location = new System.Drawing.Point(336, 76);
             this.pbxFormAddMod.Name = "pbxFormAddMod";
             this.pbxFormAddMod.Size = new System.Drawing.Size(234, 236);
             this.pbxFormAddMod.TabIndex = 21;
@@ -221,37 +214,61 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCancelar.Image = global::TP_2.Properties.Resources.boton_eliminar;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(206, 410);
+            this.btnCancelar.Location = new System.Drawing.Point(132, 359);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 31);
+            this.btnCancelar.Size = new System.Drawing.Size(86, 31);
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAceptar.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnAceptar.Image = global::TP_2.Properties.Resources.bien;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(93, 410);
+            this.btnAceptar.Location = new System.Drawing.Point(26, 359);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 31);
+            this.btnAceptar.Size = new System.Drawing.Size(86, 31);
             this.btnAceptar.TabIndex = 19;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblDescripcionFormAddMod);
+            this.panel1.Controls.Add(this.lblMarcaFormAddMod);
+            this.panel1.Controls.Add(this.lblUrlImgFormAddMod);
+            this.panel1.Controls.Add(this.lblPrecioFormAddMod);
+            this.panel1.Controls.Add(this.lblNombreFormAddMod);
+            this.panel1.Controls.Add(this.lblCategoriaFormAddMod);
+            this.panel1.Controls.Add(this.lblCodigoFormAddMod);
+            this.panel1.Location = new System.Drawing.Point(26, 76);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(127, 222);
+            this.panel1.TabIndex = 23;
             // 
             // FormAddMod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(582, 530);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAbmImagenes);
             this.Controls.Add(this.txtDescripcionFormAddMod);
             this.Controls.Add(this.pbxFormAddMod);
@@ -263,7 +280,6 @@
             this.Controls.Add(this.txtUrlFormAddMod);
             this.Controls.Add(this.txtNombreFormAddMod);
             this.Controls.Add(this.txtCodigoFormAddMod);
-            this.Controls.Add(this.gbSeccionesFormAddMod);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(598, 569);
@@ -272,10 +288,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.FormAddMod_Load);
-            this.gbSeccionesFormAddMod.ResumeLayout(false);
-            this.gbSeccionesFormAddMod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioFormAddMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormAddMod)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,7 +306,6 @@
         private System.Windows.Forms.Label lblMarcaFormAddMod;
         private System.Windows.Forms.Label lblCategoriaFormAddMod;
         private System.Windows.Forms.Label lblPrecioFormAddMod;
-        private System.Windows.Forms.GroupBox gbSeccionesFormAddMod;
         private System.Windows.Forms.TextBox txtCodigoFormAddMod;
         private System.Windows.Forms.TextBox txtNombreFormAddMod;
         private System.Windows.Forms.TextBox txtUrlFormAddMod;
@@ -303,5 +318,6 @@
         private System.Windows.Forms.TextBox txtDescripcionFormAddMod;
         private System.Windows.Forms.Button btnAbmImagenes;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

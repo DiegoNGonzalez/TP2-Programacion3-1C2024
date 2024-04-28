@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formDetalles));
             this.btnVolver = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblNombreArticulo = new System.Windows.Forms.Label();
             this.lblCodigoArticulo = new System.Windows.Forms.Label();
             this.lblValorPrecio = new System.Windows.Forms.Label();
             this.lblValorCodigo = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblValorMarca = new System.Windows.Forms.Label();
+            this.lblNombreArticulo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnteriorImg = new System.Windows.Forms.Button();
             this.btnSiguienteImg = new System.Windows.Forms.Button();
@@ -79,16 +79,6 @@
             this.panel1.Size = new System.Drawing.Size(355, 309);
             this.panel1.TabIndex = 13;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // lblNombreArticulo
-            // 
-            this.lblNombreArticulo.AutoSize = true;
-            this.lblNombreArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreArticulo.Location = new System.Drawing.Point(245, 9);
-            this.lblNombreArticulo.Name = "lblNombreArticulo";
-            this.lblNombreArticulo.Size = new System.Drawing.Size(92, 31);
-            this.lblNombreArticulo.TabIndex = 28;
-            this.lblNombreArticulo.Text = "label1";
             // 
             // lblCodigoArticulo
             // 
@@ -190,6 +180,16 @@
             this.lblValorMarca.TabIndex = 44;
             this.lblValorMarca.Text = "label7";
             // 
+            // lblNombreArticulo
+            // 
+            this.lblNombreArticulo.AutoSize = true;
+            this.lblNombreArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreArticulo.Location = new System.Drawing.Point(245, 9);
+            this.lblNombreArticulo.Name = "lblNombreArticulo";
+            this.lblNombreArticulo.Size = new System.Drawing.Size(92, 31);
+            this.lblNombreArticulo.TabIndex = 28;
+            this.lblNombreArticulo.Text = "label1";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnAnteriorImg);
@@ -241,6 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(704, 444);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblNombreArticulo);

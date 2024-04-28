@@ -62,6 +62,5 @@ namespace TP_2
         {
             Close();
         }
-
     }
 }
