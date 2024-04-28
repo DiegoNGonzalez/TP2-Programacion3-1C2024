@@ -189,6 +189,7 @@
             this.btnLimpiarFiltro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpiarFiltro.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLimpiarFiltro.UseVisualStyleBackColor = true;
+            this.btnLimpiarFiltro.Click += new System.EventHandler(this.btnLimpiarFiltro_Click);
             // 
             // btnBuscarFiltrado
             // 

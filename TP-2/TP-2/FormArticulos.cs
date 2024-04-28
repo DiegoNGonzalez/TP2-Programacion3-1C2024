@@ -32,7 +32,7 @@ namespace TP_2
             cBoxCampo.Items.Add("Marca");
             cBoxCampo.Items.Add("Codigo");
             cBoxCampo.Items.Add("Precio");
-            
+
 
         }
         private void CargarGrid()
@@ -48,7 +48,7 @@ namespace TP_2
                 else
                 {
                     dgvArticulos.DataSource = listaArticulos;
-                    dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];                  
+                    dgvArticulos.CurrentCell = dgvArticulos.Rows[0].Cells[1];
                     dgvArticulos.Columns["IdArticulo"].Visible = false;
                     dgvArticulos.Columns["DescripcionArticulo"].Visible = false;
                     dgvArticulos.Columns["CategoriaArticulo"].Visible = false;
@@ -64,7 +64,7 @@ namespace TP_2
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            Articulo seleccionado =(Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             try
             {
                 pBoxArticulosFormArticulos.Load(seleccionado.Imagenes[0].URLImagen);
@@ -72,16 +72,16 @@ namespace TP_2
             catch (Exception)
             {
                 articuloNegocio.ModificarArticuloImagen(seleccionado);
-                MessageBox.Show("Se ha modificado la URL de la imagen del articulo (por Default), porque la URL era Inexistente. Vuelva a abrir Articulos.", "URL INEXISTENTE",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se ha modificado la URL de la imagen del articulo (por Default), porque la URL era Inexistente. Vuelva a abrir Articulos.", "URL INEXISTENTE", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
         }
 
-        private void CargarImagen(string imagen) 
-        { 
+        private void CargarImagen(string imagen)
+        {
             try
             {
-                pBoxArticulosFormArticulos.Load(imagen); 
+                pBoxArticulosFormArticulos.Load(imagen);
             }
             catch (Exception ex)
             {
@@ -94,7 +94,7 @@ namespace TP_2
             FormAddMod formAddMod = new FormAddMod();
             formAddMod.ShowDialog();
             CargarGrid();
-            
+
         }
 
         private void btnModificarFormArticulos_Click(object sender, EventArgs e)
@@ -135,7 +135,7 @@ namespace TP_2
 
                 MessageBox.Show(ex.ToString());
             }
-            
+
         }
 
         private void btnSiguienteImg_Click(object sender, EventArgs e)
@@ -184,7 +184,7 @@ namespace TP_2
             string filtro = txtBusquedaRapida.Text;
             if (filtro.Length > 2)
             {
-                listaFiltrada= listaArticulos.FindAll(articulo=>articulo.NombreArticulo.ToUpper().Contains(filtro.ToUpper())|| articulo.MarcaArticulo.NombreMarca.ToUpper().Contains(filtro.ToUpper()) || articulo.CategoriaArticulo.NombreCategoria.ToUpper().Contains(filtro.ToUpper())|| articulo.CodigoArticulo.ToUpper().Contains(filtro.ToUpper()));
+                listaFiltrada = listaArticulos.FindAll(articulo => articulo.NombreArticulo.ToUpper().Contains(filtro.ToUpper()) || articulo.MarcaArticulo.NombreMarca.ToUpper().Contains(filtro.ToUpper()) || articulo.CategoriaArticulo.NombreCategoria.ToUpper().Contains(filtro.ToUpper()) || articulo.CodigoArticulo.ToUpper().Contains(filtro.ToUpper()));
                 dgvArticulos.DataSource = listaFiltrada;
             }
             else
@@ -201,8 +201,8 @@ namespace TP_2
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             formDetalles formDetalles = new formDetalles(seleccionado);
             formDetalles.ShowDialog();
-            
-            
+
+
         }
 
         private void cBoxCampo_SelectedIndexChanged(object sender, EventArgs e)
@@ -232,7 +232,7 @@ namespace TP_2
             try
             {
                 string consulta = "select  a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.ID IdCategoria, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', m.ID IdMarca FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id AND ";
-                if(campo == "Precio")
+                if (campo == "Precio")
                 {
                     if (criterio == "Mayor a")
                     {
@@ -240,25 +240,26 @@ namespace TP_2
                     }
                     else if (criterio == "Menor a")
                     {
-                        consulta +="a.Precio < " + filtro;
+                        consulta += "a.Precio < " + filtro;
                     }
                     else
                     {
-                        consulta +="a.Precio = " + filtro;
+                        consulta += "a.Precio = " + filtro;
                     }
-                }else if (campo == "Nombre")
+                }
+                else if (campo == "Nombre")
                 {
                     if (criterio == "Comienza con")
                     {
-                        consulta +="a.Nombre like '" + filtro + "%'";
+                        consulta += "a.Nombre like '" + filtro + "%'";
                     }
                     else if (criterio == "Termina con")
                     {
-                        consulta +="a.Nombre like '%" + filtro + "'";
+                        consulta += "a.Nombre like '%" + filtro + "'";
                     }
                     else
                     {
-                        consulta +="a.Nombre like '%" + filtro + "%'";
+                        consulta += "a.Nombre like '%" + filtro + "%'";
                     }
                 }
                 else if (campo == "Codigo")
@@ -280,15 +281,15 @@ namespace TP_2
                 {
                     if (criterio == "Comienza con")
                     {
-                        consulta +="m.Descripcion like '" + filtro + "%'";
+                        consulta += "m.Descripcion like '" + filtro + "%'";
                     }
                     else if (criterio == "Termina con")
                     {
-                        consulta +="m.Descripcion like '%" + filtro + "'";
+                        consulta += "m.Descripcion like '%" + filtro + "'";
                     }
                     else
                     {
-                        consulta +="m.Descripcion like '%" + filtro + "%'";
+                        consulta += "m.Descripcion like '%" + filtro + "%'";
                     }
                 }
                 listaFiltrada = negocio.ListarArticulos(consulta);
@@ -305,14 +306,67 @@ namespace TP_2
         {
             try
             {
+                if(ValidarFiltro())
+                {
+                    return;
+                }
                 string campo = cBoxCampo.SelectedItem.ToString();
                 string criterio = cBoxCriterio.SelectedItem.ToString();
                 string filtro = txtBuscarFiltrado.Text;
                 dgvArticulos.DataSource = Filtrar(campo, criterio, filtro);
-            } catch
+            }
+            catch (Exception ex)
             {
+                throw ex;
+            }
+        }
 
-            } 
+        private bool SoloNumeros(string cadena)
+        {
+            foreach (char c in cadena)
+            {
+                if (!(char.IsNumber(c)))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }   
+        private bool ValidarFiltro()
+        {
+            if (cBoxCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Debe seleccionar un campo para filtrar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (cBoxCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Debe seleccionar un criterio para filtrar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (cBoxCampo.SelectedIndex == 0 && txtBuscarFiltrado.Text == "")
+            {
+                MessageBox.Show("Debe ingresar un valor para filtrar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (cBoxCampo.SelectedIndex == 3 && txtBuscarFiltrado.Text.Length > 0) 
+            {
+                if (!(SoloNumeros(txtBuscarFiltrado.Text))) 
+                {
+                    MessageBox.Show("Debe ingresar un valor numerico para filtrar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void btnLimpiarFiltro_Click(object sender, EventArgs e)
+        {
+            txtBuscarFiltrado.Text = "";
+            txtBusquedaRapida.Text = "";
+            cBoxCampo.SelectedIndex = -1;
+            cBoxCriterio.SelectedIndex = -1;
+            CargarGrid();
         }
     }
 }
