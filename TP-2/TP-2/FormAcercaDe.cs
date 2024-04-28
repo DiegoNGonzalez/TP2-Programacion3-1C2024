@@ -17,9 +17,36 @@ namespace TP_2
             InitializeComponent();
         }
 
-        private void FormAcercaDe_Load(object sender, EventArgs e)
-        {
+       
 
+        private void btnGitHubDiego_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DiegoNGonzalez");
+        }
+
+        private void btnLinkedinDiego_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/diegongonzalez/");
+        }
+
+        private void btnLinkedinTomi_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/cacerestomas/");
+        }
+
+        private void btnGithubTomi_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/tomyok");
+        }
+
+        private void btnGithubSeba_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/sebastian-scollo");
+        }
+
+        private void btnLinkedinSeba_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/sebas-scollo-793b8324a/");
         }
     }
 }
