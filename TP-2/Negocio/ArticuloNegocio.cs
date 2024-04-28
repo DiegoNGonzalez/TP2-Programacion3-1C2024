@@ -19,12 +19,20 @@ namespace Negocio
             Imagenes = new ImagenNegocio();
         }
 
-        public List<Articulo> ListarArticulos()
+        public List<Articulo> ListarArticulos(string consulta = null)
         {
             List<Articulo> Lista = new List<Articulo>();
             try
             {
-                Datos.SetearConsulta("select  a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.ID IdCategoria, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', m.ID IdMarca FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id");
+                if (consulta!= null)
+                {
+                    Datos.SetearConsulta(consulta);
+
+                }
+                else
+                {
+                    Datos.SetearConsulta("select  a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.ID IdCategoria, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', m.ID IdMarca FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id");
+                }
                 Datos.EjecutarLectura();
 
                 while (Datos.Lector.Read())
@@ -43,8 +51,6 @@ namespace Negocio
                     aux.CategoriaArticulo.NombreCategoria = (string)Datos.Lector["Categoria"];
                     
                     
-                                     
-                                        
                     Lista.Add(aux);
                 }   
 

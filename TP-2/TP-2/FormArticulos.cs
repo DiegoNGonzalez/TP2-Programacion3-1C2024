@@ -227,5 +227,94 @@ namespace TP_2
                 }
             }
         }
+        private List<Articulo> Filtrar(string campo, string criterio, string filtro)
+        {
+            List<Articulo> listaFiltrada = new List<Articulo>();
+            try
+            {
+                string consulta = "select  a.Id, a.Codigo, a.Nombre, a.Descripcion, a.Precio, c.ID IdCategoria, c.Descripcion as 'Categoria', m.Descripcion as 'Marca', m.ID IdMarca FROM ARTICULOS a, Categorias c, Marcas m where a.IdCategoria= c.Id and a.IdMarca = m.Id AND ";
+                if(campo == "Precio")
+                {
+                    if (criterio == "Mayor a")
+                    {
+                        consulta += "a.Precio > " + filtro;
+                    }
+                    else if (criterio == "Menor a")
+                    {
+                        consulta +="a.Precio < " + filtro;
+                    }
+                    else
+                    {
+                        consulta +="a.Precio = " + filtro;
+                    }
+                }else if (campo == "Nombre")
+                {
+                    if (criterio == "Comienza con")
+                    {
+                        consulta +="a.Nombre like '" + filtro + "%'";
+                    }
+                    else if (criterio == "Termina con")
+                    {
+                        consulta +="a.Nombre like '%" + filtro + "'";
+                    }
+                    else
+                    {
+                        consulta +="a.Nombre like '%" + filtro + "%'";
+                    }
+                }
+                else if (campo == "Codigo")
+                {
+                    if (criterio == "Comienza con")
+                    {
+                        consulta += "a.Codigo like '" + filtro + "%'";
+                    }
+                    else if (criterio == "Termina con")
+                    {
+                        consulta += "a.Codigo like '%" + filtro + "'";
+                    }
+                    else
+                    {
+                        consulta += "a.Codigo like '%" + filtro + "%'";
+                    }
+                }
+                else if (campo== "Marca")
+                {
+                    if (criterio == "Comienza con")
+                    {
+                        consulta +="m.Descripcion like '" + filtro + "%'";
+                    }
+                    else if (criterio == "Termina con")
+                    {
+                        consulta +="m.Descripcion like '%" + filtro + "'";
+                    }
+                    else
+                    {
+                        consulta +="m.Descripcion like '%" + filtro + "%'";
+                    }
+                }
+                else
+                {
+                    if (criterio == "Comienza con")
+                    {
+                        consulta +="c.Descripcion like '" + filtro + "%'";
+                    }
+                    else if (criterio == "Termina con")
+                    {
+                        consulta +="c.Descripcion like '%" + filtro + "'";
+                    }
+                    else
+                    {
+                        consulta +="c.Descripcion like '%" + filtro + "%'";
+                    }
+                }
+                listaFiltrada = negocio.ListarArticulos(consulta);
+                return listaFiltrada;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
