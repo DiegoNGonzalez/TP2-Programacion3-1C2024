@@ -15,6 +15,7 @@ namespace TP_2
         public FormInicio()
         {
             InitializeComponent();
+            
         }
 
         private void btnArticulos_Click(object sender, EventArgs e)
@@ -36,11 +37,6 @@ namespace TP_2
         }
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FormAcercaDe formAcercaDe = new FormAcercaDe();
             formAcercaDe.ShowDialog();

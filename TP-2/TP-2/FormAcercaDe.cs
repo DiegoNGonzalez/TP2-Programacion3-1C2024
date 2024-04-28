@@ -16,5 +16,10 @@ namespace TP_2
         {
             InitializeComponent();
         }
+
+        private void FormAcercaDe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

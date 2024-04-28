@@ -29,181 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formDetalles));
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lblNombreArticulo = new System.Windows.Forms.Label();
             this.lblCodigoArticulo = new System.Windows.Forms.Label();
+            this.lblValorPrecio = new System.Windows.Forms.Label();
             this.lblValorCodigo = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblValorCategoria = new System.Windows.Forms.Label();
             this.lblValorDescripcion = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblValorMarca = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblValorCategoria = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblValorPrecio = new System.Windows.Forms.Label();
-            this.gbxDetalles = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnteriorImg = new System.Windows.Forms.Button();
             this.btnSiguienteImg = new System.Windows.Forms.Button();
             this.pbxDetallles = new System.Windows.Forms.PictureBox();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.gbxDetalles.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetallles)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblNombreArticulo
-            // 
-            this.lblNombreArticulo.AutoSize = true;
-            this.lblNombreArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreArticulo.Location = new System.Drawing.Point(160, 30);
-            this.lblNombreArticulo.Name = "lblNombreArticulo";
-            this.lblNombreArticulo.Size = new System.Drawing.Size(92, 31);
-            this.lblNombreArticulo.TabIndex = 0;
-            this.lblNombreArticulo.Text = "label1";
-            // 
-            // lblCodigoArticulo
-            // 
-            this.lblCodigoArticulo.AutoSize = true;
-            this.lblCodigoArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoArticulo.Location = new System.Drawing.Point(16, 120);
-            this.lblCodigoArticulo.Name = "lblCodigoArticulo";
-            this.lblCodigoArticulo.Size = new System.Drawing.Size(54, 16);
-            this.lblCodigoArticulo.TabIndex = 1;
-            this.lblCodigoArticulo.Text = "Código:";
-            // 
-            // lblValorCodigo
-            // 
-            this.lblValorCodigo.AutoSize = true;
-            this.lblValorCodigo.Location = new System.Drawing.Point(127, 123);
-            this.lblValorCodigo.Name = "lblValorCodigo";
-            this.lblValorCodigo.Size = new System.Drawing.Size(35, 13);
-            this.lblValorCodigo.TabIndex = 2;
-            this.lblValorCodigo.Text = "label3";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(16, 162);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(82, 16);
-            this.lblDescripcion.TabIndex = 3;
-            this.lblDescripcion.Text = "Descripción:";
-            // 
-            // lblValorDescripcion
-            // 
-            this.lblValorDescripcion.AutoSize = true;
-            this.lblValorDescripcion.Location = new System.Drawing.Point(127, 165);
-            this.lblValorDescripcion.Name = "lblValorDescripcion";
-            this.lblValorDescripcion.Size = new System.Drawing.Size(35, 13);
-            this.lblValorDescripcion.TabIndex = 4;
-            this.lblValorDescripcion.Text = "label5";
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(16, 201);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(48, 16);
-            this.lblMarca.TabIndex = 5;
-            this.lblMarca.Text = "Marca:";
-            // 
-            // lblValorMarca
-            // 
-            this.lblValorMarca.AutoSize = true;
-            this.lblValorMarca.Location = new System.Drawing.Point(127, 203);
-            this.lblValorMarca.Name = "lblValorMarca";
-            this.lblValorMarca.Size = new System.Drawing.Size(35, 13);
-            this.lblValorMarca.TabIndex = 6;
-            this.lblValorMarca.Text = "label7";
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(16, 238);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(69, 16);
-            this.lblCategoria.TabIndex = 7;
-            this.lblCategoria.Text = "Categoria:";
-            // 
-            // lblValorCategoria
-            // 
-            this.lblValorCategoria.AutoSize = true;
-            this.lblValorCategoria.Location = new System.Drawing.Point(127, 238);
-            this.lblValorCategoria.Name = "lblValorCategoria";
-            this.lblValorCategoria.Size = new System.Drawing.Size(35, 13);
-            this.lblValorCategoria.TabIndex = 8;
-            this.lblValorCategoria.Text = "label9";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(16, 274);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(49, 16);
-            this.lblPrecio.TabIndex = 9;
-            this.lblPrecio.Text = "Precio:";
-            // 
-            // lblValorPrecio
-            // 
-            this.lblValorPrecio.AutoSize = true;
-            this.lblValorPrecio.Location = new System.Drawing.Point(127, 274);
-            this.lblValorPrecio.Name = "lblValorPrecio";
-            this.lblValorPrecio.Size = new System.Drawing.Size(41, 13);
-            this.lblValorPrecio.TabIndex = 10;
-            this.lblValorPrecio.Text = "label11";
-            // 
-            // gbxDetalles
-            // 
-            this.gbxDetalles.Controls.Add(this.btnAnteriorImg);
-            this.gbxDetalles.Controls.Add(this.btnSiguienteImg);
-            this.gbxDetalles.Controls.Add(this.pbxDetallles);
-            this.gbxDetalles.Controls.Add(this.lblCodigoArticulo);
-            this.gbxDetalles.Controls.Add(this.lblNombreArticulo);
-            this.gbxDetalles.Controls.Add(this.lblValorPrecio);
-            this.gbxDetalles.Controls.Add(this.lblValorCodigo);
-            this.gbxDetalles.Controls.Add(this.lblPrecio);
-            this.gbxDetalles.Controls.Add(this.lblDescripcion);
-            this.gbxDetalles.Controls.Add(this.lblValorCategoria);
-            this.gbxDetalles.Controls.Add(this.lblValorDescripcion);
-            this.gbxDetalles.Controls.Add(this.lblCategoria);
-            this.gbxDetalles.Controls.Add(this.lblMarca);
-            this.gbxDetalles.Controls.Add(this.lblValorMarca);
-            this.gbxDetalles.Location = new System.Drawing.Point(84, 12);
-            this.gbxDetalles.Name = "gbxDetalles";
-            this.gbxDetalles.Size = new System.Drawing.Size(549, 365);
-            this.gbxDetalles.TabIndex = 11;
-            this.gbxDetalles.TabStop = false;
-            // 
-            // btnAnteriorImg
-            // 
-            this.btnAnteriorImg.Image = global::TP_2.Properties.Resources.flechaIzq;
-            this.btnAnteriorImg.Location = new System.Drawing.Point(344, 293);
-            this.btnAnteriorImg.Name = "btnAnteriorImg";
-            this.btnAnteriorImg.Size = new System.Drawing.Size(54, 38);
-            this.btnAnteriorImg.TabIndex = 13;
-            this.btnAnteriorImg.UseVisualStyleBackColor = true;
-            this.btnAnteriorImg.Click += new System.EventHandler(this.btnAnteriorImg_Click);
-            // 
-            // btnSiguienteImg
-            // 
-            this.btnSiguienteImg.Image = global::TP_2.Properties.Resources.flechaDer2;
-            this.btnSiguienteImg.Location = new System.Drawing.Point(422, 293);
-            this.btnSiguienteImg.Name = "btnSiguienteImg";
-            this.btnSiguienteImg.Size = new System.Drawing.Size(51, 38);
-            this.btnSiguienteImg.TabIndex = 12;
-            this.btnSiguienteImg.UseVisualStyleBackColor = true;
-            this.btnSiguienteImg.Click += new System.EventHandler(this.btnSiguienteImg_Click);
-            // 
-            // pbxDetallles
-            // 
-            this.pbxDetallles.Location = new System.Drawing.Point(308, 66);
-            this.pbxDetallles.Name = "pbxDetallles";
-            this.pbxDetallles.Size = new System.Drawing.Size(191, 221);
-            this.pbxDetallles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxDetallles.TabIndex = 11;
-            this.pbxDetallles.TabStop = false;
             // 
             // btnVolver
             // 
@@ -215,41 +61,221 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.lblCodigoArticulo);
+            this.panel1.Controls.Add(this.lblValorPrecio);
+            this.panel1.Controls.Add(this.lblValorCodigo);
+            this.panel1.Controls.Add(this.lblPrecio);
+            this.panel1.Controls.Add(this.lblDescripcion);
+            this.panel1.Controls.Add(this.lblValorCategoria);
+            this.panel1.Controls.Add(this.lblValorDescripcion);
+            this.panel1.Controls.Add(this.lblCategoria);
+            this.panel1.Controls.Add(this.lblMarca);
+            this.panel1.Controls.Add(this.lblValorMarca);
+            this.panel1.Location = new System.Drawing.Point(69, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(355, 309);
+            this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblNombreArticulo
+            // 
+            this.lblNombreArticulo.AutoSize = true;
+            this.lblNombreArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreArticulo.Location = new System.Drawing.Point(245, 9);
+            this.lblNombreArticulo.Name = "lblNombreArticulo";
+            this.lblNombreArticulo.Size = new System.Drawing.Size(92, 31);
+            this.lblNombreArticulo.TabIndex = 28;
+            this.lblNombreArticulo.Text = "label1";
+            // 
+            // lblCodigoArticulo
+            // 
+            this.lblCodigoArticulo.AutoSize = true;
+            this.lblCodigoArticulo.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoArticulo.Location = new System.Drawing.Point(58, 70);
+            this.lblCodigoArticulo.Name = "lblCodigoArticulo";
+            this.lblCodigoArticulo.Size = new System.Drawing.Size(73, 21);
+            this.lblCodigoArticulo.TabIndex = 39;
+            this.lblCodigoArticulo.Text = "Código:";
+            // 
+            // lblValorPrecio
+            // 
+            this.lblValorPrecio.AutoSize = true;
+            this.lblValorPrecio.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPrecio.Location = new System.Drawing.Point(150, 220);
+            this.lblValorPrecio.Name = "lblValorPrecio";
+            this.lblValorPrecio.Size = new System.Drawing.Size(73, 21);
+            this.lblValorPrecio.TabIndex = 48;
+            this.lblValorPrecio.Text = "label11";
+            // 
+            // lblValorCodigo
+            // 
+            this.lblValorCodigo.AutoSize = true;
+            this.lblValorCodigo.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCodigo.Location = new System.Drawing.Point(150, 69);
+            this.lblValorCodigo.Name = "lblValorCodigo";
+            this.lblValorCodigo.Size = new System.Drawing.Size(64, 21);
+            this.lblValorCodigo.TabIndex = 40;
+            this.lblValorCodigo.Text = "label3";
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(58, 222);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(73, 21);
+            this.lblPrecio.TabIndex = 47;
+            this.lblPrecio.Text = "Precio:";
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(13, 111);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(118, 21);
+            this.lblDescripcion.TabIndex = 41;
+            this.lblDescripcion.Text = "Descripción:";
+            // 
+            // lblValorCategoria
+            // 
+            this.lblValorCategoria.AutoSize = true;
+            this.lblValorCategoria.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCategoria.Location = new System.Drawing.Point(150, 184);
+            this.lblValorCategoria.Name = "lblValorCategoria";
+            this.lblValorCategoria.Size = new System.Drawing.Size(64, 21);
+            this.lblValorCategoria.TabIndex = 46;
+            this.lblValorCategoria.Text = "label9";
+            // 
+            // lblValorDescripcion
+            // 
+            this.lblValorDescripcion.AutoSize = true;
+            this.lblValorDescripcion.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorDescripcion.Location = new System.Drawing.Point(150, 111);
+            this.lblValorDescripcion.Name = "lblValorDescripcion";
+            this.lblValorDescripcion.Size = new System.Drawing.Size(64, 21);
+            this.lblValorDescripcion.TabIndex = 42;
+            this.lblValorDescripcion.Text = "label5";
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(31, 185);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(100, 21);
+            this.lblCategoria.TabIndex = 45;
+            this.lblCategoria.Text = "Categoria:";
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(67, 150);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(64, 21);
+            this.lblMarca.TabIndex = 43;
+            this.lblMarca.Text = "Marca:";
+            // 
+            // lblValorMarca
+            // 
+            this.lblValorMarca.AutoSize = true;
+            this.lblValorMarca.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorMarca.Location = new System.Drawing.Point(150, 149);
+            this.lblValorMarca.Name = "lblValorMarca";
+            this.lblValorMarca.Size = new System.Drawing.Size(64, 21);
+            this.lblValorMarca.TabIndex = 44;
+            this.lblValorMarca.Text = "label7";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnAnteriorImg);
+            this.panel2.Controls.Add(this.btnSiguienteImg);
+            this.panel2.Controls.Add(this.pbxDetallles);
+            this.panel2.Location = new System.Drawing.Point(430, 61);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(283, 309);
+            this.panel2.TabIndex = 42;
+            // 
+            // btnAnteriorImg
+            // 
+            this.btnAnteriorImg.BackgroundImage = global::TP_2.Properties.Resources.flechaIzq;
+            this.btnAnteriorImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAnteriorImg.FlatAppearance.BorderSize = 0;
+            this.btnAnteriorImg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAnteriorImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnteriorImg.Location = new System.Drawing.Point(86, 259);
+            this.btnAnteriorImg.Name = "btnAnteriorImg";
+            this.btnAnteriorImg.Size = new System.Drawing.Size(44, 28);
+            this.btnAnteriorImg.TabIndex = 44;
+            this.btnAnteriorImg.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguienteImg
+            // 
+            this.btnSiguienteImg.BackColor = System.Drawing.Color.Transparent;
+            this.btnSiguienteImg.BackgroundImage = global::TP_2.Properties.Resources.flechaDer2;
+            this.btnSiguienteImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSiguienteImg.FlatAppearance.BorderSize = 0;
+            this.btnSiguienteImg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSiguienteImg.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSiguienteImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguienteImg.Location = new System.Drawing.Point(155, 259);
+            this.btnSiguienteImg.Name = "btnSiguienteImg";
+            this.btnSiguienteImg.Size = new System.Drawing.Size(44, 28);
+            this.btnSiguienteImg.TabIndex = 43;
+            this.btnSiguienteImg.UseVisualStyleBackColor = false;
+            // 
+            // pbxDetallles
+            // 
+            this.pbxDetallles.Location = new System.Drawing.Point(46, 22);
+            this.pbxDetallles.Name = "pbxDetallles";
+            this.pbxDetallles.Size = new System.Drawing.Size(191, 221);
+            this.pbxDetallles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDetallles.TabIndex = 42;
+            this.pbxDetallles.TabStop = false;
+            // 
             // formDetalles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 444);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.lblNombreArticulo);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.gbxDetalles);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formDetalles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalles";
-            this.gbxDetalles.ResumeLayout(false);
-            this.gbxDetalles.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetallles)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNombreArticulo;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblCodigoArticulo;
+        private System.Windows.Forms.Label lblValorPrecio;
         private System.Windows.Forms.Label lblValorCodigo;
+        private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.Label lblValorCategoria;
         private System.Windows.Forms.Label lblValorDescripcion;
+        private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblValorMarca;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblValorCategoria;
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Label lblValorPrecio;
-        private System.Windows.Forms.GroupBox gbxDetalles;
-        private System.Windows.Forms.PictureBox pbxDetallles;
-        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label lblNombreArticulo;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnteriorImg;
         private System.Windows.Forms.Button btnSiguienteImg;
+        private System.Windows.Forms.PictureBox pbxDetallles;
     }
 }

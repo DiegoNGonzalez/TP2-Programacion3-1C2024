@@ -21,6 +21,7 @@ namespace TP_2
         {
             InitializeComponent();
             negocio = new ArticuloNegocio();
+
         }
 
 
