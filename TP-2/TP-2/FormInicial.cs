@@ -40,6 +40,11 @@ namespace TP_2
         {
             FormAcercaDe formAcercaDe = new FormAcercaDe();
             formAcercaDe.ShowDialog();
+            
         }
+
+        
+
+       
     }
 }
