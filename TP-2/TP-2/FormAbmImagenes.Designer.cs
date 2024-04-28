@@ -146,6 +146,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvImagenes);
             this.Controls.Add(this.pBoxAbmImagenes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAbmImagenes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -27,9 +27,10 @@ namespace TP_2
             InitializeComponent();
             this.Articulo = Articulo;
             Text = "Modificar";
-            lblUrlImgFormAddMod.Text = "Imagenes";
+            lblUrlImgFormAddMod.Text = "Imagenes:";
+            lblUrlImgFormAddMod.Location = new Point(58,108); 
             txtUrlFormAddMod.Visible = false;
-            btnAbmImagenes.Location = new Point(206, 182);
+            btnAbmImagenes.Location = new Point(310, 156);
         }
 
         public Articulo CapturarArticuloForm()
@@ -150,5 +151,7 @@ namespace TP_2
             FormAbmImagenes form = new FormAbmImagenes(Articulo);
             form.ShowDialog();
         }
+
+        
     }
 }
