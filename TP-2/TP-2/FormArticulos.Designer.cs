@@ -228,6 +228,7 @@
             this.cBoxCampo.Name = "cBoxCampo";
             this.cBoxCampo.Size = new System.Drawing.Size(121, 24);
             this.cBoxCampo.TabIndex = 3;
+            this.cBoxCampo.SelectedIndexChanged += new System.EventHandler(this.cBoxCampo_SelectedIndexChanged);
             // 
             // lblFiltro
             // 
