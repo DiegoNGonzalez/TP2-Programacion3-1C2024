@@ -30,7 +30,6 @@ namespace TP_2
             CargarGrid();
             cBoxCampo.Items.Add("Nombre");
             cBoxCampo.Items.Add("Marca");
-            cBoxCampo.Items.Add("Categoria");
             cBoxCampo.Items.Add("Codigo");
             cBoxCampo.Items.Add("Precio");
             
@@ -277,7 +276,7 @@ namespace TP_2
                         consulta += "a.Codigo like '%" + filtro + "%'";
                     }
                 }
-                else if (campo== "Marca")
+                else
                 {
                     if (criterio == "Comienza con")
                     {
@@ -292,21 +291,6 @@ namespace TP_2
                         consulta +="m.Descripcion like '%" + filtro + "%'";
                     }
                 }
-                else
-                {
-                    if (criterio == "Comienza con")
-                    {
-                        consulta +="c.Descripcion like '" + filtro + "%'";
-                    }
-                    else if (criterio == "Termina con")
-                    {
-                        consulta +="c.Descripcion like '%" + filtro + "'";
-                    }
-                    else
-                    {
-                        consulta +="c.Descripcion like '%" + filtro + "%'";
-                    }
-                }
                 listaFiltrada = negocio.ListarArticulos(consulta);
                 return listaFiltrada;
             }
@@ -315,6 +299,20 @@ namespace TP_2
 
                 throw ex;
             }
+        }
+
+        private void btnBuscarFiltrado_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string campo = cBoxCampo.SelectedItem.ToString();
+                string criterio = cBoxCriterio.SelectedItem.ToString();
+                string filtro = txtBuscarFiltrado.Text;
+                dgvArticulos.DataSource = Filtrar(campo, criterio, filtro);
+            } catch
+            {
+
+            } 
         }
     }
 }

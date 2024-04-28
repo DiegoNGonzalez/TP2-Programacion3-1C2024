@@ -203,6 +203,7 @@
             this.btnBuscarFiltrado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarFiltrado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnBuscarFiltrado.UseVisualStyleBackColor = true;
+            this.btnBuscarFiltrado.Click += new System.EventHandler(this.btnBuscarFiltrado_Click);
             // 
             // txtBuscarFiltrado
             // 
