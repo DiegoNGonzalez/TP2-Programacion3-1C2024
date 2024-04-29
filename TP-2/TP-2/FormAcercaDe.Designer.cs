@@ -33,24 +33,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnGitHubDiego = new System.Windows.Forms.Button();
             this.btnLinkedinDiego = new System.Windows.Forms.Button();
-            this.cpbDiego = new TP_2.CircularPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGithubTomi = new System.Windows.Forms.Button();
             this.btnLinkedinTomi = new System.Windows.Forms.Button();
-            this.cpbTomi = new TP_2.CircularPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGithubSeba = new System.Windows.Forms.Button();
             this.btnLinkedinSeba = new System.Windows.Forms.Button();
-            this.circularPictureBox2 = new TP_2.CircularPictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.circularPictureBox2 = new TP_2.CircularPictureBox();
+            this.cpbTomi = new TP_2.CircularPictureBox();
+            this.cpbDiego = new TP_2.CircularPictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cpbDiego)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cpbTomi)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpbTomi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpbDiego)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,7 +82,7 @@
             this.btnGitHubDiego.BackgroundImage = global::TP_2.Properties.Resources.github;
             this.btnGitHubDiego.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGitHubDiego.FlatAppearance.BorderSize = 0;
-            this.btnGitHubDiego.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnGitHubDiego.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.btnGitHubDiego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGitHubDiego.Location = new System.Drawing.Point(147, 258);
             this.btnGitHubDiego.Name = "btnGitHubDiego";
@@ -96,7 +96,7 @@
             this.btnLinkedinDiego.BackgroundImage = global::TP_2.Properties.Resources.linkedin;
             this.btnLinkedinDiego.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLinkedinDiego.FlatAppearance.BorderSize = 0;
-            this.btnLinkedinDiego.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnLinkedinDiego.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.btnLinkedinDiego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLinkedinDiego.Location = new System.Drawing.Point(51, 258);
             this.btnLinkedinDiego.Name = "btnLinkedinDiego";
@@ -104,23 +104,6 @@
             this.btnLinkedinDiego.TabIndex = 3;
             this.btnLinkedinDiego.UseVisualStyleBackColor = true;
             this.btnLinkedinDiego.Click += new System.EventHandler(this.btnLinkedinDiego_Click);
-            // 
-            // cpbDiego
-            // 
-            this.cpbDiego.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.cpbDiego.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.cpbDiego.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.cpbDiego.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.cpbDiego.BorderSize = 2;
-            this.cpbDiego.GradientAngle = 50F;
-            this.cpbDiego.Image = global::TP_2.Properties.Resources.diegoImg;
-            this.cpbDiego.InitialImage = null;
-            this.cpbDiego.Location = new System.Drawing.Point(50, 38);
-            this.cpbDiego.Name = "cpbDiego";
-            this.cpbDiego.Size = new System.Drawing.Size(143, 143);
-            this.cpbDiego.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cpbDiego.TabIndex = 2;
-            this.cpbDiego.TabStop = false;
             // 
             // panel2
             // 
@@ -151,7 +134,7 @@
             this.btnGithubTomi.BackgroundImage = global::TP_2.Properties.Resources.github;
             this.btnGithubTomi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGithubTomi.FlatAppearance.BorderSize = 0;
-            this.btnGithubTomi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnGithubTomi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.btnGithubTomi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGithubTomi.Location = new System.Drawing.Point(147, 268);
             this.btnGithubTomi.Name = "btnGithubTomi";
@@ -165,7 +148,7 @@
             this.btnLinkedinTomi.BackgroundImage = global::TP_2.Properties.Resources.linkedin;
             this.btnLinkedinTomi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLinkedinTomi.FlatAppearance.BorderSize = 0;
-            this.btnLinkedinTomi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnLinkedinTomi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.btnLinkedinTomi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLinkedinTomi.Location = new System.Drawing.Point(51, 268);
             this.btnLinkedinTomi.Name = "btnLinkedinTomi";
@@ -173,23 +156,6 @@
             this.btnLinkedinTomi.TabIndex = 4;
             this.btnLinkedinTomi.UseVisualStyleBackColor = true;
             this.btnLinkedinTomi.Click += new System.EventHandler(this.btnLinkedinTomi_Click);
-            // 
-            // cpbTomi
-            // 
-            this.cpbTomi.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.cpbTomi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.cpbTomi.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.cpbTomi.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.cpbTomi.BorderSize = 2;
-            this.cpbTomi.GradientAngle = 50F;
-            this.cpbTomi.Image = global::TP_2.Properties.Resources.fotoTomi;
-            this.cpbTomi.InitialImage = null;
-            this.cpbTomi.Location = new System.Drawing.Point(50, 38);
-            this.cpbTomi.Name = "cpbTomi";
-            this.cpbTomi.Size = new System.Drawing.Size(143, 143);
-            this.cpbTomi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cpbTomi.TabIndex = 3;
-            this.cpbTomi.TabStop = false;
             // 
             // panel3
             // 
@@ -220,7 +186,7 @@
             this.btnGithubSeba.BackgroundImage = global::TP_2.Properties.Resources.github;
             this.btnGithubSeba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGithubSeba.FlatAppearance.BorderSize = 0;
-            this.btnGithubSeba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnGithubSeba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.btnGithubSeba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGithubSeba.Location = new System.Drawing.Point(147, 268);
             this.btnGithubSeba.Name = "btnGithubSeba";
@@ -234,7 +200,7 @@
             this.btnLinkedinSeba.BackgroundImage = global::TP_2.Properties.Resources.linkedin;
             this.btnLinkedinSeba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLinkedinSeba.FlatAppearance.BorderSize = 0;
-            this.btnLinkedinSeba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnLinkedinSeba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.btnLinkedinSeba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLinkedinSeba.Location = new System.Drawing.Point(51, 268);
             this.btnLinkedinSeba.Name = "btnLinkedinSeba";
@@ -242,6 +208,17 @@
             this.btnLinkedinSeba.TabIndex = 7;
             this.btnLinkedinSeba.UseVisualStyleBackColor = true;
             this.btnLinkedinSeba.Click += new System.EventHandler(this.btnLinkedinSeba_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.label1.Location = new System.Drawing.Point(224, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(352, 49);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Desarrolladores";
             // 
             // circularPictureBox2
             // 
@@ -260,30 +237,52 @@
             this.circularPictureBox2.TabIndex = 6;
             this.circularPictureBox2.TabStop = false;
             // 
-            // label1
+            // cpbTomi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.label1.Location = new System.Drawing.Point(224, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(352, 49);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Desarrolladores";
+            this.cpbTomi.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.cpbTomi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cpbTomi.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cpbTomi.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.cpbTomi.BorderSize = 2;
+            this.cpbTomi.GradientAngle = 50F;
+            this.cpbTomi.Image = global::TP_2.Properties.Resources.fotoTomi;
+            this.cpbTomi.InitialImage = null;
+            this.cpbTomi.Location = new System.Drawing.Point(50, 38);
+            this.cpbTomi.Name = "cpbTomi";
+            this.cpbTomi.Size = new System.Drawing.Size(143, 143);
+            this.cpbTomi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cpbTomi.TabIndex = 3;
+            this.cpbTomi.TabStop = false;
+            // 
+            // cpbDiego
+            // 
+            this.cpbDiego.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.cpbDiego.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cpbDiego.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cpbDiego.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.cpbDiego.BorderSize = 2;
+            this.cpbDiego.GradientAngle = 50F;
+            this.cpbDiego.Image = global::TP_2.Properties.Resources.diegoImg;
+            this.cpbDiego.InitialImage = null;
+            this.cpbDiego.Location = new System.Drawing.Point(50, 38);
+            this.cpbDiego.Name = "cpbDiego";
+            this.cpbDiego.Size = new System.Drawing.Size(143, 143);
+            this.cpbDiego.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cpbDiego.TabIndex = 2;
+            this.cpbDiego.TabStop = false;
             // 
             // FormAcercaDe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(796, 446);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "FormAcercaDe";
@@ -291,13 +290,13 @@
             this.Text = "Acerca de";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cpbDiego)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cpbTomi)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpbTomi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpbDiego)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
